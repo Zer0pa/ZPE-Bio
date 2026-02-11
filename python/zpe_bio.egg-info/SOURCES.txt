@@ -1,0 +1,6 @@
+pyproject.toml
+python/zpe_bio.egg-info/PKG-INFO
+python/zpe_bio.egg-info/SOURCES.txt
+python/zpe_bio.egg-info/dependency_links.txt
+python/zpe_bio.egg-info/requires.txt
+python/zpe_bio.egg-info/top_level.txt

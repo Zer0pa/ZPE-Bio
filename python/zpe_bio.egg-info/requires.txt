@@ -1,0 +1,12 @@
+numpy<2.0,>=1.24
+matplotlib>=3.7
+wfdb>=4.1
+scipy>=1.11
+
+[dev]
+pytest>=7.4
+hypothesis>=6.82
+ruff>=0.1
+
+[observe]
+comet-ml>=3.35

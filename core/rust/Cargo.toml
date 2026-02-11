@@ -1,0 +1,27 @@
+[package]
+name = "zpe-bio-codec"
+version = "0.1.0"
+edition = "2021"
+description = "8-primitive geometric biosignal compression codec"
+license = "Apache-2.0 OR MIT"
+
+[lib]
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[features]
+default = ["std"]
+std = []
+embedded = []
+
+[dependencies]
+heapless = "0.8"
+defmt = "0.3"
+defmt-rtt = "0.4"
+
+[dev-dependencies]
+proptest = "1.4"
+criterion = "0.5"
+
+[[bench]]
+name = "codec_bench"
+harness = false
