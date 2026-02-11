@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: zpe-bio
+Version: 0.1.0
+Requires-Python: >=3.10
+Requires-Dist: numpy<2.0,>=1.24
+Requires-Dist: matplotlib>=3.7
+Requires-Dist: wfdb>=4.1
+Requires-Dist: scipy>=1.11
+Provides-Extra: dev
+Requires-Dist: pytest>=7.4; extra == "dev"
+Requires-Dist: hypothesis>=6.82; extra == "dev"
+Requires-Dist: ruff>=0.1; extra == "dev"
+Provides-Extra: observe
+Requires-Dist: comet-ml>=3.35; extra == "observe"
