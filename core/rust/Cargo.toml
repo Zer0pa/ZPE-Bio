@@ -15,13 +15,6 @@ embedded = []
 
 [dependencies]
 heapless = "0.8"
-defmt = "0.3"
-defmt-rtt = "0.4"
 
 [dev-dependencies]
 proptest = "1.4"
-criterion = "0.5"
-
-[[bench]]
-name = "codec_bench"
-harness = false

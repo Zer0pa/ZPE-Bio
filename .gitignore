@@ -1,0 +1,40 @@
+# OS
+.DS_Store
+
+# Local configuration
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.ruff_cache/
+.hypothesis/
+.venv/
+.mypy_cache/
+.coverage
+coverage.xml
+build/
+dist/
+pip-wheel-metadata/
+*.egg-info/
+
+# Rust and embedded build outputs
+target/
+core/rust/target/
+core/rust/Cargo.lock
+embedded/**/target/
+embedded/**/Cargo.lock
+
+# Local notebooks and editor outputs
+.ipynb_checkpoints/
+
+# Validation and generated evidence artifacts
+validation/results/
+validation/datasets/eeg/
+validation/datasets/sisfall/
+validation/datasets/upfall/
+validation/datasets/wearable_device_dataset/
+docs/regulatory/evidence/*.tar.gz
+*.png

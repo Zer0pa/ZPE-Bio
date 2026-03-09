@@ -1,4 +1,0 @@
-# file: /Users/prinivenpillay/ZPE Bio/zpe-bio/python/zpe_bio/codec.py
-# hypothesis_version: 6.151.6
-
-[-2.0, -1.0, 0.0, 0.001, 0.005, 0.03, 0.05, 0.15, 0.3, 0.4, 0.8, 0.95, 1.0, 1.2, 2.0, 4.0, 100.0, 100, 250, 1000, 65535, '--demo', 'ZPE-Bio Codec Demo', '__main__', 'adaptive_envelope', 'adaptive_rms', 'ecg', 'fixed', 'inf', 'ppg', '─']

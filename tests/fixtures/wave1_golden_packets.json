@@ -1,0 +1,45 @@
+{
+  "contract_version": "wave1.0",
+  "cases": [
+    {
+      "name": "trimodal_single_event",
+      "words": [
+        525344,
+        590904,
+        656457,
+        656384,
+        656600,
+        721938,
+        524827,
+        524908,
+        524944,
+        524945,
+        524962,
+        524979,
+        591903,
+        526368,
+        526384
+      ],
+      "expected": {
+        "taste_packets": 1,
+        "smell_packets": 1,
+        "touch_packets": 1,
+        "fused_events": 1
+      }
+    },
+    {
+      "name": "incomplete_tail_fragments",
+      "words": [
+        524801,
+        524865,
+        591903
+      ],
+      "expected": {
+        "taste_packets": 0,
+        "smell_packets": 0,
+        "touch_packets": 0,
+        "fused_events": 0
+      }
+    }
+  ]
+}
