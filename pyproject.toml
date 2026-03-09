@@ -1,27 +1,52 @@
+[build-system]
+requires = ["setuptools>=69.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "zpe-bio"
-version = "0.1.0"
+version = "0.2.0"
+description = "Deterministic 8-primitive biosignal codec with smell/taste multimodal extensions."
 requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "Apache-2.0 OR MIT"}
 dependencies = [
     "numpy>=1.24,<2.0",
-    "matplotlib>=3.7",
-    "wfdb>=4.1",
-    "scipy>=1.11",
 ]
 
 [project.optional-dependencies]
+validation = [
+    "matplotlib>=3.7",
+    "neurokit2>=0.2.12",
+    "scipy>=1.11",
+    "wfdb>=4.1",
+]
+bioeeg = [
+    "mne>=1.8",
+    "pyedflib>=0.1.42",
+]
 dev = [
-    "pytest>=7.4",
-    "hypothesis>=6.82",
-    "ruff>=0.1",
+    "build>=1.2",
+    "pytest>=8.0",
+    "ruff>=0.6",
 ]
 observe = [
     "comet-ml>=3.35",
 ]
 
+[project.scripts]
+zpe-bio = "zpe_bio.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "python"}
+
 [tool.setuptools.packages.find]
 where = ["python"]
+include = ["zpe_bio*"]
 
-[build-system]
-requires = ["setuptools>=68.0"]
-build-backend = "setuptools.build_meta"
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["python"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100

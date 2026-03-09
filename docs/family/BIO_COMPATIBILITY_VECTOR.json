@@ -1,0 +1,76 @@
+{
+  "bio_package_version": "0.2.0",
+  "imc_contract_version_consumed": "wave1.0",
+  "imc_vector_sha256": "9c8b905f6c1d30d057955aa9adf0f7ff9139853494dca673e5fbe69f24fba10e",
+  "canonical_metric_authority": {
+    "source": "IMC_COMPATIBILITY_VECTOR.json",
+    "canonical_demo_total_words": 844,
+    "note": "Compatibility authority is the frozen IMC vector, not CLI demo variant outputs."
+  },
+  "shared_marker_assumptions": {
+    "word_layout": {
+      "bits_total": 20,
+      "mode_bits": [
+        19,
+        18
+      ],
+      "version_bits": [
+        17,
+        16
+      ],
+      "payload_bits": [
+        15,
+        0
+      ]
+    },
+    "mode_semantics": {
+      "0": "normal_text_units",
+      "1": "escape_utf8_bytes",
+      "2": "extension_modality_words",
+      "3": "reserved_currently_mental_only"
+    },
+    "modality_markers": {
+      "diagram": "0x8000",
+      "music": "0x4000",
+      "voice": "0x2000",
+      "bpe": "0x1000",
+      "touch": "0x0800",
+      "smell": "0x0200",
+      "mental": "0x0100",
+      "taste": "0x0400"
+    },
+    "dispatch_precedence_reference": [
+      "mental_reserved",
+      "music",
+      "voice",
+      "diagram",
+      "bpe",
+      "taste_versioned_v1_v2_v3",
+      "touch_non_image",
+      "smell_non_image",
+      "mental_non_image",
+      "image_family",
+      "text_fallback"
+    ]
+  },
+  "packet_compatibility_guarantees": [
+    "Bio consumes IMC compatibility artifacts statically and does not import IMC runtime code.",
+    "Wave-1 golden packet fixture tests enforce deterministic trimodal packet extraction.",
+    "Strict packet version validation is available for decode ingress and raises explicit unsupported-version errors for smell/touch version drift.",
+    "Python/Rust parity is required in CI rust-quality matrix and validated by tests/test_parity.py."
+  ],
+  "known_divergences": [
+    "Bio introduces biosignal-centric CLI surfaces (ECG/EEG/multimodal-stream/chemosense-bio) not present in IMC package CLI.",
+    "Bio multimodal demos are not treated as IMC canonical metric authority; IMC vector total_words=844 remains authoritative for cross-family compatibility.",
+    "Bio phase gates include biomedical codec/repro falsification lanes that are out-of-scope for IMC release pipeline."
+  ],
+  "breaking_change_policy": {
+    "bio_side_rule": "Any change to marker semantics, packet version interpretation, or dispatch assumptions requires updating this vector and rerunning Wave-1 compatibility fixtures.",
+    "required_actions_for_breaking_change": [
+      "increment Bio compatibility vector revision",
+      "rerun tests/test_packet_compatibility.py and tests/test_parity.py",
+      "publish updated BIO_RELEASE_NOTE_FOR_COORDINATION.md",
+      "coordinate downstream replay against IMC frozen vector and report divergences"
+    ]
+  }
+}
