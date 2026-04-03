@@ -1,13 +1,12 @@
 # Legal Boundaries
 
-This note is a repo-surface summary only. The root license files are the legal source of truth.
+This note is a repo-surface summary only. The root license file is the legal source of truth.
 
 ## License Surface
 
-- Repository license selector: `../LICENSE`
-- Apache text: `../LICENSE-APACHE`
-- MIT text: `../LICENSE-MIT`
-- Python metadata and Rust crate metadata both declare the repo as dual-licensed `Apache-2.0 OR MIT`
+- Repository license: `../LICENSE` (Zer0pa Source-Available License v6.0)
+- SPDX: `LicenseRef-Zer0pa-SAL-6.0`
+- Python metadata and Rust crate metadata both declare the repo as `LicenseRef-Zer0pa-SAL-6.0`
 
 ## Claim Boundaries
 
