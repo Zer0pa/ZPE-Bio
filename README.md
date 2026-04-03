@@ -4,56 +4,23 @@
 
 ## What This Is
 
-> ZPE-Bio is a deterministic biosignal encoding system for ECG and EEG signal domains, with a Rust-backed core codec and Python package surface.
+ZPE-Bio applies the ZPE deterministic 8-primitive encoding architecture to biosignal domains — ECG and EEG. The codec ships in both **Rust** (`core/rust/`) and **Python** (`python/zpe_bio/`), with embedded reference builds under `embedded/`.
 
-**This repo is a staged proof surface, not a public release packet.** It contains real Wave-1 and Wave-2 execution artifacts but remains in private staging. Bio Wearable is NO_GO — its closure bundles are retained for traceability, not as release proof.
+Wave-1 and Wave-2 readiness artifacts are committed under `validation/results/` and `validation/runbooks/`. ECG validation runs deterministic round-trip fidelity checks against real records: `python -m zpe_bio encode-ecg --record-id 100 --samples 1000 --json`. IMC contract-consumption artifacts confirm family alignment. **Bio Wearable is NO_GO** — its closure bundles are retained for traceability, not treated as release proof.
 
-### Commercial Wedge
+For medical-device firmware teams and clinical-data infrastructure engineers evaluating deterministic biosignal encoding: this is the only lane in the family with both a Rust crate and Python package targeting the same signal domain, plus an embedded reference path. The proof lineage is auditable but the release surface is not green.
 
-This is for medical-device firmware teams, clinical-data infrastructure teams, and wearable-health platform engineers who need deterministic, reproducible biosignal encoding with auditable proof lineage. The business value is reproducibility and auditability for biosignal pipelines — currently demonstrated in staging, not in public release.
+**Readiness: private-stage (2026-03-09).** Not a public release packet. Not a clean green-verification snapshot. Historical validation artifacts preserve host-specific paths (lineage, not path authority).
 
-### Technical Wedge
+**Not claimed:** fresh green release commit, public release readiness, Bio Wearable viability, fully normalized artifact paths.
 
-The technical edge is a deterministic 8-primitive biosignal codec with both Python and Rust implementations, validated against ECG round-trip fidelity and EEG encoding paths. Wave-1 and Wave-2 readiness artifacts are committed with IMC contract-consumption alignment.
+| Proof anchor | Location |
+|---|---|
+| Wave-1 / Wave-2 artifacts | `validation/results/`, `validation/runbooks/` |
+| ECG validation | `python -m zpe_bio encode-ecg` |
+| Family alignment | `docs/family/` |
 
-### Current Readiness
-
-**STAGED_PROOF_SURFACE** — Private staging repository as of 2026-03-09. Not a public release packet. Not a clean green-verification snapshot.
-
-### What Is Proved
-
-- Runnable Python and Rust codec surfaces with maintained test suites
-- Committed Wave-1 and Wave-2 readiness artifacts
-- ECG validation commands with deterministic round-trip fidelity
-- IMC contract-consumption artifacts for family alignment
-- Source tree substance is real and testable
-
-### What Is Not Being Claimed
-
-- No fresh green release commit
-- No public release readiness
-- Bio Wearable remains NO_GO — closure bundles are traceability only
-- Historical validation artifact paths not fully normalized
-- Ruff and multimodal manifest verification not re-cleared in this phase
-
-### Ideal First Buyer
-
-Medical-device firmware team or clinical-data infrastructure team evaluating deterministic biosignal encoding with proof lineage (future — not current release).
-
-### Deployment Model
-
-Python package (`pip install -e ".[dev]"`), Rust crate (`core/rust/`), and embedded reference builds. Private staged — not a public packaged release.
-
-### Authority / Proof Anchors
-
-- `validation/results/` — committed proof and readiness artifacts
-- `validation/runbooks/` — execution runbooks
-- Wave-1 and Wave-2 execution artifacts
-- ECG validation: `python -m zpe_bio encode-ecg --record-id 100 --samples 1000 --json`
-
-### Role In The Zer0pa Family
-
-ZPE-Bio validates that the ZPE encoding architecture generalizes to biosignal domains (ECG, EEG). It sits in the staged/validation tier alongside Neuro, Mocap, and Prosody, demonstrating family breadth while the primary commercial wedges (IoT, XR, Robotics, Geo) lead market entry. The platform layer is ZPE-IMC.
+Part of the [Zer0pa](https://github.com/zer0-point-energy) family. Platform layer: [ZPE-IMC](https://github.com/zer0-point-energy/ZPE-IMC).
 
 ---
 
