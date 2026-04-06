@@ -1,0 +1,30 @@
+{
+  "status": "ok",
+  "dataset_entry": "records500/00000/00027_hr",
+  "record_name": "00027_hr",
+  "sample_rate_hz": 500.0,
+  "channels": [
+    "I",
+    "II",
+    "III",
+    "AVR",
+    "AVL",
+    "AVF",
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6"
+  ],
+  "samples": 5000,
+  "compression_ratio": 1.859773,
+  "snr_db": 33.615361,
+  "prd_percent": 2.086688,
+  "roundtrip_time_ms": 44.072293,
+  "signal_integrity": {
+    "status": "pass",
+    "compared_samples": 5000,
+    "max_abs_error": 0.016
+  }
+}

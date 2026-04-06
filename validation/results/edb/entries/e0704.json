@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "dataset_entry": "e0704",
+  "record_name": "e0704",
+  "sample_rate_hz": 250.0,
+  "channels": [
+    "V5",
+    "V1"
+  ],
+  "samples": 5000,
+  "compression_ratio": 1.285843,
+  "snr_db": 61.267999,
+  "prd_percent": 1.307187,
+  "roundtrip_time_ms": 41.391489,
+  "signal_integrity": {
+    "status": "pass",
+    "compared_samples": 5000,
+    "max_abs_error": 0.03
+  }
+}

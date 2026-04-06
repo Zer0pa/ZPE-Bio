@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "dataset_entry": "e0817",
+  "record_name": "e0817",
+  "sample_rate_hz": 250.0,
+  "channels": [
+    "V5",
+    "V1"
+  ],
+  "samples": 5000,
+  "compression_ratio": 1.274048,
+  "snr_db": 64.191113,
+  "prd_percent": 0.878328,
+  "roundtrip_time_ms": 43.642019,
+  "signal_integrity": {
+    "status": "pass",
+    "compared_samples": 5000,
+    "max_abs_error": 0.016
+  }
+}

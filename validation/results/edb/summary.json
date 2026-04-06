@@ -1,0 +1,1824 @@
+{
+  "dataset": "edb",
+  "signal_type": "ecg",
+  "dataset_dir": "validation/datasets/edb",
+  "download": {
+    "status": "reused_local",
+    "target_dir": "/workspace/zpe-bio-action-clean-20260405-144419/zpe-bio/validation/datasets/edb",
+    "records_requested": "all"
+  },
+  "aggregate": {
+    "signal_type": "ecg",
+    "entries_total": 90,
+    "entries_ok": 90,
+    "entries_failed": 0,
+    "mean_compression_ratio": 1.376457,
+    "median_compression_ratio": 1.367147,
+    "min_compression_ratio": 1.171372,
+    "max_compression_ratio": 1.55135,
+    "mean_snr_db": 52.468288,
+    "max_prd_percent": 4.33693
+  },
+  "entries": [
+    {
+      "status": "ok",
+      "dataset_entry": "e0103",
+      "record_name": "e0103",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V4",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.373626,
+      "snr_db": 44.087504,
+      "prd_percent": 1.482739,
+      "roundtrip_time_ms": 1460.201372,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.064
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0104",
+      "record_name": "e0104",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "MLIII",
+        "V4"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.323276,
+      "snr_db": 51.317796,
+      "prd_percent": 2.587607,
+      "roundtrip_time_ms": 56.655622,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0105",
+      "record_name": "e0105",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "MLIII",
+        "V4"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.334757,
+      "snr_db": 49.836614,
+      "prd_percent": 2.767828,
+      "roundtrip_time_ms": 48.479694,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0106",
+      "record_name": "e0106",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "MLIII",
+        "V3"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.42633,
+      "snr_db": 47.661063,
+      "prd_percent": 3.106084,
+      "roundtrip_time_ms": 45.251377,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0107",
+      "record_name": "e0107",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "D3",
+        "V4"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.281394,
+      "snr_db": 66.982491,
+      "prd_percent": 1.362863,
+      "roundtrip_time_ms": 39.697823,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.032
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0108",
+      "record_name": "e0108",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V4",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.321702,
+      "snr_db": 41.263774,
+      "prd_percent": 1.270048,
+      "roundtrip_time_ms": 37.148817,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.043
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0110",
+      "record_name": "e0110",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V3",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.308729,
+      "snr_db": 59.919006,
+      "prd_percent": 2.034924,
+      "roundtrip_time_ms": 39.976709,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0111",
+      "record_name": "e0111",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "MLIII",
+        "V4"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.427144,
+      "snr_db": 59.462042,
+      "prd_percent": 2.510824,
+      "roundtrip_time_ms": 37.611811,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.021
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0112",
+      "record_name": "e0112",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "MLIII",
+        "V4"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.307019,
+      "snr_db": 35.355076,
+      "prd_percent": 1.885357,
+      "roundtrip_time_ms": 56.528543,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0113",
+      "record_name": "e0113",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "MLIII",
+        "V4"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.318392,
+      "snr_db": 47.94667,
+      "prd_percent": 2.750919,
+      "roundtrip_time_ms": 43.973135,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0114",
+      "record_name": "e0114",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "MLIII",
+        "V4"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.346439,
+      "snr_db": 69.271831,
+      "prd_percent": 2.390225,
+      "roundtrip_time_ms": 36.751442,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0115",
+      "record_name": "e0115",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.489647,
+      "snr_db": 55.812024,
+      "prd_percent": 1.532727,
+      "roundtrip_time_ms": 35.982063,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.048
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0116",
+      "record_name": "e0116",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V4",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.2791,
+      "snr_db": 40.302968,
+      "prd_percent": 1.701371,
+      "roundtrip_time_ms": 40.324223,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0118",
+      "record_name": "e0118",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V4",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.464129,
+      "snr_db": 44.51919,
+      "prd_percent": 2.207084,
+      "roundtrip_time_ms": 36.625244,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.046
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0119",
+      "record_name": "e0119",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V4",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.447807,
+      "snr_db": 39.013474,
+      "prd_percent": 2.285045,
+      "roundtrip_time_ms": 37.248065,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.062
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0121",
+      "record_name": "e0121",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V4",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.497903,
+      "snr_db": 54.991915,
+      "prd_percent": 1.745128,
+      "roundtrip_time_ms": 36.863841,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.061
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0122",
+      "record_name": "e0122",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V4",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.55135,
+      "snr_db": 55.320377,
+      "prd_percent": 1.719791,
+      "roundtrip_time_ms": 35.859905,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.061
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0123",
+      "record_name": "e0123",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V4",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.43246,
+      "snr_db": 52.151562,
+      "prd_percent": 2.106475,
+      "roundtrip_time_ms": 37.814768,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.031
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0124",
+      "record_name": "e0124",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V4",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.42106,
+      "snr_db": 51.390692,
+      "prd_percent": 1.709174,
+      "roundtrip_time_ms": 37.839217,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.032
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0125",
+      "record_name": "e0125",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V4",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.464129,
+      "snr_db": 52.391083,
+      "prd_percent": 1.924961,
+      "roundtrip_time_ms": 36.123011,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.025
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0126",
+      "record_name": "e0126",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V4",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.48258,
+      "snr_db": 50.599947,
+      "prd_percent": 1.592259,
+      "roundtrip_time_ms": 36.533006,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.052
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0127",
+      "record_name": "e0127",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V4",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.473405,
+      "snr_db": 49.632872,
+      "prd_percent": 1.631323,
+      "roundtrip_time_ms": 36.038011,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.031
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0129",
+      "record_name": "e0129",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "MLIII",
+        "V3"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.346439,
+      "snr_db": 61.857698,
+      "prd_percent": 3.34805,
+      "roundtrip_time_ms": 39.220948,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0133",
+      "record_name": "e0133",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "MLIII",
+        "V3"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.346076,
+      "snr_db": 59.685024,
+      "prd_percent": 2.716677,
+      "roundtrip_time_ms": 39.305477,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0136",
+      "record_name": "e0136",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "MLIII",
+        "V4"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.335648,
+      "snr_db": 52.256516,
+      "prd_percent": 3.093599,
+      "roundtrip_time_ms": 37.954606,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0139",
+      "record_name": "e0139",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "MLIII",
+        "V4"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.392952,
+      "snr_db": 58.507359,
+      "prd_percent": 3.782951,
+      "roundtrip_time_ms": 40.107916,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0147",
+      "record_name": "e0147",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "MLIII",
+        "V4"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.216989,
+      "snr_db": 66.439366,
+      "prd_percent": 1.951819,
+      "roundtrip_time_ms": 42.453134,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0148",
+      "record_name": "e0148",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "MLIII",
+        "V4"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.171372,
+      "snr_db": 52.922428,
+      "prd_percent": 1.643221,
+      "roundtrip_time_ms": 43.190205,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.028
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0151",
+      "record_name": "e0151",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V3",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.395284,
+      "snr_db": 40.229049,
+      "prd_percent": 1.764658,
+      "roundtrip_time_ms": 36.828651,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.03
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0154",
+      "record_name": "e0154",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "MLIII",
+        "V4"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.421868,
+      "snr_db": 50.358563,
+      "prd_percent": 4.33693,
+      "roundtrip_time_ms": 36.601784,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0155",
+      "record_name": "e0155",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "MLIII",
+        "V4"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.276324,
+      "snr_db": 51.257653,
+      "prd_percent": 1.078988,
+      "roundtrip_time_ms": 41.025944,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0159",
+      "record_name": "e0159",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "MLIII",
+        "V4"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.319958,
+      "snr_db": 42.812474,
+      "prd_percent": 1.960306,
+      "roundtrip_time_ms": 37.296735,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0161",
+      "record_name": "e0161",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V4",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.440092,
+      "snr_db": 34.629497,
+      "prd_percent": 2.014645,
+      "roundtrip_time_ms": 37.311045,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.029
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0162",
+      "record_name": "e0162",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "MLIII",
+        "V4"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.296008,
+      "snr_db": 36.969185,
+      "prd_percent": 1.567085,
+      "roundtrip_time_ms": 39.502055,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.032
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0163",
+      "record_name": "e0163",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "MLIII",
+        "V4"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.327669,
+      "snr_db": 35.505682,
+      "prd_percent": 1.849605,
+      "roundtrip_time_ms": 39.504975,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0166",
+      "record_name": "e0166",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V4",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.337256,
+      "snr_db": 62.250253,
+      "prd_percent": 1.419516,
+      "roundtrip_time_ms": 46.948614,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.026
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0170",
+      "record_name": "e0170",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V4",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.435338,
+      "snr_db": 52.89005,
+      "prd_percent": 1.384145,
+      "roundtrip_time_ms": 40.260914,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.061
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0202",
+      "record_name": "e0202",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLI"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.31268,
+      "snr_db": 56.37268,
+      "prd_percent": 1.476246,
+      "roundtrip_time_ms": 39.788981,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.052
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0203",
+      "record_name": "e0203",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLI"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.270003,
+      "snr_db": 61.310226,
+      "prd_percent": 1.167106,
+      "roundtrip_time_ms": 40.050818,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0204",
+      "record_name": "e0204",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLI"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.268714,
+      "snr_db": 36.124874,
+      "prd_percent": 1.57558,
+      "roundtrip_time_ms": 41.474639,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.062
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0205",
+      "record_name": "e0205",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLI"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.35373,
+      "snr_db": 58.3107,
+      "prd_percent": 2.254451,
+      "roundtrip_time_ms": 41.270811,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0206",
+      "record_name": "e0206",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLI"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.240079,
+      "snr_db": 61.591352,
+      "prd_percent": 1.311814,
+      "roundtrip_time_ms": 39.810391,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.032
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0207",
+      "record_name": "e0207",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLI"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.29887,
+      "snr_db": 34.903443,
+      "prd_percent": 1.81527,
+      "roundtrip_time_ms": 41.217342,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0208",
+      "record_name": "e0208",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLI"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.311132,
+      "snr_db": 37.570522,
+      "prd_percent": 1.745995,
+      "roundtrip_time_ms": 40.006587,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0210",
+      "record_name": "e0210",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLI"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.410437,
+      "snr_db": 52.701294,
+      "prd_percent": 2.451318,
+      "roundtrip_time_ms": 37.462012,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.033
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0211",
+      "record_name": "e0211",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLI"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.326612,
+      "snr_db": 41.897045,
+      "prd_percent": 1.598022,
+      "roundtrip_time_ms": 38.437469,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0212",
+      "record_name": "e0212",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLI"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.323627,
+      "snr_db": 37.591251,
+      "prd_percent": 1.331118,
+      "roundtrip_time_ms": 38.586058,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.025
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0213",
+      "record_name": "e0213",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLI"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.263264,
+      "snr_db": 36.653301,
+      "prd_percent": 1.489117,
+      "roundtrip_time_ms": 39.749522,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.031
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0302",
+      "record_name": "e0302",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V3",
+        "V5"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.339764,
+      "snr_db": 55.168694,
+      "prd_percent": 3.976652,
+      "roundtrip_time_ms": 39.216309,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0303",
+      "record_name": "e0303",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V2",
+        "V5"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.340662,
+      "snr_db": 48.412156,
+      "prd_percent": 2.406508,
+      "roundtrip_time_ms": 39.15716,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0304",
+      "record_name": "e0304",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V3",
+        "V5"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.262467,
+      "snr_db": 54.323762,
+      "prd_percent": 1.129477,
+      "roundtrip_time_ms": 41.764995,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0305",
+      "record_name": "e0305",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V2",
+        "V5"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.258336,
+      "snr_db": 42.412191,
+      "prd_percent": 0.852212,
+      "roundtrip_time_ms": 41.085884,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.03
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0306",
+      "record_name": "e0306",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V2",
+        "V5"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.284357,
+      "snr_db": 37.163752,
+      "prd_percent": 1.436286,
+      "roundtrip_time_ms": 40.819047,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.029
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0403",
+      "record_name": "e0403",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "V1"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.495886,
+      "snr_db": 60.300293,
+      "prd_percent": 1.315978,
+      "roundtrip_time_ms": 35.915464,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0404",
+      "record_name": "e0404",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLI"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.495439,
+      "snr_db": 65.701202,
+      "prd_percent": 1.556336,
+      "roundtrip_time_ms": 33.784073,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.058
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0405",
+      "record_name": "e0405",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "V1"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.42633,
+      "snr_db": 61.785552,
+      "prd_percent": 1.373004,
+      "roundtrip_time_ms": 42.931548,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.055
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0406",
+      "record_name": "e0406",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLI"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.210654,
+      "snr_db": 40.955335,
+      "prd_percent": 1.470555,
+      "roundtrip_time_ms": 42.227518,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.031
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0408",
+      "record_name": "e0408",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLI"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.529754,
+      "snr_db": 57.489022,
+      "prd_percent": 1.836616,
+      "roundtrip_time_ms": 35.244832,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.058
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0409",
+      "record_name": "e0409",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLI"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.496334,
+      "snr_db": 44.267286,
+      "prd_percent": 1.917728,
+      "roundtrip_time_ms": 36.663203,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.03
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0410",
+      "record_name": "e0410",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLI"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.384466,
+      "snr_db": 42.783442,
+      "prd_percent": 1.659228,
+      "roundtrip_time_ms": 37.111037,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.029
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0411",
+      "record_name": "e0411",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLI"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.354096,
+      "snr_db": 54.917741,
+      "prd_percent": 1.448285,
+      "roundtrip_time_ms": 51.034809,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0413",
+      "record_name": "e0413",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V2",
+        "V5"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.533742,
+      "snr_db": 57.664522,
+      "prd_percent": 1.05835,
+      "roundtrip_time_ms": 36.302159,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.031
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0415",
+      "record_name": "e0415",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V2",
+        "V5"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.309415,
+      "snr_db": 53.568996,
+      "prd_percent": 1.205803,
+      "roundtrip_time_ms": 39.303858,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.036
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0417",
+      "record_name": "e0417",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLI"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.405284,
+      "snr_db": 60.363221,
+      "prd_percent": 1.051596,
+      "roundtrip_time_ms": 37.842418,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0418",
+      "record_name": "e0418",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLI"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.406668,
+      "snr_db": 52.868955,
+      "prd_percent": 1.548517,
+      "roundtrip_time_ms": 39.89703,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.059
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0501",
+      "record_name": "e0501",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V2",
+        "V4"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.392564,
+      "snr_db": 59.413634,
+      "prd_percent": 0.688128,
+      "roundtrip_time_ms": 44.390589,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0509",
+      "record_name": "e0509",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V2",
+        "V4"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.410437,
+      "snr_db": 56.474744,
+      "prd_percent": 1.714308,
+      "roundtrip_time_ms": 37.70566,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.048
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0515",
+      "record_name": "e0515",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V2",
+        "V5"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.343183,
+      "snr_db": 62.222233,
+      "prd_percent": 1.689583,
+      "roundtrip_time_ms": 37.737559,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0601",
+      "record_name": "e0601",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.529988,
+      "snr_db": 65.070475,
+      "prd_percent": 1.272073,
+      "roundtrip_time_ms": 36.065061,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.043
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0602",
+      "record_name": "e0602",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.420051,
+      "snr_db": 61.887344,
+      "prd_percent": 1.868747,
+      "roundtrip_time_ms": 38.779935,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0603",
+      "record_name": "e0603",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "V2"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.441545,
+      "snr_db": 62.282293,
+      "prd_percent": 2.113133,
+      "roundtrip_time_ms": 38.465799,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0604",
+      "record_name": "e0604",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V2",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.439678,
+      "snr_db": 63.467106,
+      "prd_percent": 1.436235,
+      "roundtrip_time_ms": 38.140133,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0605",
+      "record_name": "e0605",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.450537,
+      "snr_db": 64.474469,
+      "prd_percent": 1.610565,
+      "roundtrip_time_ms": 37.220807,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.024
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0606",
+      "record_name": "e0606",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.473405,
+      "snr_db": 64.379889,
+      "prd_percent": 1.065761,
+      "roundtrip_time_ms": 38.36513,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.019
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0607",
+      "record_name": "e0607",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "V4"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.37779,
+      "snr_db": 65.117396,
+      "prd_percent": 1.845374,
+      "roundtrip_time_ms": 38.622878,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.06
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0609",
+      "record_name": "e0609",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.295337,
+      "snr_db": 65.440786,
+      "prd_percent": 1.22174,
+      "roundtrip_time_ms": 39.97112,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0610",
+      "record_name": "e0610",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.398015,
+      "snr_db": 64.980689,
+      "prd_percent": 1.21105,
+      "roundtrip_time_ms": 44.632716,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.025
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0611",
+      "record_name": "e0611",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.51699,
+      "snr_db": 54.487813,
+      "prd_percent": 1.646464,
+      "roundtrip_time_ms": 34.960847,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.06
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0612",
+      "record_name": "e0612",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.52045,
+      "snr_db": 61.114717,
+      "prd_percent": 1.09789,
+      "roundtrip_time_ms": 35.772947,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0613",
+      "record_name": "e0613",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.539409,
+      "snr_db": 61.844895,
+      "prd_percent": 1.525294,
+      "roundtrip_time_ms": 35.814895,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.03
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0614",
+      "record_name": "e0614",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "V1"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.49723,
+      "snr_db": 57.230906,
+      "prd_percent": 0.849578,
+      "roundtrip_time_ms": 36.959149,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.031
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0615",
+      "record_name": "e0615",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "MLIII"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.463915,
+      "snr_db": 56.100357,
+      "prd_percent": 1.371032,
+      "roundtrip_time_ms": 37.919677,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.053
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0704",
+      "record_name": "e0704",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "V1"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.285843,
+      "snr_db": 61.267999,
+      "prd_percent": 1.307187,
+      "roundtrip_time_ms": 41.391489,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.03
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0801",
+      "record_name": "e0801",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V1",
+        "V5"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.367241,
+      "snr_db": 62.275907,
+      "prd_percent": 0.999442,
+      "roundtrip_time_ms": 37.191256,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.032
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0808",
+      "record_name": "e0808",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "V1"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.405284,
+      "snr_db": 37.805542,
+      "prd_percent": 1.345276,
+      "roundtrip_time_ms": 38.40991,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0817",
+      "record_name": "e0817",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "V1"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.274048,
+      "snr_db": 64.191113,
+      "prd_percent": 0.878328,
+      "roundtrip_time_ms": 43.642019,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e0818",
+      "record_name": "e0818",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V5",
+        "V1"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.367054,
+      "snr_db": 52.349078,
+      "prd_percent": 1.512885,
+      "roundtrip_time_ms": 38.731345,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.02
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e1301",
+      "record_name": "e1301",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V1",
+        "V5"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.32908,
+      "snr_db": 39.140576,
+      "prd_percent": 1.894526,
+      "roundtrip_time_ms": 41.607487,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e1302",
+      "record_name": "e1302",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V1",
+        "V5"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.279754,
+      "snr_db": 43.6818,
+      "prd_percent": 2.068687,
+      "roundtrip_time_ms": 38.077953,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.016
+      }
+    },
+    {
+      "status": "ok",
+      "dataset_entry": "e1304",
+      "record_name": "e1304",
+      "sample_rate_hz": 250.0,
+      "channels": [
+        "V1",
+        "V5"
+      ],
+      "samples": 5000,
+      "compression_ratio": 1.31787,
+      "snr_db": 32.470621,
+      "prd_percent": 2.921222,
+      "roundtrip_time_ms": 39.305778,
+      "signal_integrity": {
+        "status": "pass",
+        "compared_samples": 5000,
+        "max_abs_error": 0.032
+      }
+    }
+  ]
+}

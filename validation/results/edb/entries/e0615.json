@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "dataset_entry": "e0615",
+  "record_name": "e0615",
+  "sample_rate_hz": 250.0,
+  "channels": [
+    "V5",
+    "MLIII"
+  ],
+  "samples": 5000,
+  "compression_ratio": 1.463915,
+  "snr_db": 56.100357,
+  "prd_percent": 1.371032,
+  "roundtrip_time_ms": 37.919677,
+  "signal_integrity": {
+    "status": "pass",
+    "compared_samples": 5000,
+    "max_abs_error": 0.053
+  }
+}
