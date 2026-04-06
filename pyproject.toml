@@ -6,6 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "zpe-bio"
 version = "0.2.0"
 description = "Deterministic 8-primitive biosignal codec with smell/taste multimodal extensions."
+authors = [{name = "Zer0pa"}]
 requires-python = ">=3.10"
 readme = "README.md"
 license = "LicenseRef-Zer0pa-SAL-6.0"
