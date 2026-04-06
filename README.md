@@ -4,18 +4,18 @@
 
 # ZPE-Bio
 
-48 MIT-BIH records. 2.85% mean PRD. Deterministic round-trip.
-SAL v6.0 — free below $100M annual revenue. See [LICENSE](LICENSE).
+48 MIT-BIH records. 1.12x mean compression. 2.85% mean PRD.
+SAL v6.0. Free below $100M annual revenue. See [LICENSE](LICENSE).
 
 ---
 
 ## What This Is
 
-ZPE-Bio applies the ZPE deterministic 8-primitive encoding architecture to biosignal domains — ECG and EEG. Rust core. Python package. Embedded reference path.
+Deterministic 8-primitive biosignal codec. ECG + EEG. Rust core. Python package. Embedded reference path.
 
-Wave-1 and Wave-2 runbooks stay committed under `validation/runbooks/`. ECG validation runs through `python -m zpe_bio encode-ecg --record-id 100 --samples 1000 --json`. IMC contract-consumption artifacts confirm family alignment.
+Wave-1 and Wave-2 runbooks committed. ECG validation path committed. IMC contract-consumption artifacts committed.
 
-For medical-device firmware teams and clinical-data infrastructure engineers: this is the only lane in the family with both a Rust crate and Python package targeting the same signal domain, plus an embedded reference path.
+One signal lane. Rust crate. Python package. Embedded reference path.
 
 ECG + EEG codec in Rust and Python. Deterministic round-trip on real records.
 
