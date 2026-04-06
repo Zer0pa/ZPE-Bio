@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "record_id": "114",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8876,
+    "compression_ratio": 1.287581,
+    "prd_percent": 2.239665,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 9836,
+    "zpe_bytes_est": 15533,
+    "gzip_cr": 2.033347,
+    "zpe_cr_est": 1.287581,
+    "encode_ms": 592.78674,
+    "decode_ms": 109.072009,
+    "encode_latency_ms": 592.78674,
+    "decode_latency_ms": 109.072009,
+    "stream_hash": "a5d729def400f0de2995152083ee1aa43dd6539136d2acb8aa0a05bda5db2bb4",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 592786.74,
+    "decode_time_us": 109072.009,
+    "snr_db": 38.969896,
+    "rmse_uv": 2.523014
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 16.0
+  },
+  "header_metadata": {
+    "age_years": 72,
+    "sex": "F",
+    "comment_lines": [
+      "Digoxin",
+      "The PVCs are uniform."
+    ],
+    "comment_text": "Digoxin The PVCs are uniform.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

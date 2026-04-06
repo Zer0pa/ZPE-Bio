@@ -1,0 +1,55 @@
+{
+  "ok": true,
+  "record_id": "213",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8253,
+    "compression_ratio": 1.384778,
+    "prd_percent": 0.752537,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 14564,
+    "zpe_bytes_est": 14443,
+    "gzip_cr": 1.373249,
+    "zpe_cr_est": 1.384754,
+    "encode_ms": 46.11192,
+    "decode_ms": 18.970691,
+    "encode_latency_ms": 46.11192,
+    "decode_latency_ms": 18.970691,
+    "stream_hash": "f710c3cb170669b0e8f24c89ab139589dcf70c72a5c2168c5acb2cb1ceb6f197",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 46111.92,
+    "decode_time_us": 18970.691,
+    "snr_db": 44.385696,
+    "rmse_uv": 4.26237
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 31.0
+  },
+  "header_metadata": {
+    "age_years": 61,
+    "sex": "M",
+    "comment_lines": [
+      "Digoxin",
+      "The PVCs are multiform and usually late-cycle, frequently resulting in",
+      "fusion PVCs.  The morphology of the fusion PVCs varies from almost normal",
+      "to almost identical to that of the PVCs."
+    ],
+    "comment_text": "Digoxin The PVCs are multiform and usually late-cycle, frequently resulting in fusion PVCs.  The morphology of the fusion PVCs varies from almost normal to almost identical to that of the PVCs.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

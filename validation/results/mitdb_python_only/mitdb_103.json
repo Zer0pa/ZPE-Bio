@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "record_id": "103",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8463,
+    "compression_ratio": 1.350416,
+    "prd_percent": 1.143388,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 10869,
+    "zpe_bytes_est": 14811,
+    "gzip_cr": 1.840096,
+    "zpe_cr_est": 1.350348,
+    "encode_ms": 394.491568,
+    "decode_ms": 196.130945,
+    "encode_latency_ms": 394.491568,
+    "decode_latency_ms": 196.130945,
+    "stream_hash": "33d8d230537479767cfe05173bf3cf274c2fc685afa6216a80ebadd4526bb8c6",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 394491.568,
+    "decode_time_us": 196130.945,
+    "snr_db": 40.852424,
+    "rmse_uv": 3.645916
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 31.0
+  },
+  "header_metadata": {
+    "age_years": null,
+    "sex": null,
+    "comment_lines": [
+      "-1 M 742 654 x1",
+      "Diapres, Xyloprim"
+    ],
+    "comment_text": "-1 M 742 654 x1 Diapres, Xyloprim",
+    "diagnosis_bucket": "normal_or_unannotated"
+  }
+}

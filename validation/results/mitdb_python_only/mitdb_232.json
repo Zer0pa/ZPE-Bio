@@ -1,0 +1,56 @@
+{
+  "ok": true,
+  "record_id": "232",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8668,
+    "compression_ratio": 1.318478,
+    "prd_percent": 2.324893,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 10325,
+    "zpe_bytes_est": 15169,
+    "gzip_cr": 1.937046,
+    "zpe_cr_est": 1.318478,
+    "encode_ms": 229.934898,
+    "decode_ms": 19.665521,
+    "encode_latency_ms": 229.934898,
+    "decode_latency_ms": 19.665521,
+    "stream_hash": "996bf806d28cb55cc9f8a3c7b152e08880a6c89f66f2e1fb310a7efdfb9849a5",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 229934.898,
+    "decode_time_us": 19665.521,
+    "snr_db": 38.702705,
+    "rmse_uv": 2.750818
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 16.0
+  },
+  "header_metadata": {
+    "age_years": 76,
+    "sex": "F",
+    "comment_lines": [
+      "Aldomet, Inderal",
+      "The rhythm is compatible with sick sinus syndrome.  There is underlying",
+      "sinus bradycardia, first degree AV block, and frequent ectopic atrial runs",
+      "at rates of 80 to 90 bpm.  There are numerous long pauses up to 6 seconds",
+      "in duration."
+    ],
+    "comment_text": "Aldomet, Inderal The rhythm is compatible with sick sinus syndrome.  There is underlying sinus bradycardia, first degree AV block, and frequent ectopic atrial runs at rates of 80 to 90 bpm.  There are numerous long pauses up to 6 seconds in duration.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

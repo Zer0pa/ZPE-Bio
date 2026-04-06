@@ -1,0 +1,55 @@
+{
+  "ok": true,
+  "record_id": "208",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8850,
+    "compression_ratio": 1.291364,
+    "prd_percent": 0.596571,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 14209,
+    "zpe_bytes_est": 15488,
+    "gzip_cr": 1.407559,
+    "zpe_cr_est": 1.291322,
+    "encode_ms": 97.261489,
+    "decode_ms": 24.422057,
+    "encode_latency_ms": 97.261489,
+    "decode_latency_ms": 24.422057,
+    "stream_hash": "7803a88b1f08618e010b65001c99768b66f645310a514bb92959de1501ab3967",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 97261.489,
+    "decode_time_us": 24422.057,
+    "snr_db": 44.708318,
+    "rmse_uv": 3.366185
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 18.0
+  },
+  "header_metadata": {
+    "age_years": 23,
+    "sex": "F",
+    "comment_lines": [
+      "None",
+      "The PVCs are uniform.  The couplets, many of which include a fusion PVC, are",
+      "often seen in a bigeminal pattern.   The triplets each consist of two",
+      "PVCs and a fusion PVC."
+    ],
+    "comment_text": "None The PVCs are uniform.  The couplets, many of which include a fusion PVC, are often seen in a bigeminal pattern.   The triplets each consist of two PVCs and a fusion PVC.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

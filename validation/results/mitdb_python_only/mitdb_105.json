@@ -1,0 +1,54 @@
+{
+  "ok": true,
+  "record_id": "105",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8653,
+    "compression_ratio": 1.320764,
+    "prd_percent": 0.959176,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 11060,
+    "zpe_bytes_est": 15143,
+    "gzip_cr": 1.808318,
+    "zpe_cr_est": 1.320742,
+    "encode_ms": 400.020353,
+    "decode_ms": 201.407514,
+    "encode_latency_ms": 400.020353,
+    "decode_latency_ms": 201.407514,
+    "stream_hash": "b696504931a25a8ebd2a39b0089ffa111c93638987b1740df532b67d71d7c898",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 400020.353,
+    "decode_time_us": 201407.514,
+    "snr_db": 42.467927,
+    "rmse_uv": 2.934059
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 16.0
+  },
+  "header_metadata": {
+    "age_years": 73,
+    "sex": "F",
+    "comment_lines": [
+      "Digoxin, Nitropaste, Pronestyl",
+      "The PVCs are uniform.  The predominant feature of this tape is",
+      "high-grade noise and artifact."
+    ],
+    "comment_text": "Digoxin, Nitropaste, Pronestyl The PVCs are uniform.  The predominant feature of this tape is high-grade noise and artifact.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

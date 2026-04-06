@@ -31,7 +31,23 @@ embedded/**/Cargo.lock
 .ipynb_checkpoints/
 
 # Validation and generated evidence artifacts
-validation/results/
+validation/results/*
+!validation/results/README.md
+!validation/results/BENCHMARK_SUMMARY.md
+!validation/results/mitdb_python_only/
+!validation/results/mitdb_python_only/**
+!validation/results/ptbdb/
+!validation/results/ptbdb/**
+!validation/results/ptbxl/
+!validation/results/ptbxl/**
+!validation/results/nstdb/
+!validation/results/nstdb/**
+!validation/results/edb/
+!validation/results/edb/**
+!validation/results/sleep-edfx/
+!validation/results/sleep-edfx/**
+!validation/results/mimic3wdb-matched/
+!validation/results/mimic3wdb-matched/**
 validation/datasets/eeg/
 validation/datasets/sisfall/
 validation/datasets/upfall/

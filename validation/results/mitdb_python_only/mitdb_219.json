@@ -1,0 +1,55 @@
+{
+  "ok": true,
+  "record_id": "219",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8350,
+    "compression_ratio": 1.368691,
+    "prd_percent": 0.832627,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 11237,
+    "zpe_bytes_est": 14613,
+    "gzip_cr": 1.779834,
+    "zpe_cr_est": 1.368644,
+    "encode_ms": 46.09166,
+    "decode_ms": 18.963591,
+    "encode_latency_ms": 46.09166,
+    "decode_latency_ms": 18.963591,
+    "stream_hash": "f2db03ff67411ee40e291ac1cfe549a83591f9da07fa5a490beca8598b6c4633",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 46091.66,
+    "decode_time_us": 18963.591,
+    "snr_db": 46.094645,
+    "rmse_uv": 3.728485
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 32.0
+  },
+  "header_metadata": {
+    "age_years": null,
+    "sex": null,
+    "comment_lines": [
+      "-1 M 978 654 x1",
+      "Digoxin",
+      "Following some conversions from atrial fibrillation to normal sinus",
+      "rhythm are pauses up to 3 seconds in duration.  The PVCs are multiform."
+    ],
+    "comment_text": "-1 M 978 654 x1 Digoxin Following some conversions from atrial fibrillation to normal sinus rhythm are pauses up to 3 seconds in duration.  The PVCs are multiform.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "ok": true,
+  "record_id": "214",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8838,
+    "compression_ratio": 1.293117,
+    "prd_percent": 0.669162,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 12513,
+    "zpe_bytes_est": 15467,
+    "gzip_cr": 1.598338,
+    "zpe_cr_est": 1.293076,
+    "encode_ms": 48.050383,
+    "decode_ms": 19.861259,
+    "encode_latency_ms": 48.050383,
+    "decode_latency_ms": 19.861259,
+    "stream_hash": "79ef5ea997c2bb6a5b20cde0955560c7c8d87678f9b1fe3cf0213e9ae4f267f1",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 48050.383,
+    "decode_time_us": 19861.259,
+    "snr_db": 44.152323,
+    "rmse_uv": 3.115622
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 16.0
+  },
+  "header_metadata": {
+    "age_years": 53,
+    "sex": "M",
+    "comment_lines": [
+      "Digoxin, Dilantin",
+      "The PVCs are multiform.  There are two episodes of artifactual amplitude",
+      "decrease and one occurrence of tape slippage."
+    ],
+    "comment_text": "Digoxin, Dilantin The PVCs are multiform.  There are two episodes of artifactual amplitude decrease and one occurrence of tape slippage.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

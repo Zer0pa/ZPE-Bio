@@ -1,0 +1,55 @@
+{
+  "ok": true,
+  "record_id": "200",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8679,
+    "compression_ratio": 1.316807,
+    "prd_percent": 0.757802,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 12810,
+    "zpe_bytes_est": 15189,
+    "gzip_cr": 1.56128,
+    "zpe_cr_est": 1.316742,
+    "encode_ms": 92.156851,
+    "decode_ms": 19.356036,
+    "encode_latency_ms": 92.156851,
+    "decode_latency_ms": 19.356036,
+    "stream_hash": "bd4c2bd1a61be0a19b27343f02fcfbf1ed2e412698bff1ee5efbce4abc593b1f",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 92156.851,
+    "decode_time_us": 19356.036,
+    "snr_db": 42.892229,
+    "rmse_uv": 3.064066
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 16.0
+  },
+  "header_metadata": {
+    "age_years": 64,
+    "sex": "M",
+    "comment_lines": [
+      "Digoxin, Quinidine",
+      "The PVCs are multiform.  There are occasional bursts of high-frequency",
+      "noise in the upper channel, and severe noise and artifact in the lower",
+      "channel."
+    ],
+    "comment_text": "Digoxin, Quinidine The PVCs are multiform.  There are occasional bursts of high-frequency noise in the upper channel, and severe noise and artifact in the lower channel.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}
