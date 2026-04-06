@@ -105,3 +105,9 @@ python -m pip install -e ".[validation,bioeeg]"
 - Regulatory and startup documents still contain historical absolute-path references outside the active front door.
 
 Read this repo as a private staged baseline for Phase 4.5 and Phase 5, not as a release verdict.
+
+## Ecosystem Cross-Links
+
+- Platform-layer contract surface: [ZPE-IMC](https://github.com/zer0-point-energy/ZPE-IMC)
+- Organization surface: [Zer0pa](https://github.com/zer0-point-energy)
+- Bio-family alignment artifacts in this repo: `docs/family/BIO_IMC_ALIGNMENT_REPORT.md`
