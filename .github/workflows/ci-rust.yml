@@ -14,6 +14,9 @@ on:
       - "pyproject.toml"
       - ".github/workflows/ci-rust.yml"
 
+permissions:
+  contents: read
+
 jobs:
   rust-quality:
     runs-on: ${{ matrix.os }}
