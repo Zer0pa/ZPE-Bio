@@ -1,0 +1,54 @@
+{
+  "ok": true,
+  "record_id": "212",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8753,
+    "compression_ratio": 1.305675,
+    "prd_percent": 1.074325,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 13078,
+    "zpe_bytes_est": 15318,
+    "gzip_cr": 1.529286,
+    "zpe_cr_est": 1.305653,
+    "encode_ms": 47.651288,
+    "decode_ms": 106.546614,
+    "encode_latency_ms": 47.651288,
+    "decode_latency_ms": 106.546614,
+    "stream_hash": "96e82121c329816f47495de425f0ab09a85a6a5ff1ce52bdd729962dff80c040",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 47651.288,
+    "decode_time_us": 106546.614,
+    "snr_db": 40.210328,
+    "rmse_uv": 3.510342
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 60.0
+  },
+  "header_metadata": {
+    "age_years": 32,
+    "sex": "F",
+    "comment_lines": [
+      "None",
+      "There is rate-related right bundle branch block which appears when the heart",
+      "rate exceeds approximately 90 bpm."
+    ],
+    "comment_text": "None There is rate-related right bundle branch block which appears when the heart rate exceeds approximately 90 bpm.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

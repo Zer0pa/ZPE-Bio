@@ -1,0 +1,52 @@
+{
+  "ok": true,
+  "record_id": "100",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8521,
+    "compression_ratio": 1.341224,
+    "prd_percent": 1.809451,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 9380,
+    "zpe_bytes_est": 14912,
+    "gzip_cr": 2.132196,
+    "zpe_cr_est": 1.341202,
+    "encode_ms": 695.902603,
+    "decode_ms": 397.779984,
+    "encode_latency_ms": 695.902603,
+    "decode_latency_ms": 397.779984,
+    "stream_hash": "9da18baaa823e4d047e51bb7940ade978ec0074246a666aaeb724f6b9d1a07df",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 695902.603,
+    "decode_time_us": 397779.984,
+    "snr_db": 41.497192,
+    "rmse_uv": 3.152792
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 16.0
+  },
+  "header_metadata": {
+    "age_years": 69,
+    "sex": "M",
+    "comment_lines": [
+      "Aldomet, Inderal"
+    ],
+    "comment_text": "Aldomet, Inderal",
+    "diagnosis_bucket": "normal_or_unannotated"
+  }
+}

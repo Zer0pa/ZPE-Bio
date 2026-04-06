@@ -1,0 +1,52 @@
+{
+  "ok": true,
+  "record_id": "121",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8590,
+    "compression_ratio": 1.330451,
+    "prd_percent": 0.818748,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 10621,
+    "zpe_bytes_est": 15033,
+    "gzip_cr": 1.883062,
+    "zpe_cr_est": 1.330406,
+    "encode_ms": 398.364237,
+    "decode_ms": 108.066453,
+    "encode_latency_ms": 398.364237,
+    "decode_latency_ms": 108.066453,
+    "stream_hash": "fe7dfb5ea0e70fdfdd1aeb5e4198d2849c84b55c146df04dc31ab31bfd2e6d7e",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 398364.237,
+    "decode_time_us": 108066.453,
+    "snr_db": 49.949336,
+    "rmse_uv": 2.782229
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 16.0
+  },
+  "header_metadata": {
+    "age_years": 83,
+    "sex": "F",
+    "comment_lines": [
+      "Digoxin, Isordil, Nitropaste"
+    ],
+    "comment_text": "Digoxin, Isordil, Nitropaste",
+    "diagnosis_bucket": "normal_or_unannotated"
+  }
+}

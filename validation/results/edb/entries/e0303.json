@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "dataset_entry": "e0303",
+  "record_name": "e0303",
+  "sample_rate_hz": 250.0,
+  "channels": [
+    "V2",
+    "V5"
+  ],
+  "samples": 5000,
+  "compression_ratio": 1.340662,
+  "snr_db": 48.412156,
+  "prd_percent": 2.406508,
+  "roundtrip_time_ms": 39.15716,
+  "signal_integrity": {
+    "status": "pass",
+    "compared_samples": 5000,
+    "max_abs_error": 0.016
+  }
+}

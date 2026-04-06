@@ -1,0 +1,16 @@
+{
+  "dataset": "sleep-edfx",
+  "signal_type": "eeg",
+  "dataset_dir": "validation/datasets/sleep-edfx",
+  "download": {
+    "status": "failed",
+    "error": "404 Error: Not Found for url: https://physionet.org/files/sleep-edfx/1.0.0/sleep-cassette/SC4001E0-PSG.edf.hea"
+  },
+  "aggregate": {
+    "signal_type": "eeg",
+    "entries_total": 0,
+    "entries_ok": 0,
+    "entries_failed": 0
+  },
+  "entries": []
+}

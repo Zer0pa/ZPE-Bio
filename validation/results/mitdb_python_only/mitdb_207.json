@@ -1,0 +1,58 @@
+{
+  "ok": true,
+  "record_id": "207",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8792,
+    "compression_ratio": 1.299883,
+    "prd_percent": 0.861751,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 11270,
+    "zpe_bytes_est": 15386,
+    "gzip_cr": 1.774623,
+    "zpe_cr_est": 1.299883,
+    "encode_ms": 47.478362,
+    "decode_ms": 19.68783,
+    "encode_latency_ms": 47.478362,
+    "decode_latency_ms": 19.68783,
+    "stream_hash": "79aaab672f8874f19174f63569a53749dbe7bb6aea0c43e82eccd8353804a30a",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 47478.362,
+    "decode_time_us": 19687.83,
+    "snr_db": 42.03309,
+    "rmse_uv": 2.525906
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 16.0
+  },
+  "header_metadata": {
+    "age_years": 89,
+    "sex": "F",
+    "comment_lines": [
+      "Digoxin, Quinaglute",
+      "This is an extremely difficult record.  The predominant rhythm is normal",
+      "sinus with first degree AV block and left bundle branch block.  There are",
+      "periods when the conduction block changes to a right bundle branch block",
+      "pattern.  The PVCs are multiform.  Idioventricular rhythm appears following",
+      "the longest episode of ventricular flutter.  The record ends during the",
+      "episode of SVTA."
+    ],
+    "comment_text": "Digoxin, Quinaglute This is an extremely difficult record.  The predominant rhythm is normal sinus with first degree AV block and left bundle branch block.  There are periods when the conduction block changes to a right bundle branch block pattern.  The PVCs are multiform.  Idioventricular rhythm appears following the longest episode of ventricular flutter.  The record ends during the episode of SVTA.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

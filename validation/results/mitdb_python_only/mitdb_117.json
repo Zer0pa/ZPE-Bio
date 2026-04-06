@@ -1,0 +1,52 @@
+{
+  "ok": true,
+  "record_id": "117",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8687,
+    "compression_ratio": 1.315595,
+    "prd_percent": 1.236195,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 10886,
+    "zpe_bytes_est": 15203,
+    "gzip_cr": 1.837222,
+    "zpe_cr_est": 1.31553,
+    "encode_ms": 598.728358,
+    "decode_ms": 107.620069,
+    "encode_latency_ms": 598.728358,
+    "decode_latency_ms": 107.620069,
+    "stream_hash": "bc7dd8957cbb2ec379b01e2f1a1ef079a8d175a5f38cb86c0db1c4cc54401dce",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 598728.358,
+    "decode_time_us": 107620.069,
+    "snr_db": 49.314416,
+    "rmse_uv": 2.83801
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 16.0
+  },
+  "header_metadata": {
+    "age_years": 69,
+    "sex": "M",
+    "comment_lines": [
+      "None"
+    ],
+    "comment_text": "None",
+    "diagnosis_bucket": "normal_or_unannotated"
+  }
+}

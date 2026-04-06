@@ -1,0 +1,55 @@
+{
+  "ok": true,
+  "record_id": "104",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8696,
+    "compression_ratio": 1.314233,
+    "prd_percent": 1.054132,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 12095,
+    "zpe_bytes_est": 15218,
+    "gzip_cr": 1.653576,
+    "zpe_cr_est": 1.314233,
+    "encode_ms": 398.616583,
+    "decode_ms": 201.517291,
+    "encode_latency_ms": 398.616583,
+    "decode_latency_ms": 201.517291,
+    "stream_hash": "f94f79e60f175d6e494a126cf0a311d60c6831a3c98123e26de6a97cdb077479",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 398616.583,
+    "decode_time_us": 201517.291,
+    "snr_db": 41.299674,
+    "rmse_uv": 3.10667
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 59.0
+  },
+  "header_metadata": {
+    "age_years": 66,
+    "sex": "F",
+    "comment_lines": [
+      "Digoxin, Pronestyl",
+      "The rate of paced rhythm is close to that of the underlying sinus rhythm,",
+      "resulting in many pacemaker fusion beats.  The PVCs are multiform.  Several",
+      "bursts of muscle noise occur, but the signals are generally of good quality."
+    ],
+    "comment_text": "Digoxin, Pronestyl The rate of paced rhythm is close to that of the underlying sinus rhythm, resulting in many pacemaker fusion beats.  The PVCs are multiform.  Several bursts of muscle noise occur, but the signals are generally of good quality.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

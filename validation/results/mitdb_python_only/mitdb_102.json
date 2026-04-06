@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "record_id": "102",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8717,
+    "compression_ratio": 1.311067,
+    "prd_percent": 1.567453,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 10299,
+    "zpe_bytes_est": 15255,
+    "gzip_cr": 1.941936,
+    "zpe_cr_est": 1.311046,
+    "encode_ms": 400.334819,
+    "decode_ms": 696.357186,
+    "encode_latency_ms": 400.334819,
+    "decode_latency_ms": 696.357186,
+    "stream_hash": "f63977facd56dbc4938c05274d9726fc3fa81ee8f488db2cc68e8654d12994dc",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 400334.819,
+    "decode_time_us": 696357.186,
+    "snr_db": 40.508525,
+    "rmse_uv": 2.800429
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 50.0
+  },
+  "header_metadata": {
+    "age_years": 84,
+    "sex": "F",
+    "comment_lines": [
+      "Digoxin",
+      "The rhythm is paced with a demand pacemaker.  The PVCs are multiform."
+    ],
+    "comment_text": "Digoxin The rhythm is paced with a demand pacemaker.  The PVCs are multiform.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

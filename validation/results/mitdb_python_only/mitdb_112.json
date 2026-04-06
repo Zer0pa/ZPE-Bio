@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "record_id": "112",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8475,
+    "compression_ratio": 1.348504,
+    "prd_percent": 1.557858,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 10299,
+    "zpe_bytes_est": 14832,
+    "gzip_cr": 1.941936,
+    "zpe_cr_est": 1.348436,
+    "encode_ms": 497.482281,
+    "decode_ms": 203.474869,
+    "encode_latency_ms": 497.482281,
+    "decode_latency_ms": 203.474869,
+    "stream_hash": "0f61161375f4ae9ec2c492b27e7ca3491081aa0a9b2461ecf52cafc7f38dbb64",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 497482.281,
+    "decode_time_us": 203474.869,
+    "snr_db": 49.415312,
+    "rmse_uv": 3.003415
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 16.0
+  },
+  "header_metadata": {
+    "age_years": 54,
+    "sex": "M",
+    "comment_lines": [
+      "Digoxin, Pronestyl",
+      "There is S-T segment depression in the upper channel."
+    ],
+    "comment_text": "Digoxin, Pronestyl There is S-T segment depression in the upper channel.",
+    "diagnosis_bucket": "normal_or_unannotated"
+  }
+}

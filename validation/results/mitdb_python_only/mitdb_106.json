@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "record_id": "106",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8780,
+    "compression_ratio": 1.30166,
+    "prd_percent": 1.020311,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 12549,
+    "zpe_bytes_est": 15365,
+    "gzip_cr": 1.593752,
+    "zpe_cr_est": 1.30166,
+    "encode_ms": 492.433888,
+    "decode_ms": 201.250155,
+    "encode_latency_ms": 492.433888,
+    "decode_latency_ms": 201.250155,
+    "stream_hash": "5cd7ce74aa028652049c29700a06cb352137e3de1901aa8543a0ef0048268c9b",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 492433.888,
+    "decode_time_us": 201250.155,
+    "snr_db": 40.798739,
+    "rmse_uv": 3.959609
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 32.0
+  },
+  "header_metadata": {
+    "age_years": 24,
+    "sex": "F",
+    "comment_lines": [
+      "Inderal",
+      "The PVCs are multiform."
+    ],
+    "comment_text": "Inderal The PVCs are multiform.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

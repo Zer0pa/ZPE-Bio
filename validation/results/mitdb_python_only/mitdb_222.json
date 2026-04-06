@@ -1,0 +1,55 @@
+{
+  "ok": true,
+  "record_id": "222",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8855,
+    "compression_ratio": 1.290635,
+    "prd_percent": 1.92543,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 10029,
+    "zpe_bytes_est": 15497,
+    "gzip_cr": 1.994217,
+    "zpe_cr_est": 1.290572,
+    "encode_ms": 399.260404,
+    "decode_ms": 195.086383,
+    "encode_latency_ms": 399.260404,
+    "decode_latency_ms": 195.086383,
+    "stream_hash": "db40b5100d187645fa4838dc0c6bfe7500c44220d94f560071f17ce723432f47",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 399260.404,
+    "decode_time_us": 195086.383,
+    "snr_db": 36.825671,
+    "rmse_uv": 2.651056
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 16.0
+  },
+  "header_metadata": {
+    "age_years": 84,
+    "sex": "F",
+    "comment_lines": [
+      "Digoxin, Quinidine",
+      "The episodes of paroxysmal atrial flutter/fibrillation are usually",
+      "followed by nodal escape beats.  There are several intervals of",
+      "high-frequency noise/artifact in both channels."
+    ],
+    "comment_text": "Digoxin, Quinidine The episodes of paroxysmal atrial flutter/fibrillation are usually followed by nodal escape beats.  There are several intervals of high-frequency noise/artifact in both channels.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

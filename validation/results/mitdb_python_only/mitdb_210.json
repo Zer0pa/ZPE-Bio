@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "record_id": "210",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8677,
+    "compression_ratio": 1.317111,
+    "prd_percent": 1.221409,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 10532,
+    "zpe_bytes_est": 15185,
+    "gzip_cr": 1.898975,
+    "zpe_cr_est": 1.317089,
+    "encode_ms": 48.782864,
+    "decode_ms": 19.524243,
+    "encode_latency_ms": 48.782864,
+    "decode_latency_ms": 19.524243,
+    "stream_hash": "1c98f0bc4793007830229b87c4124fbc676fe7ab4808ff5865356052db7b5efc",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 48782.864,
+    "decode_time_us": 19524.243,
+    "snr_db": 39.939263,
+    "rmse_uv": 2.867856
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 16.0
+  },
+  "header_metadata": {
+    "age_years": 89,
+    "sex": "M",
+    "comment_lines": [
+      "None",
+      "The PVCs are multiform."
+    ],
+    "comment_text": "None The PVCs are multiform.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

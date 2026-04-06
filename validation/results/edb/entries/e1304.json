@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "dataset_entry": "e1304",
+  "record_name": "e1304",
+  "sample_rate_hz": 250.0,
+  "channels": [
+    "V1",
+    "V5"
+  ],
+  "samples": 5000,
+  "compression_ratio": 1.31787,
+  "snr_db": 32.470621,
+  "prd_percent": 2.921222,
+  "roundtrip_time_ms": 39.305778,
+  "signal_integrity": {
+    "status": "pass",
+    "compared_samples": 5000,
+    "max_abs_error": 0.032
+  }
+}

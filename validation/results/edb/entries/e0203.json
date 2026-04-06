@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "dataset_entry": "e0203",
+  "record_name": "e0203",
+  "sample_rate_hz": 250.0,
+  "channels": [
+    "V5",
+    "MLI"
+  ],
+  "samples": 5000,
+  "compression_ratio": 1.270003,
+  "snr_db": 61.310226,
+  "prd_percent": 1.167106,
+  "roundtrip_time_ms": 40.050818,
+  "signal_integrity": {
+    "status": "pass",
+    "compared_samples": 5000,
+    "max_abs_error": 0.016
+  }
+}

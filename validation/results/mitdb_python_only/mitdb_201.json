@@ -1,0 +1,54 @@
+{
+  "ok": true,
+  "record_id": "201",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8415,
+    "compression_ratio": 1.358119,
+    "prd_percent": 1.578857,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 9317,
+    "zpe_bytes_est": 14727,
+    "gzip_cr": 2.146614,
+    "zpe_cr_est": 1.35805,
+    "encode_ms": 132.755565,
+    "decode_ms": 19.00065,
+    "encode_latency_ms": 132.755565,
+    "decode_latency_ms": 19.00065,
+    "stream_hash": "82f50d921d67ccfa24773cd33aed4f2623d678c53310d8199d4cfda007b10096",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 132755.565,
+    "decode_time_us": 19000.65,
+    "snr_db": 38.751303,
+    "rmse_uv": 3.110836
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 16.0
+  },
+  "header_metadata": {
+    "age_years": 68,
+    "sex": "M",
+    "comment_lines": [
+      "Digoxin, Hydrochlorthiazide, Inderal, KCl",
+      "The PVCs are uniform and late-cycle.  Junctional escape beats occur following",
+      "episodes of ventricular trigeminy."
+    ],
+    "comment_text": "Digoxin, Hydrochlorthiazide, Inderal, KCl The PVCs are uniform and late-cycle.  Junctional escape beats occur following episodes of ventricular trigeminy.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

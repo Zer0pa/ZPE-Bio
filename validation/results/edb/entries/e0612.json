@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "dataset_entry": "e0612",
+  "record_name": "e0612",
+  "sample_rate_hz": 250.0,
+  "channels": [
+    "V5",
+    "MLIII"
+  ],
+  "samples": 5000,
+  "compression_ratio": 1.52045,
+  "snr_db": 61.114717,
+  "prd_percent": 1.09789,
+  "roundtrip_time_ms": 35.772947,
+  "signal_integrity": {
+    "status": "pass",
+    "compared_samples": 5000,
+    "max_abs_error": 0.016
+  }
+}
