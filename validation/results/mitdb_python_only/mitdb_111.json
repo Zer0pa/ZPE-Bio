@@ -1,0 +1,54 @@
+{
+  "ok": true,
+  "record_id": "111",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8891,
+    "compression_ratio": 1.285409,
+    "prd_percent": 1.398589,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 11162,
+    "zpe_bytes_est": 15560,
+    "gzip_cr": 1.791794,
+    "zpe_cr_est": 1.285347,
+    "encode_ms": 504.956117,
+    "decode_ms": 197.858381,
+    "encode_latency_ms": 504.956117,
+    "decode_latency_ms": 197.858381,
+    "stream_hash": "2aa4a8e1db0d66c721ce470b3b1e558d62d4ab13b6a711d4964c96a66a19c571",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 504956.117,
+    "decode_time_us": 197858.381,
+    "snr_db": 39.994389,
+    "rmse_uv": 2.716137
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 16.0
+  },
+  "header_metadata": {
+    "age_years": 47,
+    "sex": "F",
+    "comment_lines": [
+      "Digoxin, Lasix",
+      "There is first degree AV block.  There are short bursts of both baseline",
+      "shifts and muscle noise, but in general, the quality is excellent."
+    ],
+    "comment_text": "Digoxin, Lasix There is first degree AV block.  There are short bursts of both baseline shifts and muscle noise, but in general, the quality is excellent.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

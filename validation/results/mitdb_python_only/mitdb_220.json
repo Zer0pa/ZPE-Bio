@@ -1,0 +1,52 @@
+{
+  "ok": true,
+  "record_id": "220",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8232,
+    "compression_ratio": 1.388166,
+    "prd_percent": 1.272389,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 10414,
+    "zpe_bytes_est": 14408,
+    "gzip_cr": 1.920492,
+    "zpe_cr_est": 1.388118,
+    "encode_ms": 171.733163,
+    "decode_ms": 193.755412,
+    "encode_latency_ms": 171.733163,
+    "decode_latency_ms": 193.755412,
+    "stream_hash": "ecc73e4f07668f69593f8ffdb22069e706d0f1bda03ed8d5314a2f818cb64a3e",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 171733.163,
+    "decode_time_us": 193755.412,
+    "snr_db": 43.880888,
+    "rmse_uv": 4.06181
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 32.0
+  },
+  "header_metadata": {
+    "age_years": 87,
+    "sex": "F",
+    "comment_lines": [
+      "Digoxin"
+    ],
+    "comment_text": "Digoxin",
+    "diagnosis_bucket": "normal_or_unannotated"
+  }
+}

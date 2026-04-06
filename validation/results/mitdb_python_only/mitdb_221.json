@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "record_id": "221",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8869,
+    "compression_ratio": 1.288598,
+    "prd_percent": 1.041514,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 11079,
+    "zpe_bytes_est": 15521,
+    "gzip_cr": 1.805217,
+    "zpe_cr_est": 1.288577,
+    "encode_ms": 399.110806,
+    "decode_ms": 107.371562,
+    "encode_latency_ms": 399.110806,
+    "decode_latency_ms": 107.371562,
+    "stream_hash": "85fd5755fe904829dede4aa2c31ef99723382ac91086697ee7c4ab320d6bd4f3",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 399110.806,
+    "decode_time_us": 107371.562,
+    "snr_db": 41.037948,
+    "rmse_uv": 3.07428
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 17.0
+  },
+  "header_metadata": {
+    "age_years": 83,
+    "sex": "M",
+    "comment_lines": [
+      "Hydrochlorthiazide, Lasix",
+      "The PVCs are multiform, but one form is much more common than the others."
+    ],
+    "comment_text": "Hydrochlorthiazide, Lasix The PVCs are multiform, but one form is much more common than the others.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

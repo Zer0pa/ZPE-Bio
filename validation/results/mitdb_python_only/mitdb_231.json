@@ -1,0 +1,55 @@
+{
+  "ok": true,
+  "record_id": "231",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8523,
+    "compression_ratio": 1.340909,
+    "prd_percent": 1.078464,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 11348,
+    "zpe_bytes_est": 14916,
+    "gzip_cr": 1.762425,
+    "zpe_cr_est": 1.340842,
+    "encode_ms": 398.271197,
+    "decode_ms": 195.146443,
+    "encode_latency_ms": 398.271197,
+    "decode_latency_ms": 195.146443,
+    "stream_hash": "ef77a17123e74abd5b8b0d78aceeb5aaf9e5fe4e82f773eff3e04062489c5b9c",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 398271.197,
+    "decode_time_us": 195146.443,
+    "snr_db": 40.224089,
+    "rmse_uv": 3.232151
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 31.0
+  },
+  "header_metadata": {
+    "age_years": 72,
+    "sex": "F",
+    "comment_lines": [
+      "None",
+      "AV conduction is quite abnormal with periods of 2:1 AV block, examples",
+      "of Mobitz II block, and right bundle branch block which appears to be",
+      "rate-related.  The couplet is probably ventricular."
+    ],
+    "comment_text": "None AV conduction is quite abnormal with periods of 2:1 AV block, examples of Mobitz II block, and right bundle branch block which appears to be rate-related.  The couplet is probably ventricular.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

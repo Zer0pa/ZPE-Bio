@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "record_id": "234",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8429,
+    "compression_ratio": 1.355863,
+    "prd_percent": 1.072126,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 10792,
+    "zpe_bytes_est": 14751,
+    "gzip_cr": 1.853225,
+    "zpe_cr_est": 1.35584,
+    "encode_ms": 398.638822,
+    "decode_ms": 107.263533,
+    "encode_latency_ms": 398.638822,
+    "decode_latency_ms": 107.263533,
+    "stream_hash": "158ba9eb2f45dc1b5e4d233b7c618d64c7ac9687c812fbc426a7d5a67cc8ecd3",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 398638.822,
+    "decode_time_us": 107263.533,
+    "snr_db": 40.079956,
+    "rmse_uv": 3.375767
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 17.0
+  },
+  "header_metadata": {
+    "age_years": 56,
+    "sex": "F",
+    "comment_lines": [
+      "None",
+      "The PVCs are uniform."
+    ],
+    "comment_text": "None The PVCs are uniform.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

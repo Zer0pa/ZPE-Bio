@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "record_id": "124",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8453,
+    "compression_ratio": 1.352014,
+    "prd_percent": 0.883793,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 10551,
+    "zpe_bytes_est": 14793,
+    "gzip_cr": 1.895555,
+    "zpe_cr_est": 1.351991,
+    "encode_ms": 45.796474,
+    "decode_ms": 36.374443,
+    "encode_latency_ms": 45.796474,
+    "decode_latency_ms": 36.374443,
+    "stream_hash": "9afcbe01de83ea0ea9b7be535b3e55ff925b1366e96b4f3d310243220c19f088",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 45796.474,
+    "decode_time_us": 36374.443,
+    "snr_db": 48.911002,
+    "rmse_uv": 3.208956
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 19.0
+  },
+  "header_metadata": {
+    "age_years": 77,
+    "sex": "M",
+    "comment_lines": [
+      "Digoxin, Isordil, Quinidine",
+      "The PVCs are multiform.  The junctional escape beats follow PVCs."
+    ],
+    "comment_text": "Digoxin, Isordil, Quinidine The PVCs are multiform.  The junctional escape beats follow PVCs.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

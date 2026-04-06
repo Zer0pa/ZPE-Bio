@@ -1,0 +1,54 @@
+{
+  "ok": true,
+  "record_id": "202",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8807,
+    "compression_ratio": 1.297669,
+    "prd_percent": 1.117733,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 10212,
+    "zpe_bytes_est": 15413,
+    "gzip_cr": 1.95848,
+    "zpe_cr_est": 1.297606,
+    "encode_ms": 47.341413,
+    "decode_ms": 19.697721,
+    "encode_latency_ms": 47.341413,
+    "decode_latency_ms": 19.697721,
+    "stream_hash": "3922c399c8d2a8c18d51fd1f4bb999bb8e475f09f57df7f62d77c8c8c15770f1",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 47341.413,
+    "decode_time_us": 19697.721,
+    "snr_db": 39.793348,
+    "rmse_uv": 2.663419
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 16.0
+  },
+  "header_metadata": {
+    "age_years": 68,
+    "sex": "M",
+    "comment_lines": [
+      "Digoxin, Hydrochlorthiazide, Inderal, KCl",
+      "The PVCs are uniform and late-cycle.  This record was taken from the same",
+      "analog tape as record 201."
+    ],
+    "comment_text": "Digoxin, Hydrochlorthiazide, Inderal, KCl The PVCs are uniform and late-cycle.  This record was taken from the same analog tape as record 201.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

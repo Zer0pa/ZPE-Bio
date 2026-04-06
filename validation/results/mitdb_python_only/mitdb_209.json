@@ -1,0 +1,52 @@
+{
+  "ok": true,
+  "record_id": "209",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8669,
+    "compression_ratio": 1.318326,
+    "prd_percent": 1.413644,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 11258,
+    "zpe_bytes_est": 15171,
+    "gzip_cr": 1.776514,
+    "zpe_cr_est": 1.318305,
+    "encode_ms": 58.184994,
+    "decode_ms": 21.604025,
+    "encode_latency_ms": 58.184994,
+    "decode_latency_ms": 21.604025,
+    "stream_hash": "e4c9e13e54b607f694f332b604b33a5ed23975133ac50e50d8bf444843dbad19",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 58184.994,
+    "decode_time_us": 21604.025,
+    "snr_db": 38.471323,
+    "rmse_uv": 3.378491
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 32.0
+  },
+  "header_metadata": {
+    "age_years": 62,
+    "sex": "M",
+    "comment_lines": [
+      "Aldomet, Hydrodiuril, Inderal"
+    ],
+    "comment_text": "Aldomet, Hydrodiuril, Inderal",
+    "diagnosis_bucket": "normal_or_unannotated"
+  }
+}

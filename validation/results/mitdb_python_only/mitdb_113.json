@@ -1,0 +1,54 @@
+{
+  "ok": true,
+  "record_id": "113",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8700,
+    "compression_ratio": 1.313629,
+    "prd_percent": 0.848282,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 12242,
+    "zpe_bytes_est": 15225,
+    "gzip_cr": 1.63372,
+    "zpe_cr_est": 1.313629,
+    "encode_ms": 399.636988,
+    "decode_ms": 199.604802,
+    "encode_latency_ms": 399.636988,
+    "decode_latency_ms": 199.604802,
+    "stream_hash": "e338c87ca16873fa2105fc829f4b39e24b8b3890df868f154a612d2631cf946d",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 399636.988,
+    "decode_time_us": 199604.802,
+    "snr_db": 42.329823,
+    "rmse_uv": 3.604081
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 32.0
+  },
+  "header_metadata": {
+    "age_years": 24,
+    "sex": "F",
+    "comment_lines": [
+      "None",
+      "The variation in the rate of normal sinus rhythm is possibly due to a",
+      "wandering atrial pacemaker."
+    ],
+    "comment_text": "None The variation in the rate of normal sinus rhythm is possibly due to a wandering atrial pacemaker.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

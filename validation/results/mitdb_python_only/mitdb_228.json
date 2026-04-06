@@ -1,0 +1,55 @@
+{
+  "ok": true,
+  "record_id": "228",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8894,
+    "compression_ratio": 1.284975,
+    "prd_percent": 0.841246,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 12286,
+    "zpe_bytes_est": 15565,
+    "gzip_cr": 1.627869,
+    "zpe_cr_est": 1.284934,
+    "encode_ms": 401.01588,
+    "decode_ms": 107.424851,
+    "encode_latency_ms": 401.01588,
+    "decode_latency_ms": 107.424851,
+    "stream_hash": "bf2a4edeed7004ec2cf96cde60b9093c52159b6a3fd5c6aef2cd43cc6ef6ac7f",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 401015.88,
+    "decode_time_us": 107424.851,
+    "snr_db": 42.715009,
+    "rmse_uv": 2.955774
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 19.0
+  },
+  "header_metadata": {
+    "age_years": 80,
+    "sex": "F",
+    "comment_lines": [
+      "Digoxin, Norpace",
+      "There is first degree AV block.  The PVCs are multiform.  There are",
+      "three short occurrences of tape slippage with a maximum duration of 2.2",
+      "seconds."
+    ],
+    "comment_text": "Digoxin, Norpace There is first degree AV block.  The PVCs are multiform.  There are three short occurrences of tape slippage with a maximum duration of 2.2 seconds.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

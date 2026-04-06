@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "record_id": "119",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8703,
+    "compression_ratio": 1.313176,
+    "prd_percent": 0.661834,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 12733,
+    "zpe_bytes_est": 15231,
+    "gzip_cr": 1.570722,
+    "zpe_cr_est": 1.313111,
+    "encode_ms": 107.59076,
+    "decode_ms": 19.165767,
+    "encode_latency_ms": 107.59076,
+    "decode_latency_ms": 19.165767,
+    "stream_hash": "c3abd053daf201c11db51f0e51a9e6a4d08c73048f3f006eda9163cbf676f431",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 107590.76,
+    "decode_time_us": 19165.767,
+    "snr_db": 48.902891,
+    "rmse_uv": 3.522471
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 31.0
+  },
+  "header_metadata": {
+    "age_years": 51,
+    "sex": "F",
+    "comment_lines": [
+      "Pronestyl",
+      "The PVCs are uniform."
+    ],
+    "comment_text": "Pronestyl The PVCs are uniform.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

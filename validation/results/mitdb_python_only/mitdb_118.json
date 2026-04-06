@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "record_id": "118",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8822,
+    "compression_ratio": 1.295463,
+    "prd_percent": 0.878336,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 13005,
+    "zpe_bytes_est": 15439,
+    "gzip_cr": 1.53787,
+    "zpe_cr_est": 1.295421,
+    "encode_ms": 404.699909,
+    "decode_ms": 194.855528,
+    "encode_latency_ms": 404.699909,
+    "decode_latency_ms": 194.855528,
+    "stream_hash": "969c0cfb4e31b8b9676d3cef8c3a79e6c8fbb0763594adea5c9f38ed6248b26a",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 404699.909,
+    "decode_time_us": 194855.528,
+    "snr_db": 50.403741,
+    "rmse_uv": 3.272048
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 26.0
+  },
+  "header_metadata": {
+    "age_years": 69,
+    "sex": "M",
+    "comment_lines": [
+      "Digoxin, Norpace",
+      "The PVCs are multiform."
+    ],
+    "comment_text": "Digoxin, Norpace The PVCs are multiform.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

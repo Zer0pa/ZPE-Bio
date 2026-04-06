@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "record_id": "116",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8373,
+    "compression_ratio": 1.364931,
+    "prd_percent": 0.792468,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 13001,
+    "zpe_bytes_est": 14653,
+    "gzip_cr": 1.538343,
+    "zpe_cr_est": 1.364908,
+    "encode_ms": 405.133724,
+    "decode_ms": 190.727962,
+    "encode_latency_ms": 405.133724,
+    "decode_latency_ms": 190.727962,
+    "stream_hash": "4f98fb8910fd4ed1e381dc850fcd1efc24bfa267535eac1342bde9e8e333ac3f",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 405133.724,
+    "decode_time_us": 190727.962,
+    "snr_db": 47.494811,
+    "rmse_uv": 4.7236
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 55.0
+  },
+  "header_metadata": {
+    "age_years": 68,
+    "sex": "M",
+    "comment_lines": [
+      "None",
+      "There are two PVC forms."
+    ],
+    "comment_text": "None There are two PVC forms.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

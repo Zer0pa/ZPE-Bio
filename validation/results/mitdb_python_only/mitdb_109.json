@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "record_id": "109",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8712,
+    "compression_ratio": 1.311819,
+    "prd_percent": 0.737318,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 12930,
+    "zpe_bytes_est": 15246,
+    "gzip_cr": 1.54679,
+    "zpe_cr_est": 1.311819,
+    "encode_ms": 406.019382,
+    "decode_ms": 196.218703,
+    "encode_latency_ms": 406.019382,
+    "decode_latency_ms": 196.218703,
+    "stream_hash": "9ba50b4a279e793e2b100f39c6f5873410655bbdda84e2744a45d3ac0da27170",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 406019.382,
+    "decode_time_us": 196218.703,
+    "snr_db": 44.943477,
+    "rmse_uv": 2.909536
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 16.0
+  },
+  "header_metadata": {
+    "age_years": 64,
+    "sex": "M",
+    "comment_lines": [
+      "Quinidine",
+      "There is first degree AV block.  The PVCs are multiform."
+    ],
+    "comment_text": "Quinidine There is first degree AV block.  The PVCs are multiform.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

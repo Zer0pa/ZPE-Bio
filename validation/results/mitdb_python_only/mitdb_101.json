@@ -1,0 +1,52 @@
+{
+  "ok": true,
+  "record_id": "101",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8682,
+    "compression_ratio": 1.316352,
+    "prd_percent": 1.38712,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 10019,
+    "zpe_bytes_est": 15194,
+    "gzip_cr": 1.996207,
+    "zpe_cr_est": 1.316309,
+    "encode_ms": 492.569956,
+    "decode_ms": 108.240598,
+    "encode_latency_ms": 492.569956,
+    "decode_latency_ms": 108.240598,
+    "stream_hash": "6fa19b36f300a12fe17ddd3ece6e660dfda330ae3f6b3305ad6f7bdfc445eb01",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 492569.956,
+    "decode_time_us": 108240.598,
+    "snr_db": 41.903749,
+    "rmse_uv": 2.803783
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 16.0
+  },
+  "header_metadata": {
+    "age_years": 75,
+    "sex": "F",
+    "comment_lines": [
+      "Diapres"
+    ],
+    "comment_text": "Diapres",
+    "diagnosis_bucket": "normal_or_unannotated"
+  }
+}

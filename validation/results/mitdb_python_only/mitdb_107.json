@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "record_id": "107",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8620,
+    "compression_ratio": 1.32582,
+    "prd_percent": 0.347089,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 15893,
+    "zpe_bytes_est": 15085,
+    "gzip_cr": 1.258416,
+    "zpe_cr_est": 1.32582,
+    "encode_ms": 402.403051,
+    "decode_ms": 202.038544,
+    "encode_latency_ms": 402.403051,
+    "decode_latency_ms": 202.038544,
+    "stream_hash": "052a357f52f32c0a00f7f5c9870ad22fe44fb21b3bebfb8e22b1ec1003651698",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 402403.051,
+    "decode_time_us": 202038.544,
+    "snr_db": 49.539565,
+    "rmse_uv": 2.980285
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 31.0
+  },
+  "header_metadata": {
+    "age_years": 63,
+    "sex": "M",
+    "comment_lines": [
+      "Digoxin",
+      "Complete heart block is present. The PVCs are multiform."
+    ],
+    "comment_text": "Digoxin Complete heart block is present. The PVCs are multiform.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

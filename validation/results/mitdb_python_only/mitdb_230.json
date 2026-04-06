@@ -1,0 +1,52 @@
+{
+  "ok": true,
+  "record_id": "230",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8303,
+    "compression_ratio": 1.376439,
+    "prd_percent": 1.112339,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 11690,
+    "zpe_bytes_est": 14531,
+    "gzip_cr": 1.710864,
+    "zpe_cr_est": 1.376368,
+    "encode_ms": 493.704302,
+    "decode_ms": 299.737453,
+    "encode_latency_ms": 493.704302,
+    "decode_latency_ms": 299.737453,
+    "stream_hash": "c96476a68802b8a2794cc1553ea18ca2d9bf7063ec3c446443c609b2fc993fcc",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 493704.302,
+    "decode_time_us": 299737.453,
+    "snr_db": 40.561527,
+    "rmse_uv": 3.996849
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 30.0
+  },
+  "header_metadata": {
+    "age_years": 32,
+    "sex": "M",
+    "comment_lines": [
+      "Dilantin"
+    ],
+    "comment_text": "Dilantin",
+    "diagnosis_bucket": "normal_or_unannotated"
+  }
+}

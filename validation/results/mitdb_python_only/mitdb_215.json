@@ -1,0 +1,54 @@
+{
+  "ok": true,
+  "record_id": "215",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8841,
+    "compression_ratio": 1.292679,
+    "prd_percent": 1.27231,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 12412,
+    "zpe_bytes_est": 15472,
+    "gzip_cr": 1.611344,
+    "zpe_cr_est": 1.292658,
+    "encode_ms": 65.073171,
+    "decode_ms": 68.05119,
+    "encode_latency_ms": 65.073171,
+    "decode_latency_ms": 68.05119,
+    "stream_hash": "ec84b48a70a83dd4e4b220bb1bce68ad71fe48300c3fd69dc31d8cd4c5df739d",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 65073.171,
+    "decode_time_us": 68051.19,
+    "snr_db": 38.644033,
+    "rmse_uv": 3.339251
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 25.0
+  },
+  "header_metadata": {
+    "age_years": 81,
+    "sex": "M",
+    "comment_lines": [
+      "None",
+      "The PVCs are multiform.  There are two very short occurrences of tape slippage",
+      "(each less than one second in duration)."
+    ],
+    "comment_text": "None The PVCs are multiform.  There are two very short occurrences of tape slippage (each less than one second in duration).",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}
