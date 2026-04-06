@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "dataset_entry": "e0154",
+  "record_name": "e0154",
+  "sample_rate_hz": 250.0,
+  "channels": [
+    "MLIII",
+    "V4"
+  ],
+  "samples": 5000,
+  "compression_ratio": 1.421868,
+  "snr_db": 50.358563,
+  "prd_percent": 4.33693,
+  "roundtrip_time_ms": 36.601784,
+  "signal_integrity": {
+    "status": "pass",
+    "compared_samples": 5000,
+    "max_abs_error": 0.016
+  }
+}

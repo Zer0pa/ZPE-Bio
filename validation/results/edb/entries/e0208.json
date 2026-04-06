@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "dataset_entry": "e0208",
+  "record_name": "e0208",
+  "sample_rate_hz": 250.0,
+  "channels": [
+    "V5",
+    "MLI"
+  ],
+  "samples": 5000,
+  "compression_ratio": 1.311132,
+  "snr_db": 37.570522,
+  "prd_percent": 1.745995,
+  "roundtrip_time_ms": 40.006587,
+  "signal_integrity": {
+    "status": "pass",
+    "compared_samples": 5000,
+    "max_abs_error": 0.016
+  }
+}

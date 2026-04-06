@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "dataset_entry": "bw",
+  "record_name": "bw",
+  "sample_rate_hz": 360.0,
+  "channels": [
+    "noise1",
+    "noise2"
+  ],
+  "samples": 5000,
+  "compression_ratio": 1.327845,
+  "snr_db": 46.635459,
+  "prd_percent": 0.467237,
+  "roundtrip_time_ms": 44.943841,
+  "signal_integrity": {
+    "status": "pass",
+    "compared_samples": 5000,
+    "max_abs_error": 0.016
+  }
+}

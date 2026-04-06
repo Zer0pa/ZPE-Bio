@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "dataset_entry": "119e00",
+  "record_name": "119e00",
+  "sample_rate_hz": 360.0,
+  "channels": [
+    "MLII",
+    "V1"
+  ],
+  "samples": 5000,
+  "compression_ratio": 1.319261,
+  "snr_db": 64.676721,
+  "prd_percent": 0.69952,
+  "roundtrip_time_ms": 44.549847,
+  "signal_integrity": {
+    "status": "pass",
+    "compared_samples": 5000,
+    "max_abs_error": 0.028
+  }
+}
