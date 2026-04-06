@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "dataset_entry": "e0509",
+  "record_name": "e0509",
+  "sample_rate_hz": 250.0,
+  "channels": [
+    "V2",
+    "V4"
+  ],
+  "samples": 5000,
+  "compression_ratio": 1.410437,
+  "snr_db": 56.474744,
+  "prd_percent": 1.714308,
+  "roundtrip_time_ms": 37.70566,
+  "signal_integrity": {
+    "status": "pass",
+    "compared_samples": 5000,
+    "max_abs_error": 0.048
+  }
+}

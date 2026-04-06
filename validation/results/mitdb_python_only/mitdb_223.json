@@ -1,0 +1,54 @@
+{
+  "ok": true,
+  "record_id": "223",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8315,
+    "compression_ratio": 1.374452,
+    "prd_percent": 0.861683,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 10730,
+    "zpe_bytes_est": 14552,
+    "gzip_cr": 1.863933,
+    "zpe_cr_est": 1.374382,
+    "encode_ms": 310.9002,
+    "decode_ms": 195.097104,
+    "encode_latency_ms": 310.9002,
+    "decode_latency_ms": 195.097104,
+    "stream_hash": "a1c252ea0dd7dc7046d79ff09c376a06dcc84fbff0ddace9e4b2c9b21f084346",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 310900.2,
+    "decode_time_us": 195097.104,
+    "snr_db": 46.159939,
+    "rmse_uv": 3.404541
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 20.0
+  },
+  "header_metadata": {
+    "age_years": 73,
+    "sex": "M",
+    "comment_lines": [
+      "None",
+      "The PVCs are multiform.  The two longest episodes of ventricular tachycardia",
+      "are slow (100 to 105 bpm) and bidirectional."
+    ],
+    "comment_text": "None The PVCs are multiform.  The two longest episodes of ventricular tachycardia are slow (100 to 105 bpm) and bidirectional.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

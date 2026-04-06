@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "dataset_entry": "e1302",
+  "record_name": "e1302",
+  "sample_rate_hz": 250.0,
+  "channels": [
+    "V1",
+    "V5"
+  ],
+  "samples": 5000,
+  "compression_ratio": 1.279754,
+  "snr_db": 43.6818,
+  "prd_percent": 2.068687,
+  "roundtrip_time_ms": 38.077953,
+  "signal_integrity": {
+    "status": "pass",
+    "compared_samples": 5000,
+    "max_abs_error": 0.016
+  }
+}

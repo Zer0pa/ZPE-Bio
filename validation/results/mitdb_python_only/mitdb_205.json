@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "record_id": "205",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8318,
+    "compression_ratio": 1.373957,
+    "prd_percent": 1.772611,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 8986,
+    "zpe_bytes_est": 14557,
+    "gzip_cr": 2.225684,
+    "zpe_cr_est": 1.373909,
+    "encode_ms": 46.657654,
+    "decode_ms": 48.072773,
+    "encode_latency_ms": 46.657654,
+    "decode_latency_ms": 48.072773,
+    "stream_hash": "f8e999ddfe00d6dfa3a3207523f053f63f4cf684c6d9fd4841f5b22050bb1882",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 46657.654,
+    "decode_time_us": 48072.773,
+    "snr_db": 41.375135,
+    "rmse_uv": 3.27608
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 16.0
+  },
+  "header_metadata": {
+    "age_years": 59,
+    "sex": "M",
+    "comment_lines": [
+      "Digoxin, Quinaglute",
+      "The PVCs are of two forms, one of which is much more common than the other."
+    ],
+    "comment_text": "Digoxin, Quinaglute The PVCs are of two forms, one of which is much more common than the other.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

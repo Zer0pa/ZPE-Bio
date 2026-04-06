@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "dataset_entry": "e0147",
+  "record_name": "e0147",
+  "sample_rate_hz": 250.0,
+  "channels": [
+    "MLIII",
+    "V4"
+  ],
+  "samples": 5000,
+  "compression_ratio": 1.216989,
+  "snr_db": 66.439366,
+  "prd_percent": 1.951819,
+  "roundtrip_time_ms": 42.453134,
+  "signal_integrity": {
+    "status": "pass",
+    "compared_samples": 5000,
+    "max_abs_error": 0.016
+  }
+}

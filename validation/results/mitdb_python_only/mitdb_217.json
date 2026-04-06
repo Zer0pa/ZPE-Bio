@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "record_id": "217",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8813,
+    "compression_ratio": 1.296786,
+    "prd_percent": 0.460127,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 14608,
+    "zpe_bytes_est": 15423,
+    "gzip_cr": 1.369113,
+    "zpe_cr_est": 1.296765,
+    "encode_ms": 402.42099,
+    "decode_ms": 108.701505,
+    "encode_latency_ms": 402.42099,
+    "decode_latency_ms": 108.701505,
+    "stream_hash": "bf5d40f7c82ecb9e58dca9a152e3b5c4b3208c1cde594dfb49f3e95fd635b53a",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 402420.99,
+    "decode_time_us": 108701.505,
+    "snr_db": 46.818291,
+    "rmse_uv": 2.819096
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 31.0
+  },
+  "header_metadata": {
+    "age_years": 65,
+    "sex": "M",
+    "comment_lines": [
+      "Digoxin, Lasix, Quinidine",
+      "The PVCs are multiform."
+    ],
+    "comment_text": "Digoxin, Lasix, Quinidine The PVCs are multiform.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

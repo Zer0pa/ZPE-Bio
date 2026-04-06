@@ -1,0 +1,56 @@
+{
+  "ok": true,
+  "record_id": "203",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 9118,
+    "compression_ratio": 1.253408,
+    "prd_percent": 0.69409,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 15168,
+    "zpe_bytes_est": 15957,
+    "gzip_cr": 1.318565,
+    "zpe_cr_est": 1.253368,
+    "encode_ms": 47.732008,
+    "decode_ms": 19.69874,
+    "encode_latency_ms": 47.732008,
+    "decode_latency_ms": 19.69874,
+    "stream_hash": "02c1047f8eb03005873004b1036ece807463ef5710a4bc01e872319a2fa61985",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 47732.008,
+    "decode_time_us": 19698.74,
+    "snr_db": 43.514073,
+    "rmse_uv": 3.537188
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 18.0
+  },
+  "header_metadata": {
+    "age_years": 43,
+    "sex": "M",
+    "comment_lines": [
+      "Coumadin, Digoxin, Heparin, Hygroton, Lasix",
+      "The PVCs are multiform.  There are QRS morphology changes in the upper",
+      "channel due to axis shifts.  There is considerable noise in both channels,",
+      "including muscle artifact and baseline shifts.  This is a very difficult",
+      "record, even for humans!"
+    ],
+    "comment_text": "Coumadin, Digoxin, Heparin, Hygroton, Lasix The PVCs are multiform.  There are QRS morphology changes in the upper channel due to axis shifts.  There is considerable noise in both channels, including muscle artifact and baseline shifts.  This is a very difficult record, even for humans!",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "record_id": "123",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8686,
+    "compression_ratio": 1.315746,
+    "prd_percent": 1.166987,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 10596,
+    "zpe_bytes_est": 15201,
+    "gzip_cr": 1.887505,
+    "zpe_cr_est": 1.315703,
+    "encode_ms": 107.951915,
+    "decode_ms": 19.06474,
+    "encode_latency_ms": 107.951915,
+    "decode_latency_ms": 19.06474,
+    "stream_hash": "89771fa562efd9fbaa7528800dd59f897849f48f1ccb684b1cd3a56023c670ab",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 107951.915,
+    "decode_time_us": 19064.74,
+    "snr_db": 48.249307,
+    "rmse_uv": 3.394024
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 31.0
+  },
+  "header_metadata": {
+    "age_years": 63,
+    "sex": "F",
+    "comment_lines": [
+      "Digoxin, Inderal",
+      "The PVCs are uniform and interpolated."
+    ],
+    "comment_text": "Digoxin, Inderal The PVCs are uniform and interpolated.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}

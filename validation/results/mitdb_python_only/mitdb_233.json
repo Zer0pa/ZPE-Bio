@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "record_id": "233",
+  "lead_index": 0,
+  "sample_rate_hz": 360.0,
+  "mode": "clinical",
+  "thr_mode": "adaptive_rms",
+  "threshold": 0.001,
+  "step": 0.001,
+  "metrics": {
+    "samples": 10000,
+    "tokens": 8335,
+    "compression_ratio": 1.371154,
+    "prd_percent": 0.646173,
+    "raw_bytes": 20000,
+    "raw_bytes_16bit": 20000,
+    "gzip_bytes": 13908,
+    "zpe_bytes_est": 14587,
+    "gzip_cr": 1.438021,
+    "zpe_cr_est": 1.371084,
+    "encode_ms": 400.20687,
+    "decode_ms": 106.947378,
+    "encode_latency_ms": 400.20687,
+    "decode_latency_ms": 106.947378,
+    "stream_hash": "2872077c60edf9fa914a48515ed6a6ac6f1820f6ca657da7d43d75794a0d11a7",
+    "mode": "clinical",
+    "thr_mode": "adaptive_rms",
+    "threshold": 0.001,
+    "step": 0.001,
+    "encode_time_us": 400206.87,
+    "decode_time_us": 106947.378,
+    "snr_db": 44.190851,
+    "rmse_uv": 3.619558
+  },
+  "signal_integrity": {
+    "status": "pass",
+    "original_finite": true,
+    "reconstructed_finite": true,
+    "compared_samples": 10000,
+    "length_match": true,
+    "max_abs_error_uv": 31.0
+  },
+  "header_metadata": {
+    "age_years": 57,
+    "sex": "M",
+    "comment_lines": [
+      "Dilantin",
+      "The PVCs are multiform."
+    ],
+    "comment_text": "Dilantin The PVCs are multiform.",
+    "diagnosis_bucket": "arrhythmia_or_conduction_disorder"
+  }
+}
