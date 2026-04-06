@@ -1,3 +1,7 @@
+<p>
+  <img src=".github/assets/readme/zpe-masthead.gif" alt="ZPE-Bio Masthead" width="100%">
+</p>
+
 # ZPE-Bio
 
 ---
