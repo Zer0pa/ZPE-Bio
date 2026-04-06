@@ -29,6 +29,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import confusion_matrix, precision_score, recall_score
 from sklearn.model_selection import train_test_split
 
+from zpe_bio.archive_utils import safe_extract_zip
 from zpe_bio.codec import CodecMode, encode
 from zpe_bio.wearable_wave import confusion_metrics, load_wfdb_record, roundtrip_metrics
 
@@ -90,10 +91,11 @@ def _ensure_sisfall(dataset_root: Path, execution_log: list[str]) -> tuple[Path,
         if not zip_outer.exists():
             urlretrieve(url, zip_outer)
         (sisfall_dir / "extracted").mkdir(parents=True, exist_ok=True)
+        # SisFall is a nested archive; validate both layers before unpacking.
         with zipfile.ZipFile(zip_outer, "r") as zf:
-            zf.extractall(sisfall_dir / "extracted")
+            safe_extract_zip(zf, sisfall_dir / "extracted")
         with zipfile.ZipFile(zip_inner, "r") as zf:
-            zf.extractall(sisfall_dir / "extracted")
+            safe_extract_zip(zf, sisfall_dir / "extracted")
         execution_log.append(f"[{_utc_now()}] sisfall_download_done sha256={_sha256(zip_outer)}")
 
     txt_files = sorted([p for p in extract_dir.rglob("*.txt") if p.name[:1] in {"F", "D"}])
