@@ -8,10 +8,15 @@
     "MLIII"
   ],
   "samples": 5000,
+  "raw_bytes": 10000,
+  "gzip_bytes": 5871,
+  "zpe_bytes_est": 7478,
   "compression_ratio": 1.337256,
+  "gzip_compression_ratio": 1.703287,
+  "zpe_vs_gzip_improvement": 0.785103,
   "snr_db": 62.250253,
   "prd_percent": 1.419516,
-  "roundtrip_time_ms": 46.948614,
+  "roundtrip_time_ms": 68.838368,
   "signal_integrity": {
     "status": "pass",
     "compared_samples": 5000,

@@ -18,10 +18,15 @@
     "V6"
   ],
   "samples": 5000,
+  "raw_bytes": 10000,
+  "gzip_bytes": 6941,
+  "zpe_bytes_est": 6596,
   "compression_ratio": 1.51607,
+  "gzip_compression_ratio": 1.440715,
+  "zpe_vs_gzip_improvement": 1.052304,
   "snr_db": 30.259728,
   "prd_percent": 3.070536,
-  "roundtrip_time_ms": 52.50961,
+  "roundtrip_time_ms": 53.40962,
   "signal_integrity": {
     "status": "pass",
     "compared_samples": 5000,

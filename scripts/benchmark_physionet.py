@@ -12,6 +12,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from statistics import mean, median
 from typing import Any
+from urllib.request import urlretrieve
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 PYTHON_DIR = REPO_ROOT / "python"
@@ -92,6 +93,9 @@ DATASETS: dict[str, DatasetConfig] = {
         default_limit=25,
     ),
 }
+
+SLEEP_EDFX_URL = "https://physionet.org/files/sleep-edfx/1.0.0/sleep-cassette/SC4001E0-PSG.edf"
+SLEEP_EDFX_RELATIVE_PATH = Path("sleep-cassette") / "SC4001E0-PSG.edf"
 
 
 def _wfdb_module() -> Any:
@@ -261,7 +265,20 @@ def _ecg_entry(record_path: Path, dataset_dir: Path, args: argparse.Namespace) -
         "sample_rate_hz": loaded["sample_rate_hz"],
         "channels": loaded["channels"],
         "samples": int(metrics["samples"]),
+        "raw_bytes": int(metrics["raw_bytes"]),
+        "gzip_bytes": int(metrics["gzip_bytes"]),
+        "zpe_bytes_est": int(metrics["zpe_bytes_est"]),
         "compression_ratio": float(metrics["compression_ratio"]),
+        "gzip_compression_ratio": round(
+            float(metrics["raw_bytes"] / metrics["gzip_bytes"]) if metrics["gzip_bytes"] > 0 else 0.0,
+            6,
+        ),
+        "zpe_vs_gzip_improvement": round(
+            float(metrics["compression_ratio"] / (metrics["raw_bytes"] / metrics["gzip_bytes"]))
+            if metrics["gzip_bytes"] > 0
+            else 0.0,
+            6,
+        ),
         "snr_db": float(metrics["snr_db"]),
         "prd_percent": float(metrics["prd_percent"]),
         "roundtrip_time_ms": round(elapsed_ms, 6),
@@ -288,8 +305,18 @@ def _eeg_entry(edf_path: Path, dataset_dir: Path, args: argparse.Namespace) -> d
         "sample_rate_hz": float(result["sample_rate_hz"]),
         "channel_count": int(result["channel_count"]),
         "raw_bytes": raw_bytes,
+        "gzip_bytes": int(result["gzip_bytes"]),
         "zpe_bytes_est": zpe_bytes,
         "compression_ratio": round(compression_ratio, 6),
+        "gzip_compression_ratio": round(float(raw_bytes / result["gzip_bytes"]), 6)
+        if int(result["gzip_bytes"]) > 0
+        else 0.0,
+        "zpe_vs_gzip_improvement": round(
+            float(compression_ratio / (raw_bytes / result["gzip_bytes"]))
+            if int(result["gzip_bytes"]) > 0
+            else 0.0,
+            6,
+        ),
         "total_runtime_ms": float(result["total_runtime_ms"]),
         "mean_channel_rmse": round(mean(channel_rmses), 6) if channel_rmses else 0.0,
         "max_channel_rmse": round(max(channel_rmses), 6) if channel_rmses else 0.0,
@@ -339,9 +366,25 @@ def _aggregate_dataset(config: DatasetConfig, entries: list[dict[str, Any]]) -> 
     if config.signal_type == "ecg" and ok_entries:
         aggregate["mean_snr_db"] = round(mean(float(entry["snr_db"]) for entry in ok_entries), 6)
         aggregate["max_prd_percent"] = round(max(float(entry["prd_percent"]) for entry in ok_entries), 6)
+        aggregate["mean_gzip_compression_ratio"] = round(
+            mean(float(entry["gzip_compression_ratio"]) for entry in ok_entries),
+            6,
+        )
+        aggregate["mean_zpe_vs_gzip_improvement"] = round(
+            mean(float(entry["zpe_vs_gzip_improvement"]) for entry in ok_entries),
+            6,
+        )
     if config.signal_type == "eeg" and ok_entries:
         aggregate["mean_channel_rmse"] = round(mean(float(entry["mean_channel_rmse"]) for entry in ok_entries), 6)
         aggregate["mean_runtime_ms"] = round(mean(float(entry["total_runtime_ms"]) for entry in ok_entries), 6)
+        aggregate["mean_gzip_compression_ratio"] = round(
+            mean(float(entry["gzip_compression_ratio"]) for entry in ok_entries),
+            6,
+        )
+        aggregate["mean_zpe_vs_gzip_improvement"] = round(
+            mean(float(entry["zpe_vs_gzip_improvement"]) for entry in ok_entries),
+            6,
+        )
     return aggregate
 
 
@@ -374,6 +417,8 @@ def _write_summary_markdown(
         "median_compression_ratio",
         "min_compression_ratio",
         "max_compression_ratio",
+        "mean_gzip_compression_ratio",
+        "mean_zpe_vs_gzip_improvement",
         "mean_snr_db",
         "max_prd_percent",
         "mean_channel_rmse",
@@ -393,26 +438,28 @@ def _write_summary_markdown(
     if config.signal_type == "ecg":
         lines.extend(
             [
-                "| Entry | CR | SNR (dB) | PRD (%) | Runtime (ms) | Integrity |",
-                "| --- | ---: | ---: | ---: | ---: | --- |",
+                "| Entry | Gzip CR | ZPE CR | ZPE/Gzip | SNR (dB) | PRD (%) | Runtime (ms) | Integrity |",
+                "| --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |",
             ]
         )
         for entry in ok_entries:
             lines.append(
-                f"| {entry['dataset_entry']} | {entry['compression_ratio']:.6f} | "
+                f"| {entry['dataset_entry']} | {entry['gzip_compression_ratio']:.6f} | "
+                f"{entry['compression_ratio']:.6f} | {entry['zpe_vs_gzip_improvement']:.6f} | "
                 f"{entry['snr_db']:.6f} | {entry['prd_percent']:.6f} | "
                 f"{entry['roundtrip_time_ms']:.6f} | {entry['signal_integrity']['status']} |"
             )
     else:
         lines.extend(
             [
-                "| Entry | CR | Mean channel RMSE | Runtime (ms) | Integrity |",
-                "| --- | ---: | ---: | ---: | --- |",
+                "| Entry | Gzip CR | ZPE CR | ZPE/Gzip | Mean channel RMSE | Runtime (ms) | Integrity |",
+                "| --- | ---: | ---: | ---: | ---: | ---: | --- |",
             ]
         )
         for entry in ok_entries:
             lines.append(
-                f"| {entry['dataset_entry']} | {entry['compression_ratio']:.6f} | "
+                f"| {entry['dataset_entry']} | {entry['gzip_compression_ratio']:.6f} | "
+                f"{entry['compression_ratio']:.6f} | {entry['zpe_vs_gzip_improvement']:.6f} | "
                 f"{entry['mean_channel_rmse']:.6f} | {entry['total_runtime_ms']:.6f} | "
                 f"{entry['signal_integrity']['status']} |"
             )
@@ -472,6 +519,8 @@ def _download_dataset(
     args: argparse.Namespace,
 ) -> tuple[Path, dict[str, Any]]:
     dataset_dir = _dataset_download_dir(download_root, config)
+    if config.dataset == "sleep-edfx":
+        return _download_sleep_edfx(dataset_dir, skip_download, args)
     if skip_download:
         if not dataset_dir.exists():
             raise FileNotFoundError(f"dataset directory not found for --skip-download: {dataset_dir}")
@@ -494,6 +543,30 @@ def _download_dataset(
         "status": "downloaded",
         "target_dir": str(dataset_dir),
         "records_requested": _records_requested(config, args),
+    }
+
+
+def _download_sleep_edfx(
+    dataset_dir: Path,
+    skip_download: bool,
+    args: argparse.Namespace,
+) -> tuple[Path, dict[str, Any]]:
+    target = dataset_dir / SLEEP_EDFX_RELATIVE_PATH
+    if skip_download:
+        if not target.exists():
+            raise FileNotFoundError(f"Sleep-EDF file not found for --skip-download: {target}")
+        return dataset_dir, {
+            "status": "reused_local",
+            "target_dir": str(dataset_dir),
+            "records_requested": _records_requested(DATASETS["sleep-edfx"], args),
+        }
+
+    target.parent.mkdir(parents=True, exist_ok=True)
+    urlretrieve(SLEEP_EDFX_URL, target)
+    return dataset_dir, {
+        "status": "downloaded",
+        "target_dir": str(dataset_dir),
+        "records_requested": 1,
     }
 
 
@@ -537,10 +610,18 @@ def _comparison_payload(dataset_payloads: list[dict[str, Any]]) -> dict[str, Any
     for signal_type in ("ecg", "eeg"):
         entries = ok_by_type[signal_type]
         ratios = [float(entry["compression_ratio"]) for entry in entries]
-        comparison[signal_type] = {
+        payload = {
             "entries": len(entries),
             "mean_compression_ratio": round(mean(ratios), 6) if ratios else None,
         }
+        if entries and all("gzip_compression_ratio" in entry for entry in entries):
+            payload["mean_gzip_compression_ratio"] = round(
+                mean(float(entry["gzip_compression_ratio"]) for entry in entries),
+                6,
+            )
+        if entries and all("zpe_vs_gzip_improvement" in entry for entry in entries):
+            payload["mean_zpe_vs_gzip_improvement"] = round(mean(float(entry["zpe_vs_gzip_improvement"]) for entry in entries), 6)
+        comparison[signal_type] = payload
 
     ecg_mean = comparison["ecg"]["mean_compression_ratio"]
     eeg_mean = comparison["eeg"]["mean_compression_ratio"]
@@ -557,6 +638,7 @@ def main(argv: list[str] | None = None) -> int:
     download_root = Path(args.download_root)
     results_root = Path(args.results_root)
     dataset_payloads: list[dict[str, Any]] = []
+    overall_ok = True
 
     for dataset_name in args.dataset:
         config = DATASETS[dataset_name]
@@ -583,6 +665,7 @@ def main(argv: list[str] | None = None) -> int:
                 )
             )
         except Exception as exc:  # pragma: no cover - exercised on real downloads
+            overall_ok = False
             results_dir.mkdir(parents=True, exist_ok=True)
             payload = {
                 "dataset": config.dataset,
@@ -613,7 +696,7 @@ def main(argv: list[str] | None = None) -> int:
             dataset_payloads.append(payload)
 
     payload = {
-        "ok": True,
+        "ok": overall_ok,
         "datasets": dataset_payloads,
         "comparison": _comparison_payload(dataset_payloads),
     }
@@ -621,7 +704,7 @@ def main(argv: list[str] | None = None) -> int:
         print(json.dumps(payload, indent=2))
     else:
         print(f"Benchmarked {len(dataset_payloads)} dataset(s).")
-    return 0
+    return 0 if overall_ok else 1
 
 
 if __name__ == "__main__":

@@ -1,6 +1,6 @@
 # ZPE-Bio
 
-48 MIT-BIH records. 1.12x mean compression. 2.85% mean PRD.
+48 MIT-BIH records. 1.32x mean compression. 1.12% mean PRD.
 Research use only. Not FDA-cleared. Do not use for clinical diagnosis.
 
 ---
@@ -11,15 +11,17 @@ Deterministic 8-primitive biosignal codec. ECG + EEG. Rust core. Python package.
 
 Medical device audit trails need deterministic replay, stable thresholds, and reproducible byte streams. ZPE-Bio keeps round-trip metrics tied to the same record, same mode, and same CLI path so firmware teams, clinical data engineers, and reviewers can re-run evidence without transport ambiguity.
 
-Validated on: MIT-BIH Arrhythmia ✅ | PTB-XL ✅ | NSTDB ✅ | Sleep-EDF blocked by upstream 404
+Validated on: MIT-BIH Arrhythmia ✅ | PTB-XL ✅ | NSTDB ✅ | Sleep-EDF single-file ✅
 
 Wave-1 and Wave-2 readiness artifacts are committed under `validation/results/` and `validation/runbooks/`. ECG validation runs deterministic round-trip fidelity checks against real MIT-BIH records: `python -m zpe_bio encode-ecg --record-id 100 --samples 1000 --json`. IMC contract-consumption artifacts confirm family alignment.
 
-PhysioNet lanes tracked here: MIT-BIH local mirror committed. PTB-XL and NSTDB summaries committed. Sleep-EDF reproducibility currently stops at the documented upstream 404.
+PhysioNet lanes tracked here: MIT-BIH local mirror committed. PTB-XL, NSTDB, EDB, and a single-file Sleep-EDF summary committed.
 
 Ecosystem neighbors: [WFDB-Python](https://github.com/MIT-LCP/wfdb-python), [NeuroKit2](https://github.com/neuropsychology/NeuroKit), [HeartPy](https://github.com/paulvangentcom/heartrate_analysis_python), [BioSPPy](https://github.com/PIA-Group/BioSPPy).
 
 Alternative tooling focuses on loading, filtering, and downstream analysis. ZPE-Bio focuses on deterministic compression, replay, and audit-ready transport.
+
+Baseline context: gzip leads on MIT-BIH, NSTDB, and EDB. ZPE leads on PTB-XL and the reproduced Sleep-EDF file.
 
 | Proof anchor | Location |
 |---|---|

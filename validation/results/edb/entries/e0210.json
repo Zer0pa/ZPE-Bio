@@ -8,10 +8,15 @@
     "MLI"
   ],
   "samples": 5000,
+  "raw_bytes": 10000,
+  "gzip_bytes": 4040,
+  "zpe_bytes_est": 7090,
   "compression_ratio": 1.410437,
+  "gzip_compression_ratio": 2.475248,
+  "zpe_vs_gzip_improvement": 0.569817,
   "snr_db": 52.701294,
   "prd_percent": 2.451318,
-  "roundtrip_time_ms": 37.462012,
+  "roundtrip_time_ms": 61.77057,
   "signal_integrity": {
     "status": "pass",
     "compared_samples": 5000,

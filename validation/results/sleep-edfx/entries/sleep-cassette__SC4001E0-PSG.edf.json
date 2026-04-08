@@ -1,0 +1,21 @@
+{
+  "status": "ok",
+  "dataset_entry": "sleep-cassette/SC4001E0-PSG.edf",
+  "record_name": "SC4001E0-PSG.edf",
+  "sample_rate_hz": 100.0,
+  "channel_count": 2,
+  "raw_bytes": 16384,
+  "gzip_bytes": 17440,
+  "zpe_bytes_est": 9040,
+  "compression_ratio": 1.812389,
+  "gzip_compression_ratio": 0.93945,
+  "zpe_vs_gzip_improvement": 1.929204,
+  "total_runtime_ms": 8107.583735,
+  "mean_channel_rmse": 0.207799,
+  "max_channel_rmse": 0.225488,
+  "stream_hash": "e838a2810715a1e9542151b97e1d2eed76e129a15e06affb983c2b0d01ffd8a7",
+  "signal_integrity": {
+    "status": "pass",
+    "channels": 2
+  }
+}
