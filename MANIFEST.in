@@ -1,6 +1,8 @@
 include pyproject.toml
+include BENCHMARKS.md
 
 graft python/zpe_bio
+graft examples
 
 prune tests
 prune validation

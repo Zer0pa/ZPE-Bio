@@ -8,6 +8,10 @@ This changelog tracks the staged repo surface, not a public release line.
 
 ### Added
 
+- Runnable example scripts under `examples/`
+- WFDB interop and clean-install tests
+- Repo-level benchmark index (`BENCHMARKS.md`)
+- Optional dependency groups for test and docs workflows
 - Root repo front door (`README.md`)
 - Repo-level audit and proof entry points
 - Repo-level legal/license surface

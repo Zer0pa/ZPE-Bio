@@ -34,6 +34,12 @@ bioeeg = [
     "mne>=1.8",
     "pyedflib>=0.1.42",
 ]
+test = [
+    "pytest>=8.0",
+]
+docs = [
+    "grip>=4.6",
+]
 dev = [
     "build>=1.2",
     "pytest>=8.0",

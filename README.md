@@ -61,6 +61,9 @@ python -m pip install -e ".[dev,validation]"
 python -m zpe_bio encode-ecg --record-id 100 --samples 1000 --json
 ```
 
+Examples: `examples/README.md`
+Benchmarks: `BENCHMARKS.md`
+
 ## Current Reality
 
 - Runtime/package surface exists under `python/zpe_bio/`.

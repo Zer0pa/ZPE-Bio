@@ -29,7 +29,10 @@ def test_missing_real_eeg_file_raises_source_error() -> None:
         )
 
 
-def test_missing_eeg_backends_raise_dependency_error(monkeypatch: pytest.MonkeyPatch) -> None:
+def test_missing_eeg_backends_raise_dependency_error(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
     from zpe_bio import bio_wave2
 
     def _raise_import_error(*_args, **_kwargs):
@@ -37,10 +40,12 @@ def test_missing_eeg_backends_raise_dependency_error(monkeypatch: pytest.MonkeyP
 
     monkeypatch.setattr(bio_wave2, "_read_edf_with_pyedflib", _raise_import_error)
     monkeypatch.setattr(bio_wave2, "_read_edf_with_mne", _raise_import_error)
+    edf_path = tmp_path / "SC4001E0-PSG.edf"
+    edf_path.write_bytes(b"placeholder")
 
     with pytest.raises(DependencyError):
         encode_eeg_to_mental(
-            edf_path=Path("validation/datasets/eeg/SC4001E0-PSG.edf"),
+            edf_path=edf_path,
             max_channels=1,
             max_samples=128,
             synthetic=False,
