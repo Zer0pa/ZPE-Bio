@@ -1,32 +1,65 @@
 # ZPE-Bio
 
+48 MIT-BIH records. 1.12x mean compression. 2.85% mean PRD.
+Research use only. Not FDA-cleared. Do not use for clinical diagnosis.
+
 ---
 
 ## What This Is
 
-ZPE-Bio applies the ZPE deterministic 8-primitive encoding architecture to biosignal domains — ECG and EEG. The codec ships in both **Rust** (`core/rust/`) and **Python** (`python/zpe_bio/`), with embedded reference builds under `embedded/`.
+Deterministic 8-primitive biosignal codec. ECG + EEG. Rust core. Python package. Embedded reference path.
 
-Wave-1 and Wave-2 readiness artifacts are committed under `validation/results/` and `validation/runbooks/`. ECG validation runs deterministic round-trip fidelity checks against real records: `python -m zpe_bio encode-ecg --record-id 100 --samples 1000 --json`. IMC contract-consumption artifacts confirm family alignment. **Bio Wearable is NO_GO** — its closure bundles are retained for traceability, not treated as release proof.
+Medical device audit trails need deterministic replay, stable thresholds, and reproducible byte streams. ZPE-Bio keeps round-trip metrics tied to the same record, same mode, and same CLI path so firmware teams, clinical data engineers, and reviewers can re-run evidence without transport ambiguity.
 
-For medical-device firmware teams and clinical-data infrastructure engineers evaluating deterministic biosignal encoding: this is the only lane in the family with both a Rust crate and Python package targeting the same signal domain, plus an embedded reference path. The proof lineage is auditable but the release surface is not green.
+Validated on: MIT-BIH Arrhythmia ✅ | PTB-XL ✅ | NSTDB ✅ | Sleep-EDF blocked by upstream 404
 
-**Readiness: private-stage (2026-03-09).** Not a public release packet. Not a clean green-verification snapshot. Historical validation artifacts preserve host-specific paths (lineage, not path authority).
+Wave-1 and Wave-2 readiness artifacts are committed under `validation/results/` and `validation/runbooks/`. ECG validation runs deterministic round-trip fidelity checks against real MIT-BIH records: `python -m zpe_bio encode-ecg --record-id 100 --samples 1000 --json`. IMC contract-consumption artifacts confirm family alignment.
 
-**Not claimed:** fresh green release commit, public release readiness, Bio Wearable viability, fully normalized artifact paths.
+PhysioNet lanes tracked here: MIT-BIH local mirror committed. PTB-XL and NSTDB summaries committed. Sleep-EDF reproducibility currently stops at the documented upstream 404.
+
+Ecosystem neighbors: [WFDB-Python](https://github.com/MIT-LCP/wfdb-python), [NeuroKit2](https://github.com/neuropsychology/NeuroKit), [HeartPy](https://github.com/paulvangentcom/heartrate_analysis_python), [BioSPPy](https://github.com/PIA-Group/BioSPPy).
+
+Alternative tooling focuses on loading, filtering, and downstream analysis. ZPE-Bio focuses on deterministic compression, replay, and audit-ready transport.
 
 | Proof anchor | Location |
 |---|---|
-| Wave-1 / Wave-2 artifacts | `validation/results/`, `validation/runbooks/` |
-| ECG validation | `python -m zpe_bio encode-ecg` |
+| MIT-BIH golden benchmark | `docs/specs/ZPE_BIOSIGNAL_CODEC_PRD_v1.0.md` |
+| ECG validation | `python -m zpe_bio encode-ecg --record-id 100 --samples 1000 --json` |
+| Validation results | `validation/results/`, `validation/runbooks/` |
 | Family alignment | `docs/family/` |
 
-Part of the [Zer0pa](https://github.com/zer0-point-energy) family. Platform layer: [ZPE-IMC](https://github.com/zer0-point-energy/ZPE-IMC).
+Part of the [Zer0pa](https://github.com/Zer0pa) family. Platform layer: [ZPE-IMC](https://github.com/Zer0pa/ZPE-IMC).
 
 ---
 
 ZPE-Bio is the biosignal sector repository for Zero-Point Encoding. It packages a deterministic 8-primitive biosignal codec, a Rust-backed core codec crate, and Bio-specific validation artifacts for Wave-1 and Wave-2 execution.
 
-This repository is a private staging surface as of 2026-03-09. It is not a public release packet and it is not a clean green-verification snapshot.
+## Install
+
+Editable source install:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -e ".[dev,validation]"
+```
+
+Wheel build:
+
+```bash
+python -m pip install build
+python -m build
+python -m pip install dist/*.whl
+```
+
+## Quick Start
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -e ".[dev,validation]"
+python -m zpe_bio encode-ecg --record-id 100 --samples 1000 --json
+```
 
 ## Current Reality
 
@@ -42,29 +75,6 @@ This repository is a private staging surface as of 2026-03-09. It is not a publi
 - Wave-2 execution artifacts are present but mixed.
 - Bio Wearable remains `NO_GO`; its closure bundles are retained for traceability, not treated as release proof.
 - Historical validation artifacts preserve host-specific paths and should be read as lineage, not as current path authority.
-
-## Fast Start
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-python -m pip install -e ".[dev]"
-python -m zpe_bio --help
-python -m zpe_bio roundtrip --mode clinical --samples 250
-```
-
-For ECG validation commands:
-
-```bash
-python -m pip install -e ".[validation]"
-python -m zpe_bio encode-ecg --record-id 100 --samples 1000 --json
-```
-
-Optional EEG support requires extra packages and local dataset acquisition:
-
-```bash
-python -m pip install -e ".[validation,bioeeg]"
-```
 
 ## What This Repo Proves Today
 
@@ -86,7 +96,8 @@ python -m pip install -e ".[validation,bioeeg]"
 - `embedded/`: embedded reference builds
 - `tests/`: maintained pytest suite
 - `scripts/`: operator scripts and generators
-- `validation/results/`: committed proof and readiness artifacts
+- `validation/results/`: committed benchmark outputs and summaries
+- `validation/benchmarks/`: benchmark runners and validation entrypoints
 - `validation/runbooks/`: execution runbooks
 - `docs/`: repo docs, family alignment, and regulatory material
 
@@ -104,10 +115,10 @@ python -m pip install -e ".[validation,bioeeg]"
 - `ruff` and multimodal manifest verification were not re-cleared in this phase.
 - Regulatory and startup documents still contain historical absolute-path references outside the active front door.
 
-Read this repo as a private staged baseline for Phase 4.5 and Phase 5, not as a release verdict.
+Read this repo as the current biosignal proof surface and operator baseline.
 
 ## Ecosystem Cross-Links
 
-- Platform-layer contract surface: [ZPE-IMC](https://github.com/zer0-point-energy/ZPE-IMC)
-- Organization surface: [Zer0pa](https://github.com/zer0-point-energy)
+- Platform-layer contract surface: [ZPE-IMC](https://github.com/Zer0pa/ZPE-IMC)
+- Organization surface: [Zer0pa](https://github.com/Zer0pa)
 - Bio-family alignment artifacts in this repo: `docs/family/BIO_IMC_ALIGNMENT_REPORT.md`
