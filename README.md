@@ -12,15 +12,74 @@ For medical-device firmware teams and clinical-data infrastructure engineers eva
 
 **Readiness: private-stage (2026-03-09).** Not a public release packet. Not a clean green-verification snapshot. Historical validation artifacts preserve host-specific paths (lineage, not path authority).
 
-**Not claimed:** fresh green release commit, public release readiness, Bio Wearable viability, fully normalized artifact paths.
-
-| Proof anchor | Location |
-|---|---|
-| Wave-1 / Wave-2 artifacts | `validation/results/`, `validation/runbooks/` |
-| ECG validation | `python -m zpe_bio encode-ecg` |
-| Family alignment | `docs/family/` |
-
 Part of the [Zer0pa](https://github.com/zer0-point-energy) family. Platform layer: [ZPE-IMC](https://github.com/zer0-point-energy/ZPE-IMC).
+
+| Field | Value |
+|-------|-------|
+| Architecture | BIO_WAVEFORM |
+| Encoding | ECG_DELTA_V1 |
+
+## Key Metrics
+
+| Metric | Value | Tag |
+|--------|-------|-----|
+| ECG Fidelity | deterministic | ROUND_TRIP |
+| Signal Domains | ECG + EEG | DUAL_LANE |
+| Implementations | Rust + Python | DUAL_STACK |
+| Bio Wearable | NO_GO | BLOCKED |
+
+## What We Prove
+
+- Deterministic round-trip fidelity on ECG waveforms
+- Dual implementation: Rust core crate and Python package
+- Wave-1 and Wave-2 readiness artifacts committed
+- IMC contract-consumption alignment verified
+
+## What We Don't Claim
+
+- No claim of fresh green release commit
+- No claim of public release readiness
+- No claim of Bio Wearable validation (NO_GO)
+- No claim of regulatory or FDA compliance
+
+## Current Authority
+
+| Field | Value |
+|-------|-------|
+| Verdict | PRIVATE_STAGE |
+| Commit SHA | 83dc91685284 |
+| Confidence | 100% (MIT-BIH integrity passes) |
+| Source | validation/results/BENCHMARK_SUMMARY.md |
+
+## Verification Status
+
+| Code | Check | Verdict |
+|------|-------|---------|
+| V_01 | MIT-BIH integrity passes (48/48) | PASS |
+| V_02 | PTB-XL benchmark summary committed | PASS |
+| V_03 | NSTDB benchmark summary committed | PASS |
+| V_04 | EDB benchmark summary committed | PASS |
+| V_05 | Sleep-EDF single-file benchmark committed | PASS |
+| V_06 | Bio Wearable gate | FAIL |
+
+## Proof Anchors
+
+| Path | State |
+|------|-------|
+| validation/results/BENCHMARK_SUMMARY.md | VERIFIED |
+| validation/results/ptbxl/summary.json | VERIFIED |
+| validation/results/nstdb/summary.json | VERIFIED |
+| validation/results/edb/summary.json | VERIFIED |
+| validation/results/sleep-edfx/summary.json | VERIFIED |
+| docs/family/BIO_IMC_ALIGNMENT_REPORT.md | VERIFIED |
+
+## Repo Shape
+
+| Field | Value |
+|-------|-------|
+| Proof Anchors | 6 |
+| Modality Lanes | 2 |
+| Authority Source | validation/results/BENCHMARK_SUMMARY.md |
 
 ---
 
@@ -28,22 +87,7 @@ ZPE-Bio is the biosignal sector repository for Zero-Point Encoding. It packages 
 
 This repository is a private staging surface as of 2026-03-09. It is not a public release packet and it is not a clean green-verification snapshot.
 
-## Current Reality
-
-- Runtime/package surface exists under `python/zpe_bio/`.
-- Native codec surface exists under `core/rust/`.
-- Embedded references exist under `embedded/`.
-- Proof and readiness artifacts exist under `validation/results/` and `validation/runbooks/`.
-- Family alignment artifacts exist under `docs/family/`.
-
-## Current Status Snapshot
-
-- Wave-1 repo substance is real.
-- Wave-2 execution artifacts are present but mixed.
-- Bio Wearable remains `NO_GO`; its closure bundles are retained for traceability, not treated as release proof.
-- Historical validation artifacts preserve host-specific paths and should be read as lineage, not as current path authority.
-
-## Fast Start
+## Quick Start
 
 ```bash
 python -m venv .venv
@@ -66,14 +110,29 @@ Optional EEG support requires extra packages and local dataset acquisition:
 python -m pip install -e ".[validation,bioeeg]"
 ```
 
-## What This Repo Proves Today
+## Ecosystem
 
+- Platform-layer contract surface: [ZPE-IMC](https://github.com/zer0-point-energy/ZPE-IMC)
+- Organization surface: [Zer0pa](https://github.com/zer0-point-energy)
+- Bio-family alignment artifacts in this repo: `docs/family/BIO_IMC_ALIGNMENT_REPORT.md`
+
+## Current Reality
+
+- Runtime/package surface exists under `python/zpe_bio/`.
+- Native codec surface exists under `core/rust/`.
+- Embedded references exist under `embedded/`.
+- Proof and readiness artifacts exist under `validation/results/` and `validation/runbooks/`.
+- Family alignment artifacts exist under `docs/family/`.
 - The source tree contains runnable Python and Rust codec surfaces.
 - The source tree contains committed Wave-1 and Wave-2 readiness artifacts.
 - The source tree contains IMC contract-consumption artifacts for family alignment.
 
-## What It Does Not Prove Today
+## Current Status Snapshot
 
+- Wave-1 repo substance is real.
+- Wave-2 execution artifacts are present but mixed.
+- Bio Wearable remains `NO_GO`; its closure bundles are retained for traceability, not treated as release proof.
+- Historical validation artifacts preserve host-specific paths and should be read as lineage, not as current path authority.
 - It does not prove a fresh green release commit.
 - It does not prove public-release readiness.
 - It does not prove Bio Wearable closure.
@@ -105,9 +164,3 @@ python -m pip install -e ".[validation,bioeeg]"
 - Regulatory and startup documents still contain historical absolute-path references outside the active front door.
 
 Read this repo as a private staged baseline for Phase 4.5 and Phase 5, not as a release verdict.
-
-## Ecosystem Cross-Links
-
-- Platform-layer contract surface: [ZPE-IMC](https://github.com/zer0-point-energy/ZPE-IMC)
-- Organization surface: [Zer0pa](https://github.com/zer0-point-energy)
-- Bio-family alignment artifacts in this repo: `docs/family/BIO_IMC_ALIGNMENT_REPORT.md`
