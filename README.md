@@ -42,7 +42,7 @@ Part of the [Zer0pa](https://github.com/zer0-point-energy) family. Platform laye
 - No claim of Bio Wearable validation (NO_GO)
 - No claim of regulatory or FDA compliance
 
-## Current Authority
+## Commercial Readiness
 
 | Field | Value |
 |-------|-------|
@@ -51,7 +51,7 @@ Part of the [Zer0pa](https://github.com/zer0-point-energy) family. Platform laye
 | Confidence | 100% (MIT-BIH integrity passes) |
 | Source | validation/results/BENCHMARK_SUMMARY.md |
 
-## Verification Status
+## Tests and Verification
 
 | Code | Check | Verdict |
 |------|-------|---------|
