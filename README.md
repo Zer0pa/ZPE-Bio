@@ -21,12 +21,14 @@ Part of the [Zer0pa](https://github.com/zer0-point-energy) family. Platform laye
 
 ## Key Metrics
 
-| Metric | Value | Tag |
-|--------|-------|-----|
-| ECG Fidelity | deterministic | ROUND_TRIP |
-| Signal Domains | ECG + EEG | DUAL_LANE |
-| Implementations | Rust + Python | DUAL_STACK |
-| Bio Wearable | NO_GO | BLOCKED |
+| Metric | Value | Baseline |
+|--------|-------|----------|
+| MIT-BIH | 48/48 | — |
+| PTB-XL | 1.576202× | 100/100 entries |
+| EDB_SNR | 52.468288 dB | 90/90 entries |
+| NSTDB_SNR | 60.493187 dB | 15/15 entries |
+
+> Source: [`validation/results/BENCHMARK_SUMMARY.md`](validation/results/BENCHMARK_SUMMARY.md) | [`validation/results/ptbxl/summary.json`](validation/results/ptbxl/summary.json) | [`validation/results/edb/summary.json`](validation/results/edb/summary.json) | [`validation/results/nstdb/summary.json`](validation/results/nstdb/summary.json)
 
 ## What We Prove
 
