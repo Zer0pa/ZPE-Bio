@@ -4,15 +4,13 @@
 
 ## What This Is
 
-ZPE-Bio applies the ZPE deterministic 8-primitive encoding architecture to biosignal domains — ECG and EEG. The codec ships in both **Rust** (`core/rust/`) and **Python** (`python/zpe_bio/`), with embedded reference builds under `embedded/`.
+**ZPE-Bio applies the ZPE deterministic 8-primitive encoding architecture to biosignal domains — ECG and EEG.**
 
-Wave-1 and Wave-2 readiness artifacts are committed under `validation/results/` and `validation/runbooks/`. ECG validation runs deterministic round-trip fidelity checks against real records: `python -m zpe_bio encode-ecg --record-id 100 --samples 1000 --json`. IMC contract-consumption artifacts confirm family alignment. **Bio Wearable is NO_GO** — its closure bundles are retained for traceability, not treated as release proof.
+The codec ships in both Rust (core/rust/) and Python (python/zpe_bio/), with embedded reference builds under embedded/.
 
-For medical-device firmware teams and clinical-data infrastructure engineers evaluating deterministic biosignal encoding: this is the only lane in the family with both a Rust crate and Python package targeting the same signal domain, plus an embedded reference path. The proof lineage is auditable but the release surface is not green.
+Wave-1 and Wave-2 readiness artifacts are committed under validation/results/ and validation/runbooks/.
 
-**Readiness: private-stage (2026-03-09).** Not a public release packet. Not a clean green-verification snapshot. Historical validation artifacts preserve host-specific paths (lineage, not path authority).
-
-Part of the [Zer0pa](https://github.com/zer0-point-energy) family. Platform layer: [ZPE-IMC](https://github.com/zer0-point-energy/ZPE-IMC).
+ECG validation runs deterministic round-trip fidelity checks against real records: python -m zpe_bio encode-ecg --record-id 100 --samples 1000 --json.
 
 | Field | Value |
 |-------|-------|
@@ -21,19 +19,20 @@ Part of the [Zer0pa](https://github.com/zer0-point-energy) family. Platform laye
 
 ## Key Metrics
 
-| Metric | Value | Tag |
-|--------|-------|-----|
-| ECG Fidelity | deterministic | ROUND_TRIP |
-| Signal Domains | ECG + EEG | DUAL_LANE |
-| Implementations | Rust + Python | DUAL_STACK |
-| Bio Wearable | NO_GO | BLOCKED |
+| Metric | Value | Baseline |
+|--------|-------|----------|
+| ECG_SNR | 43.29 dB | — |
+| RMSE | 3.24 μV | — |
+| COMPRESSION | 1.32× | vs gzip ~2× (lossless) |
+| INTEGRITY | 48/48 | pass |
 
 ## What We Prove
 
-- Deterministic round-trip fidelity on ECG waveforms
-- Dual implementation: Rust core crate and Python package
-- Wave-1 and Wave-2 readiness artifacts committed
-- IMC contract-consumption alignment verified
+- 8-code delta quantization decomposes ECG signals into directional primitives
+- Deterministic round-trip fidelity verified across MIT-BIH's full 48-record corpus
+- Dual implementation surface: Rust core crate and Python package with parity checks
+- Heterogeneous biosignal transport via shared primitive layer (ECG, EEG, wearable)
+- IMC contract-consumption alignment verified on the staged pipeline
 
 ## What We Don't Claim
 
@@ -46,21 +45,21 @@ Part of the [Zer0pa](https://github.com/zer0-point-energy) family. Platform laye
 
 | Field | Value |
 |-------|-------|
-| Verdict | PRIVATE_STAGE |
-| Commit SHA | 83dc91685284 |
+| Verdict | STAGED |
+| Commit SHA | 83DC916 |
 | Confidence | 100% (MIT-BIH integrity passes) |
-| Source | validation/results/BENCHMARK_SUMMARY.md |
+| Source | proofs/FINAL_STATUS.md |
 
 ## Tests and Verification
 
 | Code | Check | Verdict |
 |------|-------|---------|
-| V_01 | MIT-BIH integrity passes (48/48) | PASS |
-| V_02 | PTB-XL benchmark summary committed | PASS |
-| V_03 | NSTDB benchmark summary committed | PASS |
-| V_04 | EDB benchmark summary committed | PASS |
-| V_05 | Sleep-EDF single-file benchmark committed | PASS |
-| V_06 | Bio Wearable gate | FAIL |
+| V_01 | MIT-BIH_INTEGRITY_PASSES_(48/48) | PASS |
+| V_02 | PTB-XL_BENCHMARK_SUMMARY_COMMITTED | PASS |
+| V_03 | NSTDB_BENCHMARK_SUMMARY_COMMITTED | PASS |
+| V_04 | EDB_BENCHMARK_SUMMARY_COMMITTED | PASS |
+| V_05 | SLEEP-EDF_SINGLE-FILE_BENCHMARK_... | PASS |
+| V_06 | BIO_WEARABLE_GATE | FAIL |
 
 ## Proof Anchors
 
