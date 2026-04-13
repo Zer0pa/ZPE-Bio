@@ -4,7 +4,7 @@
 
 ## What This Is
 
-ZPE-Bio applies the ZPE deterministic 8-primitive encoding architecture to biosignal domains — ECG and EEG. The codec ships in both **Rust** (`core/rust/`) and **Python** (`python/zpe_bio/`), with embedded reference builds under `embedded/`.
+ZPE-Bio applies the ZPE deterministic 8-primitive encoding architecture to biosignal domains — ECG. The codec ships in both **Rust** (`core/rust/`) and **Python** (`python/zpe_bio/`), with embedded reference builds under `embedded/`.
 
 Wave-1 and Wave-2 readiness artifacts are committed under `validation/results/` and `validation/runbooks/`. ECG validation runs deterministic round-trip fidelity checks against real records: `python -m zpe_bio encode-ecg --record-id 100 --samples 1000 --json`. IMC contract-consumption artifacts confirm family alignment. **Bio Wearable is NO_GO** — its closure bundles are retained for traceability, not treated as release proof.
 
