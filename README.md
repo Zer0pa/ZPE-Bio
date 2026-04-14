@@ -28,6 +28,15 @@ Part of the [Zer0pa](https://github.com/zer0-point-energy) family. Platform laye
 
 > Source: [`validation/results/BENCHMARK_SUMMARY.md`](validation/results/BENCHMARK_SUMMARY.md) | [`validation/results/ptbxl/summary.json`](validation/results/ptbxl/summary.json) | [`validation/results/edb/summary.json`](validation/results/edb/summary.json) | [`validation/results/nstdb/summary.json`](validation/results/nstdb/summary.json)
 
+## Competitive Benchmarks
+
+| Tool | MIT-BIH CR | Notes |
+|------|-----------|-------|
+| **ZPE-Bio** | **1.32×** | Deterministic, bit-identical domain-aware replay |
+| gzip | 2.13× | Higher CR but no deterministic integrity guarantee |
+
+ZPE-Bio targets deterministic integrity, not compression ratio. Gzip achieves higher compression (2.13× vs 1.32×) on MIT-BIH data but does not guarantee bit-identical domain-aware replay. The commercial wedge is determinism + integrity, not raw ratio.
+
 ## What We Prove
 
 > Auditable guarantees backed by committed proof artifacts. Start at `AUDITOR_PLAYBOOK.md`.
