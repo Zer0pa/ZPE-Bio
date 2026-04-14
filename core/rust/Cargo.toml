@@ -3,7 +3,7 @@ name = "zpe-bio-codec"
 version = "0.1.0"
 edition = "2021"
 description = "8-primitive geometric biosignal compression codec"
-license = "LicenseRef-Zer0pa-SAL-6.0"
+license = "LicenseRef-Zer0pa-SAL-6.2"
 
 [lib]
 crate-type = ["staticlib", "cdylib", "rlib"]

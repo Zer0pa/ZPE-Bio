@@ -20,7 +20,7 @@ This document defines the software development process and controls for ZPE-Bio,
 ## 3. Development Lifecycle
 
 - Model: falsification-driven V-model
-- Source control: Git repository under `/Users/zer0pa-build/ZPE Bio/zpe-bio`
+- Source control: Git repository under `<repo-root>`
 - Validation framework: DT-1 through DT-17
 - Gating control: `RUNBOOK_00_MASTER.md` phase gates
 
@@ -42,7 +42,7 @@ This document defines the software development process and controls for ZPE-Bio,
 
 ## 6. Risk Management Reference
 
-See `/Users/zer0pa-build/ZPE Bio/zpe-bio/docs/regulatory/DOC-008_RMF.md`.
+See `docs/regulatory/DOC-008_RMF.md`.
 
 ## 7. Verification Strategy
 
@@ -53,4 +53,4 @@ See `/Users/zer0pa-build/ZPE Bio/zpe-bio/docs/regulatory/DOC-008_RMF.md`.
 
 ## 8. Configuration Management
 
-See `/Users/zer0pa-build/ZPE Bio/zpe-bio/docs/regulatory/DOC-010_CONFIGURATION_MANAGEMENT_PLAN.md`.
+See `docs/regulatory/DOC-010_CONFIGURATION_MANAGEMENT_PLAN.md`.

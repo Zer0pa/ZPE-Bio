@@ -23,9 +23,9 @@
 
 ## Provenance (Copied Sources)
 - Smell/core/diagram source lineage:
-  - `/Users/zer0pa-build/ZPE Multimodality/ZPE-IMC/source/...`
+  - `ZPE-IMC/source/...`
 - Taste source lineage:
-  - `/Users/zer0pa-build/ZPE Multimodality/taste/source/...`
+  - `taste/source/...`
 
 ## Validation Added
 - New tests:

@@ -52,6 +52,7 @@ ZPE-Bio targets deterministic integrity, not compression ratio. Gzip achieves hi
 - No claim of public release readiness
 - No claim of Bio Wearable validation (NO_GO)
 - No claim of regulatory or FDA compliance
+- No claim of NaN-safe input handling — NaN inputs produce silently incorrect reconstruction (PRD=0.0 reported). This is a known limitation with implications for clinical/regulated deployment. Input validation is the caller's responsibility.
 
 ## Commercial Readiness
 
@@ -183,6 +184,6 @@ python -m pip install -e ".[validation,bioeeg]"
 
 - Historical GO prose exists, but this staged repo still carries unresolved correctness work.
 - `ruff` and multimodal manifest verification were not re-cleared in this phase.
-- Regulatory and startup documents still contain historical absolute-path references outside the active front door.
+- Regulatory and startup documents contained historical absolute-path references (scrubbed 2026-04-14; now repo-relative).
 
 Read this repo as a private staged baseline for Phase 4.5 and Phase 5, not as a release verdict.

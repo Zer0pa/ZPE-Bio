@@ -2,10 +2,10 @@
 
 Evidence sources used:
 
-- `/Users/zer0pa-build/ZPE Bio/zpe-bio/validation/results/dt_results_20260212T104642.json`
-- `/Users/zer0pa-build/ZPE Bio/zpe-bio/validation/results/dt_results_20260212T112710.json`
-- `/Users/zer0pa-build/ZPE Bio/zpe-bio/validation/results/dt_results_20260212T103331.json`
-- `/Users/zer0pa-build/ZPE Bio/zpe-bio/validation/results/phase3_hostok_20260212T113430.json`
+- `validation/results/dt_results_20260212T104642.json`
+- `validation/results/dt_results_20260212T112710.json`
+- `validation/results/dt_results_20260212T103331.json`
+- `validation/results/phase3_hostok_20260212T113430.json`
 
 | Requirement ID | Description | DT(s) | DT Status | Evidence |
 |:---|:---|:---|:---|:---|
@@ -19,7 +19,7 @@ Evidence sources used:
 | REQ-EMBED-3 | Encode < 1 ms | DT-10 | PASS | `dt_results_20260212T112710.json`, `phase3_hostok_20260212T113430.json` |
 | REQ-BLE-1 | Packet framing with CRC | DT-17 | PASS | `dt_results_20260212T112710.json`, `phase3_hostok_20260212T113430.json` |
 | REQ-SEC-1 | No data-dependent timing | DT-14 | PASS | `dt_results_20260212T103331.json` |
-| REQ-REG-1 | IEC 62304 Class B package | DOC-001..DOC-012 | IN_PROGRESS | `/Users/zer0pa-build/ZPE Bio/zpe-bio/docs/regulatory/` |
+| REQ-REG-1 | IEC 62304 Class B package | DOC-001..DOC-012 | IN_PROGRESS | `docs/regulatory/` |
 | REQ-REG-2 | Cardiologist kappa >= 0.85 | Human Equiv Gate | SUSPENDED_BY_OWNER | `DOC-012_HUMAN_EQUIVALENCE_GATE_REPORT.md` |
 | REQ-REG-3 | MIT-BIH benchmark coverage | DT-1 | PASS | `dt_results_20260212T104642.json` |
 

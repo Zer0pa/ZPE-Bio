@@ -2,7 +2,7 @@
 
 ## Commands
 1. Verify IMC freeze:
-   - `shasum -a 256 '/Users/zer0pa-build/ZPE Multimodality/ZPE-IMC/v0.0/docs/family/IMC_COMPATIBILITY_VECTOR.json'`
+   - `shasum -a 256 'ZPE-IMC/v0.0/docs/family/IMC_COMPATIBILITY_VECTOR.json'`
    - Parse `contract_version` from IMC vector and IMC interface contract.
 2. Capture baseline inventory:
    - `python -m pip show zpe-bio`

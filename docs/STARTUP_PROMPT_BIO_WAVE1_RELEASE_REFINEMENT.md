@@ -1,8 +1,8 @@
 # Startup Prompt: Bio Wave-1 Coordinated Release Refinement Agent
 
 Execute only against:
-- PRD: `/Users/zer0pa-build/ZPE Bio/zpe-bio/docs/PRD_BIO_WAVE1_RELEASE_REFINEMENT.md`
-- Scope root: `/Users/zer0pa-build/ZPE Bio/zpe-bio`
+- PRD: `docs/PRD_BIO_WAVE1_RELEASE_REFINEMENT.md`
+- Scope root: `<repo-root>`
 
 ## Mission
 Execute Bio release refinement end-to-end, enforce deterministic parity, and publish IMC alignment artifacts for coordinated family release.
@@ -10,7 +10,7 @@ Execute Bio release refinement end-to-end, enforce deterministic parity, and pub
 ## Hard Rules
 1. Runbook-first required.
 2. Code execution required; do not stop at planning.
-3. Modify only inside `/Users/zer0pa-build/ZPE Bio/zpe-bio`.
+3. Modify only inside `<repo-root>`.
 4. Maintain sector separation (no importing IMC runtime code).
 5. IMC coordination is artifact-level only.
 6. On any failed gate: patch and rerun full phase gates.

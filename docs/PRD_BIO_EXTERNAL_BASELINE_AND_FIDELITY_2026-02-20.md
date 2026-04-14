@@ -1,7 +1,7 @@
 # PRD: Bio External Baseline + Fidelity Closure
 
 - Date: 2026-02-20
-- Repo root: `/Users/zer0pa-build/ZPE Bio/zpe-bio`
+- Repo root: `<repo-root>`
 - Priority: P0
 
 ## 1) Mission (Measurable)
@@ -11,10 +11,10 @@ Close the remaining scientific engineering gaps in Bio:
 3. Remove ambiguous chemosense taste claim tag (`placeholder_governed`) from runtime outputs/tests.
 
 ## 2) Baseline Evidence Anchors
-1. `/Users/zer0pa-build/ZPE Bio/zpe-bio/validation/results/bio_wave2_phase2_ecg_benchmark.json`
-2. `/Users/zer0pa-build/ZPE Bio/zpe-bio/python/zpe_bio/bio_wave2.py`
-3. `/Users/zer0pa-build/ZPE Bio/zpe-bio/tests/test_chemosense_bio_cli.py`
-4. `/Users/zer0pa-build/ZPE Multimodality/ZPE_IMC_TECHNICAL_DOSSIER.md`
+1. `validation/results/bio_wave2_phase2_ecg_benchmark.json`
+2. `python/zpe_bio/bio_wave2.py`
+3. `tests/test_chemosense_bio_cli.py`
+4. `ZPE_IMC_TECHNICAL_DOSSIER.md`
 
 ## 3) In Scope / Out Of Scope
 In scope:
@@ -56,7 +56,7 @@ If stretch target fails:
 
 ## 7) Mandatory Artifacts
 Output folder:
-- `/Users/zer0pa-build/ZPE Bio/zpe-bio/validation/results/<DATE>_bio_external_baseline_fidelity/`
+- `validation/results/<DATE>_bio_external_baseline_fidelity/`
 
 Required:
 1. `handoff_manifest.json`

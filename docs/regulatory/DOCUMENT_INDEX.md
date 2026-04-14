@@ -17,5 +17,5 @@
 
 ## Notes
 
-- DT-based verification evidence is linked in `/Users/zer0pa-build/ZPE Bio/zpe-bio/docs/regulatory/traceability/REQ_DT_MATRIX.md`.
+- DT-based verification evidence is linked in `docs/regulatory/traceability/REQ_DT_MATRIX.md`.
 - `DOC-012` execution is parked by owner directive (2026-02-12) pending external cardiologist inputs.

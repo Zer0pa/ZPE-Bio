@@ -1,7 +1,7 @@
 # RUNBOOK: BIO WAVE-2 MASTER
 
 ## Scope
-- Repo root: `/Users/zer0pa-build/ZPE Bio/zpe-bio`
+- Repo root: `<repo-root>`
 - PRD source: `docs/PRD_BIO_WAVE2_BIOSIGNAL_MULTIMODAL_EXECUTION.md`
 
 ## Execution Order (Strict)

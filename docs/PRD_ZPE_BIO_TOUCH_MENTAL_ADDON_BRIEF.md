@@ -12,7 +12,7 @@
 
 ## Scope
 - In scope:
-  - transplant `touch` and `mental` modules from `/Users/zer0pa-build/ZPE Multimodality/ZPE-IMC/source`.
+  - transplant `touch` and `mental` modules from `ZPE-IMC/source`.
   - integrate APIs under `python/zpe_bio/multimodal`.
   - add regression tests, fuzz safety checks, benchmarks, CI gates, and checksum manifest updates.
 - Out of scope:
@@ -22,9 +22,9 @@
 
 ## Source of Truth
 - Touch source:
-  - `/Users/zer0pa-build/ZPE Multimodality/ZPE-IMC/source/touch`
+  - `ZPE-IMC/source/touch`
 - Mental source:
-  - `/Users/zer0pa-build/ZPE Multimodality/ZPE-IMC/source/mental`
+  - `ZPE-IMC/source/mental`
 
 ## Execution Plan
 ### 1. Transplant and Wire Modules
@@ -79,7 +79,7 @@
 - `python scripts/verify_multimodal_manifest.py` passes.
 - `python scripts/benchmark_multimodal.py ...` passes with touch/mental thresholds.
 - `PYTHONPATH=python python -m zpe_bio multimodal --json` reports successful touch/mental checks.
-- No external imports from `/Users/zer0pa-build/ZPE Multimodality/...` remain in runtime modules.
+- No external imports from `...` remain in runtime modules.
 
 ## Risk Controls
 - Parser hardening:

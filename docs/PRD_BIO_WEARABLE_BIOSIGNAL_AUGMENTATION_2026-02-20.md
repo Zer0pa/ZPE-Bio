@@ -1,8 +1,8 @@
 # PRD: Bio Wearable-Biosignal Augmentation Wave-1
 
 - Date: 2026-02-20
-- Scope root: `/Users/zer0pa-build/ZPE Bio/zpe-bio`
-- Concept anchor: `/Users/zer0pa-build/ZPE Multimodality/ZPE Sector Expansion Concept Docs/ZPE Wearable Health _ Biosignal — Concept Document.md`
+- Scope root: `<repo-root>`
+- Concept anchor: `ZPE Sector Expansion Concept Docs/ZPE Wearable Health _ Biosignal — Concept Document.md`
 - Priority: P0
 - Reason: wearable/biosignal concept is an augmentation of existing Bio lane (not a separate new sector root)
 
@@ -21,9 +21,9 @@ Target outcomes:
 
 ## 2) Baseline Evidence and Current Failure Points
 Baseline anchors:
-1. `/Users/zer0pa-build/ZPE Bio/zpe-bio/validation/results/BIO_WAVE2_HANDOFF_MANIFEST.json`
-2. `/Users/zer0pa-build/ZPE Bio/zpe-bio/validation/results/bio_wave2_phase2_ecg_benchmark.json`
-3. `/Users/zer0pa-build/ZPE Multimodality/ZPE Sector Expansion Concept Docs/ZPE Wearable Health _ Biosignal — Concept Document.md`
+1. `validation/results/BIO_WAVE2_HANDOFF_MANIFEST.json`
+2. `validation/results/bio_wave2_phase2_ecg_benchmark.json`
+3. `ZPE Sector Expansion Concept Docs/ZPE Wearable Health _ Biosignal — Concept Document.md`
 
 Current failure points:
 1. Existing Bio wave does not cover full wearable set (PPG/IMU/EDA/SpO2 paths and associated tests) at required depth.
@@ -71,7 +71,7 @@ Stretch:
 
 ## 7) Mandatory Artifacts to Output
 Output root:
-- `/Users/zer0pa-build/ZPE Bio/zpe-bio/validation/results/2026-02-20_bio_wearable_augmentation/`
+- `validation/results/2026-02-20_bio_wearable_augmentation/`
 
 Required files:
 1. `handoff_manifest.json`
@@ -153,7 +153,7 @@ Every lane run must include, in addition to core PRD artifacts:
 Scoring policy:
 1. Concept-open-questions from the concept document must be resolved in `concept_open_questions_resolution.md` with evidence links.
 2. Every Appendix B checklist item must be mapped in `concept_resource_traceability.json` with source and artifact pointers.
-3. Apply `/Users/zer0pa-build/ZPE Multimodality/SECTOR_EXECUTION_QUALITY_RUBRIC_2026-02-20.md`.
+3. Apply `SECTOR_EXECUTION_QUALITY_RUBRIC_2026-02-20.md`.
 4. Lane is `NO-GO` on any non-negotiable gate failure, regardless of aggregate score.
 5. Lane cannot be marked complete unless beyond-brief innovations are evidenced and reproducible.
 
@@ -198,8 +198,8 @@ Launch and complete Bio wearable augmentation from zero execution to evidence-co
 ## Appendix E) NET-NEW Resource Ingestion and RunPod Readiness (2026-02-21)
 
 ### E1) Evidence Inputs (Mandatory)
-1. `/Users/zer0pa-build/ZPE Multimodality/ZPE 10-Lane NET-NEW Resource Maximization Pack.md`
-2. `/Users/zer0pa-build/ZPE Multimodality/ZPE 10-Lane NET-NEW Resource Maximization Pack.pdf`
+1. `ZPE 10-Lane NET-NEW Resource Maximization Pack.md`
+2. `ZPE 10-Lane NET-NEW Resource Maximization Pack.pdf`
 3. Claims stay evidence-bound; theory and synthetic-only paths cannot close clinical proxy claims.
 
 ### E2) Attempt-All Rule and Impracticality Criteria
@@ -227,7 +227,7 @@ If local compute limits large-scale model or benchmark execution:
 4. Complete local dry-run validation before escalation.
 
 ### E5) Additional Mandatory Artifacts (Max Wave)
-Place in `/Users/zer0pa-build/ZPE Bio/zpe-bio/validation/results/2026-02-20_bio_wearable_augmentation/`:
+Place in `validation/results/2026-02-20_bio_wearable_augmentation/`:
 1. `max_resource_lock.json`
 2. `max_resource_validation_log.md`
 3. `max_claim_resource_map.json`
@@ -247,7 +247,7 @@ Place in `/Users/zer0pa-build/ZPE Bio/zpe-bio/validation/results/2026-02-20_bio_
 ## Appendix F) Gap-Closure Rebrief v2 (2026-02-21)
 
 ### F1) Input Anchors (Mandatory)
-1. `/Users/zer0pa-build/ZPE Multimodality/ZPE 10-Lane Gap Closure.md`
+1. `ZPE 10-Lane Gap Closure.md`
 2. Bio wearable artifact bundle at `validation/results/2026-02-20_bio_wearable_augmentation/`.
 
 ### F2) Commercialization Gate (Mandatory)

@@ -7,9 +7,9 @@
 
 ## 1. Repository Baseline
 
-- Root: `/Users/zer0pa-build/ZPE Bio/zpe-bio`
+- Root: `<repo-root>`
 - Governing docs: PRD + RUNBOOK series in project root
-- Evidence artifacts: `/Users/zer0pa-build/ZPE Bio/zpe-bio/validation/results`
+- Evidence artifacts: `validation/results`
 
 ## 2. Controlled Items
 

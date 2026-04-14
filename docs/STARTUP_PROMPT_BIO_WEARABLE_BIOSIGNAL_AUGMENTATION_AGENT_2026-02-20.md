@@ -20,8 +20,8 @@ You are running inside the correct lane folder already.
 
 ## Forbidden Work
 1. Do not edit sibling lanes, parent orchestration docs, IMC/IoT/Bio repos (unless this lane is Bio), or other projects.
-2. Do not touch `/Users/zer0pa-build/ZPE Multimodality/packetgram`.
-3. Do not touch `/Users/zer0pa-build/ZPE Multimodality/strokegram`.
+2. Do not touch `packetgram`.
+3. Do not touch `strokegram`.
 
 ## Engineering Mandate (Non-Negotiable)
 1. Execute end-to-end as a production engineer: runbook -> implementation -> falsification -> regression -> artifact handoff.

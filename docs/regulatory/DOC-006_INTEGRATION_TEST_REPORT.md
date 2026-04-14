@@ -13,10 +13,10 @@
 
 ## 2. Evidence Artifacts
 
-- `/Users/zer0pa-build/ZPE Bio/zpe-bio/validation/results/dt_results_20260212T104642.json` (P0)
-- `/Users/zer0pa-build/ZPE Bio/zpe-bio/validation/results/dt_results_20260212T112710.json` (P1)
-- `/Users/zer0pa-build/ZPE Bio/zpe-bio/validation/results/dt_results_20260212T103331.json` (P2)
-- `/Users/zer0pa-build/ZPE Bio/zpe-bio/validation/results/phase3_hostok_20260212T113430.json` (Phase 3 host gate)
+- `validation/results/dt_results_20260212T104642.json` (P0)
+- `validation/results/dt_results_20260212T112710.json` (P1)
+- `validation/results/dt_results_20260212T103331.json` (P2)
+- `validation/results/phase3_hostok_20260212T113430.json` (Phase 3 host gate)
 
 ## 3. Gate Summary
 
