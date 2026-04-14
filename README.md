@@ -63,7 +63,7 @@ ZPE-Bio targets deterministic integrity, not compression ratio. Gzip achieves hi
 | Confidence | 100% (MIT-BIH integrity passes) |
 | Source | validation/results/BENCHMARK_SUMMARY.md |
 
-> **Evaluators:** `pip install -e .` in a clean venv, then run `pytest`. Contact hello@zer0pa.com for integration guidance.
+> **Evaluators:** `pip install zpe-bio` (available on PyPI), then run `pytest`. Contact hello@zer0pa.com for integration guidance.
 
 ## Tests and Verification
 
@@ -102,6 +102,13 @@ ZPE-Bio is the biosignal sector repository for Zero-Point Encoding. It packages 
 This repository is a private staging surface as of 2026-03-09. It is not a public release packet and it is not a clean green-verification snapshot.
 
 ## Quick Start
+
+```bash
+# Install from PyPI
+pip install zpe-bio
+```
+
+Or install from source (development):
 
 ```bash
 python -m venv .venv
