@@ -22,9 +22,9 @@ Part of the [Zer0pa](https://github.com/zer0-point-energy) family. Platform laye
 | Metric | Value | Baseline |
 |--------|-------|----------|
 | MIT-BIH | 48/48 | — |
-| PTB-XL | 1.576202× | 100/100 entries |
-| EDB_SNR | 52.468288 dB | 90/90 entries |
-| NSTDB_SNR | 60.493187 dB | 15/15 entries |
+| PTB-XL | 1.58× | 100/100 entries |
+| EDB_SNR | 52.47 | dB |
+| NSTDB_SNR | 60.49 | dB |
 
 > Source: [`validation/results/BENCHMARK_SUMMARY.md`](validation/results/BENCHMARK_SUMMARY.md) | [`validation/results/ptbxl/summary.json`](validation/results/ptbxl/summary.json) | [`validation/results/edb/summary.json`](validation/results/edb/summary.json) | [`validation/results/nstdb/summary.json`](validation/results/nstdb/summary.json)
 
