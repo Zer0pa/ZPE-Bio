@@ -2,7 +2,7 @@
 
 Date: 2026-02-20
 Owner: Product/Engineering
-Repo: `/Users/prinivenpillay/ZPE Bio/zpe-bio`
+Repo: `/Users/zer0pa-build/ZPE Bio/zpe-bio`
 Scope: code + release engineering only
 Priority: P0
 

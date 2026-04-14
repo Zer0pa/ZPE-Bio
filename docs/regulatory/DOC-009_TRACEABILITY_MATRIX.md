@@ -7,7 +7,7 @@
 
 The authoritative matrix is maintained at:
 
-- `/Users/prinivenpillay/ZPE Bio/zpe-bio/docs/regulatory/traceability/REQ_DT_MATRIX.md`
+- `/Users/zer0pa-build/ZPE Bio/zpe-bio/docs/regulatory/traceability/REQ_DT_MATRIX.md`
 
 This document confirms bidirectional linkage from requirements to destruct tests and evidence artifacts.
 

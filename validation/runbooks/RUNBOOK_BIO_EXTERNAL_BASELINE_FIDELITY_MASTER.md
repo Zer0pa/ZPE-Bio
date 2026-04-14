@@ -1,7 +1,7 @@
 # RUNBOOK: BIO EXTERNAL BASELINE + FIDELITY MASTER
 
 ## Scope
-- Repo root: `/Users/prinivenpillay/ZPE Bio/zpe-bio`
+- Repo root: `/Users/zer0pa-build/ZPE Bio/zpe-bio`
 - PRD source: `docs/PRD_BIO_EXTERNAL_BASELINE_AND_FIDELITY_2026-02-20.md`
 
 ## Execution Order (Strict)

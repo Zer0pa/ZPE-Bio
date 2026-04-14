@@ -1,7 +1,7 @@
 # RUNBOOK: BIO WEARABLE AUGMENTATION MASTER
 
 ## Scope
-- Repo root: `/Users/prinivenpillay/ZPE Bio/zpe-bio`
+- Repo root: `/Users/zer0pa-build/ZPE Bio/zpe-bio`
 - PRD: `docs/PRD_BIO_WEARABLE_BIOSIGNAL_AUGMENTATION_2026-02-20.md`
 - Startup prompt: `docs/STARTUP_PROMPT_BIO_WEARABLE_BIOSIGNAL_AUGMENTATION_AGENT_2026-02-20.md`
 

@@ -13,7 +13,7 @@
 
 ## 2. Current System Metrics Snapshot
 
-From `/Users/prinivenpillay/ZPE Bio/zpe-bio/validation/results/phase3_hostok_20260212T113430.json`:
+From `/Users/zer0pa-build/ZPE Bio/zpe-bio/validation/results/phase3_hostok_20260212T113430.json`:
 
 - DT-6 static RAM: 1088 bytes
 - DT-9 mean TX reduction: 9.04x

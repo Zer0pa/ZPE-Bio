@@ -1,7 +1,7 @@
 # RUNBOOK: Bio Rx Reproducible Falsification Rerun
 
 ## Scope
-- Repository: `/Users/prinivenpillay/ZPE Bio/zpe-bio`
+- Repository: `/Users/zer0pa-build/ZPE Bio/zpe-bio`
 - Purpose: run full falsification in a pinned local environment (`.venv`) and emit machine-runnable evidence artifacts.
 - This runbook does not use global Python.
 

@@ -1,7 +1,7 @@
 # RUNBOOK: BIO WAVE-1 MASTER
 
 ## Scope
-- Repo root: `/Users/prinivenpillay/ZPE Bio/zpe-bio`
+- Repo root: `/Users/zer0pa-build/ZPE Bio/zpe-bio`
 - PRD source: `docs/PRD_BIO_WAVE1_RELEASE_REFINEMENT.md`
 
 ## Execution Order (Strict)

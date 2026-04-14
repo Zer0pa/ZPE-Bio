@@ -48,5 +48,5 @@
 
 ## Final Check-In Contract
 1. Must comply with:
-   - `/Users/prinivenpillay/ZPE Multimodality/CENTRAL_CHECKIN_PROTOCOL_2026-02-21.md`
-   - `/Users/prinivenpillay/ZPE Multimodality/UNIVERSAL_LANE_FINAL_CHECKIN_PROMPT_2026-02-21.md`
+   - `/Users/zer0pa-build/ZPE Multimodality/CENTRAL_CHECKIN_PROTOCOL_2026-02-21.md`
+   - `/Users/zer0pa-build/ZPE Multimodality/UNIVERSAL_LANE_FINAL_CHECKIN_PROMPT_2026-02-21.md`

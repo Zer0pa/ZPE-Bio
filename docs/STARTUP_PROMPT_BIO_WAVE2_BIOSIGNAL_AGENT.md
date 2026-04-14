@@ -1,15 +1,15 @@
 # Startup Prompt: Bio Wave-2 Biosignal Multimodal Agent
 
 Execute only against:
-1. PRD: `/Users/prinivenpillay/ZPE Bio/zpe-bio/docs/PRD_BIO_WAVE2_BIOSIGNAL_MULTIMODAL_EXECUTION.md`
-2. Scope root: `/Users/prinivenpillay/ZPE Bio/zpe-bio`
+1. PRD: `/Users/zer0pa-build/ZPE Bio/zpe-bio/docs/PRD_BIO_WAVE2_BIOSIGNAL_MULTIMODAL_EXECUTION.md`
+2. Scope root: `/Users/zer0pa-build/ZPE Bio/zpe-bio`
 
 ## Mission
 Implement code-first Bio Wave-2 execution: productized ECG/EEG CLI lanes, unified multimodal ECG+EEG stream demo, chemosense command hardening, and full falsification bundle.
 
 ## Hard Rules
 1. Runbook-first is mandatory.
-2. Do not work outside `/Users/prinivenpillay/ZPE Bio/zpe-bio`.
+2. Do not work outside `/Users/zer0pa-build/ZPE Bio/zpe-bio`.
 3. Do not modify IMC repo or other modality repos.
 4. No clinical claim inflation; emit only measured metrics.
 5. If a gate fails, patch and rerun that phase before proceeding.
