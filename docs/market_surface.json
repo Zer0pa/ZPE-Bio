@@ -6,7 +6,7 @@
   "commercial_wedge": "For medical-device firmware teams, clinical-data infrastructure teams, and wearable-health platform engineers needing deterministic, reproducible biosignal encoding with auditable proof lineage. Business value: reproducibility and auditability for biosignal pipelines.",
   "technical_wedge": "Deterministic 8-primitive biosignal codec with Python and Rust implementations, validated against ECG round-trip fidelity and EEG encoding paths. Wave-1 and Wave-2 readiness artifacts committed with IMC contract-consumption alignment.",
   "ideal_first_buyer": "Medical-device firmware team or clinical-data infrastructure team evaluating deterministic biosignal encoding with proof lineage (future — not current release).",
-  "deployment_model": "Python package (pip install -e '.[dev]'), Rust crate (core/rust/), and embedded reference builds. Private staged — not a public packaged release.",
+  "deployment_model": "Python package on PyPI (`pip install zpe-bio`), Rust crate (core/rust/), and embedded reference builds. Repo remains private staged and not release-ready.",
   "proof_anchors": [
     "validation/results/ — committed proof and readiness artifacts",
     "Wave-1 and Wave-2 execution artifacts",

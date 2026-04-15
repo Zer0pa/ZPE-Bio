@@ -39,7 +39,7 @@ ZPE-Bio targets deterministic integrity, not compression ratio. Gzip achieves hi
 
 ## What We Prove
 
-> Auditable guarantees backed by committed proof artifacts. Start at `AUDITOR_PLAYBOOK.md`.
+> Auditable guarantees backed by committed proof artifacts. Start at `validation/results/BENCHMARK_SUMMARY.md`.
 
 - Deterministic round-trip fidelity on ECG waveforms
 - Dual implementation: Rust core crate and Python package
@@ -63,7 +63,7 @@ ZPE-Bio targets deterministic integrity, not compression ratio. Gzip achieves hi
 | Confidence | 100% (MIT-BIH integrity passes) |
 | Source | validation/results/BENCHMARK_SUMMARY.md |
 
-> **Evaluators:** `pip install zpe-bio` (available on PyPI), then run `pytest`. Contact hello@zer0pa.com for integration guidance.
+> **Evaluators:** `pip install zpe-bio` (available on PyPI) closes the public package import surface. Repo-local `pytest` that exercises ECG ingest currently needs validation extras as well: `python -m pip install -e ".[dev,validation]"`. Contact hello@zer0pa.com for integration guidance.
 
 ## Tests and Verification
 
@@ -106,6 +106,7 @@ This repository is a private staging surface as of 2026-03-09. It is not a publi
 ```bash
 # Install from PyPI
 pip install zpe-bio
+python -c "import zpe_bio; print(zpe_bio.__file__)"
 ```
 
 Or install from source (development):
@@ -118,10 +119,11 @@ python -m zpe_bio --help
 python -m zpe_bio roundtrip --mode clinical --samples 250
 ```
 
-For ECG validation commands:
+Repo-local pytest and ECG validation commands require validation extras:
 
 ```bash
-python -m pip install -e ".[validation]"
+python -m pip install -e ".[dev,validation]"
+pytest
 python -m zpe_bio encode-ecg --record-id 100 --samples 1000 --json
 ```
 
@@ -173,7 +175,7 @@ python -m pip install -e ".[validation,bioeeg]"
 - `python/zpe_bio/`: Python package and CLI
 - `core/rust/`: Rust codec crate
 - `embedded/`: embedded reference builds
-- `tests/`: maintained pytest suite
+- `tests/`: repo-local pytest suite; ECG ingest checks require validation extras
 - `scripts/`: operator scripts and generators
 - `validation/results/`: committed proof and readiness artifacts
 - `validation/runbooks/`: execution runbooks
@@ -181,10 +183,10 @@ python -m pip install -e ".[validation,bioeeg]"
 
 ## Audit And Boundaries
 
-- Proof index: `PROOF_INDEX.md`
-- Short audit path: `AUDITOR_PLAYBOOK.md`
-- Public/operator limits: `PUBLIC_AUDIT_LIMITS.md`
-- Docs landing: `docs/README.md`
+- Proof index: `validation/results/README.md`
+- Short audit path: `validation/results/BENCHMARK_SUMMARY.md`
+- Public/operator limits: `docs/LEGAL_BOUNDARIES.md`
+- Docs landing: `docs/ARCHITECTURE.md`
 - Legal boundary summary: `docs/LEGAL_BOUNDARIES.md`
 
 ## Open Contradictions
