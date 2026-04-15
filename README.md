@@ -21,9 +21,9 @@ Part of the [Zer0pa](https://github.com/zer0-point-energy) family. Platform laye
 
 | Metric | Value | Baseline |
 |--------|-------|----------|
+| DETERMINISM | 3/3 | strict encode-decode replay |
 | MIT-BIH | 48/48 | — |
 | PTB-XL | 1.58× | 100/100 entries |
-| EDB_SNR | 52.47 | dB |
 | NSTDB_SNR | 60.49 | dB |
 
 > Source: [`validation/results/BENCHMARK_SUMMARY.md`](validation/results/BENCHMARK_SUMMARY.md) | [`validation/results/ptbxl/summary.json`](validation/results/ptbxl/summary.json) | [`validation/results/edb/summary.json`](validation/results/edb/summary.json) | [`validation/results/nstdb/summary.json`](validation/results/nstdb/summary.json)
