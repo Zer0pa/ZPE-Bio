@@ -2,7 +2,7 @@
 
 ## Scope
 - Bio repo: repository root (`.`)
-- IMC freeze source: `ZPE-IMC` `docs/family/` release contract surface
+- IMC freeze source: `ZPE-IMC` `docs/family/` coordination contract surface
 - Alignment mode: artifact-level only (no IMC runtime import coupling)
 
 ## Freeze Verification
@@ -26,8 +26,8 @@
 
 ## Known Divergences (Intentional)
 1. Bio release includes biosignal-specific command lanes not part of IMC CLI.
-2. Bio CLI demo outputs are not canonicalized against IMC total words; IMC vector remains authority for family-level compatibility.
+2. Bio CLI demo outputs are not canonicalized against IMC total words; IMC vector remains authority for cross-repo compatibility.
 3. Bio release engineering includes biomedical falsification gates beyond IMC release scope.
 
 ## Coordination Outcome
-Wave-1 alignment is **compatible at artifact contract level** with IMC freeze `wave1.0`, with canonical authority pinned to IMC vector (`844`) and divergences explicitly documented for non-breaking sector specialization.
+Wave-1 alignment is **compatible at artifact contract level** with IMC freeze `wave1.0`, with canonical authority pinned to IMC vector (`844`) and divergences explicitly documented for non-breaking biosignal specialization.

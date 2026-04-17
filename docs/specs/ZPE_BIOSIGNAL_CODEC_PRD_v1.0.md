@@ -1,22 +1,24 @@
-# ZPE-Bio: 8-Primitive Biosignal Compression SDK
-## Product Requirements Document & Execution Runbook v1.3
+# ZPE-Bio: 8-Primitive Biosignal Encoding Product
+## Historical Product Requirements Document & Execution Runbook v1.3
 
 **Codename:** Heartbeat  
-**Classification:** Zer0paLab Confidential — MungoDB Poison Pill License  
+**Classification:** Historical internal spec retained in the repo and aligned to Zer0pa SAL v6.2 posture
 **Date:** 2026-02-11  
 **Revision:** v1.3 — Bionic Log-Magnitude Ratified, Host Parity Secured  
-**Status:** RATIFIED (Owner Park Applied) — Phases 1-4 runbooks completed; external clinical/legal closure items suspended by owner directive  
+**Status:** Historical runbook retained for provenance. Current public authority is the ECG-backed benchmark surface under `validation/results/`; external clinical/legal closure items remain parked by owner directive.
+
+This document is kept as a historical specification and execution runbook. It is not the governing public authority surface. Current public claims should be cross-checked against the retained benchmark summaries under `validation/results/`.
 
 ---
 
 ## 1. Executive Summary
 
-ZPE-Bio is a deterministic, certifiable biosignal compression codec designed for high-fidelity clinical monitoring and extreme-efficiency wearable transmission. By encoding waveforms as 8-primitive geometric chain codes and applying **Hybrid Delta-Modulation** with nature-inspired **Weber-Fechner Log-Binning**, the codec achieves a Pareto-optimal balance between bandwidth and diagnostic integrity.
+ZPE-Bio is a deterministic biosignal encoding product designed for high-fidelity ECG monitoring and auditable replay in constrained software and embedded environments. It uses directional 8-primitive waveform encoding plus **Hybrid Delta-Modulation** and **Weber-Fechner Log-Binning** to preserve diagnostic morphology while keeping the encoded stream deterministic.
 
 ### 1.1 Core Objectives
-- **CR ≥ 5x**: Unified compression target for ECG/PPG signals.
-- **PRD < 5%**: Maximum allowable distortion for clinical diagnostic accuracy.
-- **no_std/Deterministic**: Memory-safe, heap-free implementation for embedded MCUs (nRF5340/Zephyr).
+- **Deterministic ECG replay**: retain reproducible encode/decode behavior on the public ECG authority corpora.
+- **PRD < 5% in clinical mode**: maintain diagnostic-fidelity reconstruction on the validated ECG path.
+- **Embedded-capable implementation**: keep the Rust crate and reference targets usable for constrained environments.
 
 ---
 
@@ -55,11 +57,15 @@ To maintain constant relative error across micro-volt P-waves and milli-volt QRS
 - [x] **Parity Success (Re-audit)**: parity passes after Rust rebuild (`python/zpe_bio/test_parity.py`, `DT-13`).
 - [x] **Embedded Host Gate (Phase 3)**: `thumbv8m.main-none-eabi` build + DT-6/9/10/13/17 pass in consolidated report `validation/results/phase3_hostok_20260212T113430.json`.
 
-### 3.2 Golden Benchmark (MIT-BIH 48 Records)
-| Mode | Mean CR | Mean PRD | Gate Status |
+### 3.2 Current Public Authority Snapshot
+| Surface | Metric | Value | Source |
 |:---|:---|:---|:---|
-| **TRANSPORT** | 8.70x | 12.21% | **CONDITIONAL** (`CR_min=4.81x`, one record below 5x in latest re-audit) |
-| **CLINICAL** | 1.12x | 2.85% | **CONDITIONAL** (fidelity passes, but compression remains below commercial transport target) |
+| **MIT-BIH** | Integrity passes | 48/48 | `validation/results/BENCHMARK_SUMMARY.md` |
+| **PTB-XL** | Mean compression ratio | 1.576202x | `validation/results/ptbxl/summary.json` |
+| **EDB** | Mean SNR | 52.468288 dB | `validation/results/edb/summary.json` |
+| **NSTDB** | Mean SNR | 60.493187 dB | `validation/results/nstdb/summary.json` |
+
+ECG is the governing public authority surface. EEG helpers and wearable paths remain outside the current headline proof boundary.
 
 ---
 

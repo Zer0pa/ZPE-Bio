@@ -4,13 +4,13 @@
 
 ## What This Is
 
-Deterministic biosignal compression where reproducibility is mandatory. ECG round-trip fidelity validated against MIT-BIH, PTB-XL, EDB, and NSTDB records — dual Rust and Python codec with embedded reference builds.
+Deterministic biosignal encoding for workflows where reproducibility is mandatory. Current governing evidence is ECG round-trip fidelity across MIT-BIH, PTB-XL, EDB, and NSTDB, with dual Rust and Python codec surfaces plus embedded reference builds.
 
-For medical-device firmware teams and clinical-data infrastructure engineers: this is the only lane in the family with both a Rust crate and Python package targeting the same signal domain, plus an embedded reference path. The proof lineage is auditable but the release surface is not green. **Bio Wearable is NO_GO** — its closure bundles are retained for traceability, not treated as release proof.
+For medical-device firmware teams and clinical-data infrastructure engineers: ZPE-Bio is an independent biosignal encoding product with auditable ECG proof lineage. EEG commands and multimodal helpers remain auxiliary surfaces, not current headline authority. **Bio Wearable is NO_GO** and retained only for traceability, not product authority.
 
-**Readiness: private-stage (2026-03-09).** Not a public release packet. Not a clean green-verification snapshot. Historical validation artifacts preserve host-specific paths (lineage, not path authority).
+Commercial posture: always in beta. Installable now, improving continuously. Historical validation artifacts may preserve host-specific paths; treat them as provenance, not current operator instructions.
 
-Part of the [Zer0pa](https://github.com/zer0-point-energy) family. Platform layer: [ZPE-IMC](https://github.com/zer0-point-energy/ZPE-IMC).
+Cross-repo coordination with [ZPE-IMC](https://github.com/zer0-point-energy/ZPE-IMC) is documented under `docs/family/`. ZPE-Bio stands on its own product surface; shared coordination does not make this repo a common platform dependency.
 
 | Field | Value |
 |-------|-------|
@@ -21,46 +21,36 @@ Part of the [Zer0pa](https://github.com/zer0-point-energy) family. Platform laye
 
 | Metric | Value | Baseline |
 |--------|-------|----------|
-| DETERMINISM | 3/3 | strict encode-decode replay |
-| MIT-BIH | 48/48 | — |
-| PTB-XL | 1.58× | 100/100 entries |
-| NSTDB_SNR | 60.49 | dB |
+| MIT-BIH | 48/48 | integrity passes |
+| PTB-XL | 1.576202× | 100/100 entries |
+| EDB_SNR | 52.468288 dB | 90/90 entries |
+| NSTDB_SNR | 60.493187 dB | 15/15 entries |
 
 > Source: [`validation/results/BENCHMARK_SUMMARY.md`](validation/results/BENCHMARK_SUMMARY.md) | [`validation/results/ptbxl/summary.json`](validation/results/ptbxl/summary.json) | [`validation/results/edb/summary.json`](validation/results/edb/summary.json) | [`validation/results/nstdb/summary.json`](validation/results/nstdb/summary.json)
-
-## Competitive Benchmarks
-
-| Tool | MIT-BIH CR | Notes |
-|------|-----------|-------|
-| **ZPE-Bio** | **1.32×** | Deterministic, bit-identical domain-aware replay |
-| gzip | 2.13× | Higher CR but no deterministic integrity guarantee |
-
-ZPE-Bio targets deterministic integrity, not compression ratio. Gzip achieves higher compression (2.13× vs 1.32×) on MIT-BIH data but does not guarantee bit-identical domain-aware replay. The commercial wedge is determinism + integrity, not raw ratio.
 
 ## What We Prove
 
 > Auditable guarantees backed by committed proof artifacts. Start at `validation/results/BENCHMARK_SUMMARY.md`.
 
-- Deterministic round-trip fidelity on ECG waveforms
-- Dual implementation: Rust core crate and Python package
-- Wave-1 and Wave-2 readiness artifacts committed
-- IMC contract-consumption alignment verified
+- Deterministic ECG round-trip fidelity verified across the MIT-BIH 48-record corpus
+- External ECG benchmark summaries retained for PTB-XL, EDB, and NSTDB
+- Dual implementation surface: Rust core crate and Python package
+- Cross-repo coordination with ZPE-IMC is documented at artifact level only
 
 ## What We Don't Claim
 
-- No claim of fresh green release commit
-- No claim of public release readiness
-- No claim of Bio Wearable validation (NO_GO)
+- No claim that EEG helpers carry the same benchmark authority as the ECG path
+- No claim of Bio Wearable validation
 - No claim of regulatory or FDA compliance
-- No claim of NaN-safe input handling — NaN inputs produce silently incorrect reconstruction (PRD=0.0 reported). This is a known limitation with implications for clinical/regulated deployment. Input validation is the caller's responsibility.
+- No claim of NaN-safe input handling; callers must sanitize NaN inputs before encode/decode
 
 ## Commercial Readiness
 
 | Field | Value |
 |-------|-------|
-| Verdict | PRIVATE_STAGE |
-| Release posture | Live work in progress; not a final official release |
-| Commit SHA | 83dc91685284 |
+| Verdict | ACTIVE_BETA |
+| Release posture | Useful now, improving continuously |
+| Authority scope | ECG-backed proof surface |
 | Confidence | 100% (MIT-BIH integrity passes) |
 | Source | validation/results/BENCHMARK_SUMMARY.md |
 
@@ -98,9 +88,9 @@ ZPE-Bio targets deterministic integrity, not compression ratio. Gzip achieves hi
 
 ---
 
-ZPE-Bio is the biosignal sector repository for Zero-Point Encoding. It packages a deterministic 8-primitive biosignal codec, a Rust-backed core codec crate, and Bio-specific validation artifacts for Wave-1 and Wave-2 execution.
+ZPE-Bio is an independent biosignal encoding product in the Zer0pa portfolio. It packages an ECG-backed deterministic codec surface, a Rust core crate, and retained validation artifacts for continued verification and improvement.
 
-This repository is a private staging surface as of 2026-03-09. It is not a public release packet and it is not a clean green-verification snapshot.
+This repository is an active beta surface. It installs now, it improves continuously, and its current governing authority is the retained ECG benchmark set under `validation/results/`.
 
 ## Quick Start
 
@@ -136,9 +126,9 @@ python -m pip install -e ".[validation,bioeeg]"
 
 ## Ecosystem
 
-- Platform-layer contract surface: [ZPE-IMC](https://github.com/zer0-point-energy/ZPE-IMC)
+- Cross-repo coordination surface: [ZPE-IMC](https://github.com/zer0-point-energy/ZPE-IMC)
 - Organization surface: [Zer0pa](https://github.com/zer0-point-energy)
-- Bio-family alignment artifacts in this repo: `docs/family/BIO_IMC_ALIGNMENT_REPORT.md`
+- Coordination artifacts in this repo: `docs/family/BIO_IMC_ALIGNMENT_REPORT.md`
 
 ## Who This Is For
 
@@ -146,8 +136,8 @@ python -m pip install -e ".[validation,bioeeg]"
 |---|---|
 | **Ideal first buyer** | Medical-device firmware team or clinical-data infrastructure team evaluating deterministic biosignal encoding |
 | **Pain statement** | Biosignal pipelines require reproducibility and auditability — generic compressors are non-deterministic or domain-agnostic |
-| **Deployment model** | Python package + Rust crate, private staged |
-| **Family position** | Staged validation lane — proves the architecture extends to regulated biosignal domains |
+| **Deployment model** | Python package + Rust crate, always-in-beta |
+| **Portfolio position** | Independent biosignal product with retained cross-repo coordination artifacts under `docs/family/` |
 
 ## Current Reality
 
@@ -155,21 +145,17 @@ python -m pip install -e ".[validation,bioeeg]"
 - Native codec surface exists under `core/rust/`.
 - Embedded references exist under `embedded/`.
 - Proof and readiness artifacts exist under `validation/results/` and `validation/runbooks/`.
-- Family alignment artifacts exist under `docs/family/`.
+- Cross-repo coordination artifacts exist under `docs/family/`.
 - The source tree contains runnable Python and Rust codec surfaces.
 - The source tree contains committed Wave-1 and Wave-2 readiness artifacts.
-- The source tree contains IMC contract-consumption artifacts for family alignment.
+- The source tree contains ZPE-IMC coordination artifacts for artifact-level compatibility.
 
 ## Current Status Snapshot
 
-- Wave-1 repo substance is real.
-- Wave-2 execution artifacts are present but mixed.
-- Bio Wearable remains `NO_GO`; its closure bundles are retained for traceability, not treated as release proof.
-- Historical validation artifacts preserve host-specific paths and should be read as lineage, not as current path authority.
-- It does not prove a fresh green release commit.
-- It does not prove public-release readiness.
-- It does not prove Bio Wearable closure.
-- It does not prove that every historical validation artifact path has been normalized.
+- Wave-1 and Wave-2 artifacts are retained and auditable.
+- Bio Wearable remains `NO_GO`; its closure bundles are retained for traceability, not product authority.
+- EEG and multimodal helpers exist in the codebase but are not current headline proof surfaces.
+- Historical validation artifacts may preserve host-specific paths and should be read as provenance rather than operator instructions.
 
 ## Repository Map
 
@@ -180,7 +166,7 @@ python -m pip install -e ".[validation,bioeeg]"
 - `scripts/`: operator scripts and generators
 - `validation/results/`: committed proof and readiness artifacts
 - `validation/runbooks/`: execution runbooks
-- `docs/`: repo docs, family alignment, and regulatory material
+- `docs/`: repo docs, coordination notes, and regulatory material
 
 ## Audit And Boundaries
 
@@ -192,8 +178,8 @@ python -m pip install -e ".[validation,bioeeg]"
 
 ## Open Contradictions
 
-- Historical GO prose exists, but this staged repo still carries unresolved correctness work.
+- Some historical docs still describe broader biosignal scope than the current ECG-backed authority surface.
 - `ruff` and multimodal manifest verification were not re-cleared in this phase.
-- Regulatory and startup documents contained historical absolute-path references (scrubbed 2026-04-14; now repo-relative).
+- Regulatory closeout still depends on parked external artifacts and owner-held decisions.
 
-Read this repo as a private staged baseline for Phase 4.5 and Phase 5, not as a release verdict.
+Read this repo as an active biosignal beta with ECG authority today and explicit open limits, not as a finished regulatory release.

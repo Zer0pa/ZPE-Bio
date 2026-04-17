@@ -1,13 +1,13 @@
 # Architecture
 
-This document maps the current ZPE-Bio staged repo structure.
+This document maps the current ZPE-Bio product surface.
 
 ## Runtime Surface
 
-- `python/zpe_bio/codec.py`: reference biosignal codec
-- `python/zpe_bio/cli.py`: CLI entry point for roundtrip, ECG, EEG, benchmark, multimodal, and chemosense commands
-- `python/zpe_bio/bio_wave2.py`: Wave-2 command helpers and dataset/error wiring
-- `python/zpe_bio/multimodal/`: smell, taste, touch, mental, and diagram lane helpers
+- `python/zpe_bio/codec.py`: governing ECG codec surface; directional delta quantisation and log-magnitude encoding live here
+- `python/zpe_bio/cli.py`: CLI entry point for roundtrip, ECG, benchmark, and auxiliary EEG/multimodal commands
+- `python/zpe_bio/bio_wave2.py`: ECG ingest helpers plus auxiliary EEG, chemosense, and multimodal wiring
+- `python/zpe_bio/multimodal/`: auxiliary smell, taste, touch, mental, and diagram helpers not used as the current headline authority surface
 
 ## Native Surface
 
@@ -25,6 +25,8 @@ This document maps the current ZPE-Bio staged repo structure.
 - `validation/runbooks/`: execution runbooks
 - `validation/benchmarks/`: benchmark runners
 - `validation/destruct_tests/`: destructive/falsification checks
+
+Current retained public authority is ECG. EEG helpers and multimodal commands are part of the repo surface, but they are not benchmarked to the same level as the ECG path.
 
 ## Data Surface
 

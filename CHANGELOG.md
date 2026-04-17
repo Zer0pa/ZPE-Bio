@@ -2,7 +2,7 @@
 
 All notable repo-surface changes to ZPE-Bio are documented here.
 
-This changelog tracks the staged repo surface, not a public release line.
+This changelog tracks the active beta product surface, not a boxed release train.
 
 ## Unreleased
 
@@ -15,7 +15,7 @@ This changelog tracks the staged repo surface, not a public release line.
 
 ### Changed
 
-- Packaging metadata now points to the root README and declared dual license
+- Packaging metadata now points to the root README and declared `LicenseRef-Zer0pa-SAL-6.2`
 - Active front-door docs now use repo-relative path language instead of machine-specific roots
 - Local-only dataset directories are excluded from staged git scope
 
