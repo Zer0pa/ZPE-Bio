@@ -48,9 +48,8 @@ Cross-repo coordination with [ZPE-IMC](https://github.com/zer0-point-energy/ZPE-
 
 | Field | Value |
 |-------|-------|
-| Verdict | ACTIVE_BETA |
-| Release posture | Useful now, improving continuously |
-| Authority scope | ECG-backed proof surface |
+| Verdict | STAGED |
+| Commit SHA | d752e5ce541d |
 | Confidence | 100% (MIT-BIH integrity passes) |
 | Source | validation/results/BENCHMARK_SUMMARY.md |
 
