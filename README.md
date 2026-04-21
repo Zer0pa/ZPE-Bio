@@ -58,13 +58,10 @@ ZPE-Bio targets deterministic integrity, not compression ratio. Gzip achieves hi
 
 | Field | Value |
 |-------|-------|
-| Verdict | PRIVATE_STAGE |
-| Release posture | Live work in progress; not a final official release |
+| Verdict | STAGED |
 | Commit SHA | 83dc91685284 |
 | Confidence | 100% (MIT-BIH integrity passes) |
 | Source | validation/results/BENCHMARK_SUMMARY.md |
-
-> **Evaluators:** `pip install zpe-bio` (available on PyPI) closes the public package import surface. Repo-local `pytest` that exercises ECG ingest currently needs validation extras as well: `python -m pip install -e ".[dev,validation]"`. Contact hello@zer0pa.com for integration guidance.
 
 ## Tests and Verification
 
