@@ -21,6 +21,6 @@
     "NaN-safe input handling not guaranteed — NaN inputs produce silently incorrect reconstruction (PRD=0.0 reported); input validation is the caller's responsibility"
   ],
   "family_position": "Validates ZPE encoding generality to biosignal domains (ECG, EEG). Staged/validation tier alongside Neuro, Mocap, and Prosody.",
-  "license": "LicenseRef-Zer0pa-SAL-6.2",
+  "license": "LicenseRef-Zer0pa-SAL-7.0",
   "contact": "hello@zer0pa.com"
 }

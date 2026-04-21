@@ -3,6 +3,7 @@ name = "zpe-bio-nrf5340"
 version = "0.1.0"
 edition = "2021"
 
+license = "LicenseRef-Zer0pa-SAL-7.0"
 [dependencies]
 zpe-bio-codec = { path = "../../core/rust", default-features = false, features = ["embedded"] }
 cortex-m = { version = "0.7", features = ["critical-section-single-core"] }
