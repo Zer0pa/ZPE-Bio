@@ -4,9 +4,9 @@ This note is a repo-surface summary only. The root license file is the legal sou
 
 ## License Surface
 
-- Repository license: `../LICENSE` (Zer0pa Source-Available License v6.2)
-- SPDX: `LicenseRef-Zer0pa-SAL-6.2`
-- Python metadata and Rust crate metadata both declare the repo as `LicenseRef-Zer0pa-SAL-6.2`
+- Repository license: `../LICENSE` (Zer0pa Source-Available License v7.0)
+- SPDX: `LicenseRef-Zer0pa-SAL-7.0`
+- Python metadata and Rust crate metadata both declare the repo as `LicenseRef-Zer0pa-SAL-7.0`
 
 ## Claim Boundaries
 
