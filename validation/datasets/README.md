@@ -8,8 +8,4 @@ This directory mixes staged and local-only dataset mirrors.
 
 ## Local-Only In This Phase
 
-- `eeg/`
-- `sisfall/`
-- `wearable_device_dataset/`
-
-These larger mirrors remain local-only for staging discipline and will need explicit reacquisition or operator attachment in later verification phases.
+Additional EEG, SisFall, and wearable-device mirrors remain local-only for staging discipline and are not committed in this clone. They will need explicit reacquisition or operator attachment in later verification phases.

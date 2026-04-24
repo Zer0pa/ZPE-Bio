@@ -16,7 +16,7 @@ This document maps the current ZPE-Bio staged repo structure.
 ## Embedded Surface
 
 - `embedded/nrf5340/`: embedded reference target
-- `embedded/stm32wb/`: embedded reference target material
+- No secondary embedded target is staged in this checkout.
 
 ## Validation Surface
 
@@ -29,8 +29,8 @@ This document maps the current ZPE-Bio staged repo structure.
 ## Data Surface
 
 - `validation/datasets/mitdb/`: staged ECG dataset mirror used by Bio Wave-1 and Wave-2 ECG flows
-- `validation/datasets/eeg/`, `validation/datasets/sisfall/`, `validation/datasets/wearable_device_dataset/`: local-only mirrors intentionally excluded from staged git scope
+- Additional EEG, SisFall, and wearable dataset mirrors are local-only in this phase and are intentionally excluded from the staged git scope.
 
 ## Repo-Boundary Rule
 
-The canonical repo root is this inner `zpe-bio/` directory only. Nothing in the outer workspace wrapper is part of the staged GitHub repo.
+The canonical repo root is this checkout. Nothing in the outer workspace wrapper is part of the staged GitHub repo.

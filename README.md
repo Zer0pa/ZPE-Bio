@@ -59,7 +59,7 @@ ZPE-Bio targets deterministic integrity, not compression ratio. Gzip achieves hi
 | Field | Value |
 |-------|-------|
 | Verdict | STAGED |
-| Commit SHA | 83dc91685284 |
+| Commit SHA | 74999e5d24b1 |
 | Confidence | 100% (MIT-BIH integrity passes) |
 | Source | validation/results/BENCHMARK_SUMMARY.md |
 

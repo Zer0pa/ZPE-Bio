@@ -1,0 +1,25 @@
+{
+  "title": "ZPE-Bio",
+  "description": "Deterministic biosignal compression where reproducibility is mandatory. ECG round-trip fidelity validated against MIT-BIH, PTB-XL, EDB, and NSTDB records — dual Rust and Python codec with embedded reference builds.",
+  "creators": [
+    {
+      "name": "Zer0pa (Pty) Ltd"
+    }
+  ],
+  "keywords": [
+    "biosignal compression",
+    "ECG",
+    "deterministic codec",
+    "medical waveform",
+    "PhysioNet"
+  ],
+  "license": "LicenseRef-Zer0pa-SAL-7.0",
+  "upload_type": "software",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Zer0pa/ZPE-Bio",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
