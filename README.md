@@ -6,11 +6,11 @@
 
 Deterministic biosignal compression where reproducibility is mandatory. ECG round-trip fidelity validated against MIT-BIH, PTB-XL, EDB, and NSTDB records — dual Rust and Python codec with embedded reference builds.
 
-For medical-device firmware teams and clinical-data infrastructure engineers: this is the only lane in the family with both a Rust crate and Python package targeting the same signal domain, plus an embedded reference path. The proof lineage is auditable but the release surface is not green. **Bio Wearable is NO_GO** — its closure bundles are retained for traceability, not treated as release proof.
+For medical-device firmware teams and clinical-data infrastructure engineers, this repo pairs a Rust crate and Python package against the same biosignal domain, with embedded reference material and auditable proof lineage. The proof lineage is auditable but the release surface is not green. **Bio Wearable is NO_GO** — its closure bundles are retained for traceability, not treated as release proof.
 
-**Readiness: active development (2026-03-09).** Always-in-beta; validation artifacts and codec surfaces are continuously improved. Historical validation artifacts preserve host-specific paths (lineage, not path authority).
+Always-in-beta; validation artifacts and codec surfaces are continuously improved. Historical validation artifacts preserve host-specific paths (lineage, not path authority).
 
-Part of the [Zer0pa](https://github.com/zer0-point-energy) family. Platform layer: [ZPE-IMC](https://github.com/zer0-point-energy/ZPE-IMC).
+ZPE-Bio is an independent biosignal codec repo within the Zer0pa portfolio.
 
 | Field | Value |
 |-------|-------|
@@ -59,7 +59,7 @@ ZPE-Bio targets deterministic integrity, not compression ratio. Gzip achieves hi
 | Field | Value |
 |-------|-------|
 | Verdict | STAGED |
-| Commit SHA | 83dc91685284 |
+| Commit SHA | 74999e5d24b1 |
 | Confidence | 100% (MIT-BIH integrity passes) |
 | Source | validation/results/BENCHMARK_SUMMARY.md |
 
@@ -95,9 +95,9 @@ ZPE-Bio targets deterministic integrity, not compression ratio. Gzip achieves hi
 
 ---
 
-ZPE-Bio is the biosignal sector repository for Zero-Point Encoding. It packages a deterministic 8-primitive biosignal codec, a Rust-backed core codec crate, and Bio-specific validation artifacts for Wave-1 and Wave-2 execution.
+ZPE-Bio is an independent biosignal codec repo. It packages deterministic ECG-oriented codec surfaces, a Rust-backed core crate, and staged Bio validation artifacts tied to committed ECG proof work.
 
-ZPE-Bio is an active development surface as of 2026-03-09. Codec and validation surfaces are continuously evolving toward full release readiness.
+The repo is useful now for staged ECG verification, but it is not itself a public-release verdict and does not override the Bio Wearable `NO_GO` gate.
 
 ## Quick Start
 
@@ -143,7 +143,7 @@ python -m pip install -e ".[validation,bioeeg]"
 |---|---|
 | **Ideal first buyer** | Medical-device firmware team or clinical-data infrastructure team evaluating deterministic biosignal encoding |
 | **Pain statement** | Biosignal pipelines require reproducibility and auditability — generic compressors are non-deterministic or domain-agnostic |
-| **Deployment model** | Python package + Rust crate, private staged |
+| **Deployment model** | Python package + Rust crate, public repo with staged release surface |
 | **Family position** | Staged validation lane — proves the architecture extends to regulated biosignal domains |
 
 ## Current Reality
@@ -193,4 +193,4 @@ python -m pip install -e ".[validation,bioeeg]"
 - `ruff` and multimodal manifest verification were not re-cleared in this phase.
 - Regulatory and startup documents contained historical absolute-path references (scrubbed 2026-04-14; now repo-relative).
 
-Read this repo as a private staged baseline for Phase 4.5 and Phase 5, not as a release verdict.
+Read this repo as a staged baseline for Phase 4.5 and Phase 5, not as a release verdict.

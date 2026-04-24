@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: >-
+  If you use ZPE-Bio, please cite this repository record.
+type: software
+title: "ZPE-Bio: Deterministic biosignal codec with staged ECG proof artifacts"
+authors:
+  - name: "Zer0pa (Pty) Ltd"
+    email: architects@zer0pa.ai
+version: 0.2.0
+repository-code: https://github.com/Zer0pa/ZPE-Bio
+url: https://github.com/Zer0pa/ZPE-Bio
+abstract: >-
+  ZPE-Bio is a deterministic biosignal codec repo focused on staged ECG proof,
+  auditable replay, and paired Python and Rust surfaces for the same waveform
+  domain. The public proof surface is ECG-focused and does not treat the Bio
+  Wearable gate as closed.
+keywords:
+  - biosignal compression
+  - ECG
+  - deterministic codec
+  - medical waveform
+  - PhysioNet
