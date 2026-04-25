@@ -12,15 +12,11 @@ Outputs are written to:
 from __future__ import annotations
 
 import argparse
-import csv
 import gzip
 import hashlib
 import json
 import lzma
 import math
-import os
-import re
-import subprocess
 import urllib.request
 from dataclasses import dataclass
 from datetime import datetime, timezone

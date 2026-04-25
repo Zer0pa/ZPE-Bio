@@ -6,23 +6,19 @@ import argparse
 import csv
 import json
 import math
-import sys
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 from statistics import mean, median
 from typing import Any
 
-REPO_ROOT = Path(__file__).resolve().parents[1]
-PYTHON_DIR = REPO_ROOT / "python"
-if str(PYTHON_DIR) not in sys.path:
-    sys.path.insert(0, str(PYTHON_DIR))
-
 import numpy as np
 
 from zpe_bio.bio_wave2 import ecg_roundtrip_metrics, load_mitbih_record
 from zpe_bio.codec import CodecMode
 from zpe_bio.wearable_wave import snr_db
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
 
 DEFAULT_RESULTS_DIR = REPO_ROOT / "validation" / "results"
 DEFAULT_RECORDS_DIR = DEFAULT_RESULTS_DIR / "mitdb_python_only"

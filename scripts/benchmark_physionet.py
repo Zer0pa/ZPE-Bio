@@ -6,23 +6,19 @@ import argparse
 import contextlib
 import io
 import json
-import sys
 import time
 from dataclasses import dataclass
 from pathlib import Path
 from statistics import mean, median
 from typing import Any
 
-REPO_ROOT = Path(__file__).resolve().parents[1]
-PYTHON_DIR = REPO_ROOT / "python"
-if str(PYTHON_DIR) not in sys.path:
-    sys.path.insert(0, str(PYTHON_DIR))
-
 import numpy as np
 
 from zpe_bio.bio_wave2 import encode_eeg_to_mental
 from zpe_bio.codec import CodecMode
 from zpe_bio.wearable_wave import roundtrip_metrics
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
 
 
 @dataclass(frozen=True)

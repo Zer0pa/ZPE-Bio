@@ -1,17 +1,3 @@
 include pyproject.toml
 
 graft python/zpe_bio
-
-prune tests
-prune validation
-prune scripts
-prune notebooks
-prune embedded
-prune core
-prune docs/regulatory/evidence
-
-global-exclude __pycache__
-global-exclude *.py[cod]
-global-exclude *.so
-global-exclude *.dylib
-global-exclude *.dll
