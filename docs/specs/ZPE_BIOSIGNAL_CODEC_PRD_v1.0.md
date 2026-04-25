@@ -1,4 +1,4 @@
-# ZPE-Bio: 8-Primitive Biosignal Compression SDK
+# ZPE-Bio: Deterministic Biosignal Compression SDK
 ## Product Requirements Document & Execution Runbook v1.3
 
 **Codename:** Heartbeat  
@@ -11,10 +11,10 @@
 
 ## 1. Executive Summary
 
-ZPE-Bio is a deterministic, certifiable biosignal compression codec designed for high-fidelity clinical monitoring and extreme-efficiency wearable transmission. By encoding waveforms as 8-primitive geometric chain codes and applying **Hybrid Delta-Modulation** with nature-inspired **Weber-Fechner Log-Binning**, the codec achieves a Pareto-optimal balance between bandwidth and diagnostic integrity.
+ZPE-Bio is a deterministic, certifiable biosignal compression codec designed for high-fidelity clinical monitoring and extreme-efficiency wearable transmission. By encoding waveforms as deterministic geometric chain codes and applying **Hybrid Delta-Modulation** with nature-inspired **Weber-Fechner Log-Binning**, the codec achieves a Pareto-optimal balance between bandwidth and diagnostic integrity.
 
 ### 1.1 Core Objectives
-- **CR ≥ 5x**: Unified compression target for ECG/PPG signals.
+- **CR ≥ 5x**: ECG/PPG compression target.
 - **PRD < 5%**: Maximum allowable distortion for clinical diagnostic accuracy.
 - **no_std/Deterministic**: Memory-safe, heap-free implementation for embedded MCUs (nRF5340/Zephyr).
 

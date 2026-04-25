@@ -1,5 +1,5 @@
 # DOC-001: Software Development Plan (SDP)
-## ZPE-Bio 8-Primitive Biosignal Compression Codec
+## ZPE-Bio Deterministic Biosignal Compression Codec
 
 **Document ID:** DOC-001  
 **Version:** 1.0  
@@ -9,7 +9,7 @@
 
 ## 1. Purpose
 
-This document defines the software development process and controls for ZPE-Bio, an 8-primitive biosignal compression codec targeting host and embedded medical-adjacent workflows.
+This document defines the software development process and controls for ZPE-Bio, a deterministic biosignal compression codec targeting host and embedded medical-adjacent workflows.
 
 ## 2. Scope
 
