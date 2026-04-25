@@ -1,0 +1,1101 @@
+{
+  "wave": "Wave-CB",
+  "date": "2026-04-25",
+  "lane": "ZPE-Bio",
+  "comparators": [
+    "gzip",
+    "zlib",
+    "zstd"
+  ],
+  "data_source": "validation/datasets/mitdb/ (committed in repo)",
+  "n_records": 48,
+  "framing_note": "ZPE-Bio is a fidelity-bounded-lossy ECG codec (PRD <= 2.32% on MIT-BIH per validation/results/mitdb_python_only/mitdb_aggregate.json). gzip / zlib / zstd are general-purpose lossless byte compressors run on raw int16 .dat bytes. Direct compression-ratio comparison is not apples-to-apples: ZPE-Bio's CR is intrinsically bounded by its clinical fidelity contract; lossless compressors achieve whatever CR the byte distribution permits at zero error. The honest comparison reports both CRs and the fidelity contract, not a single 'winner'. Additionally, ZPE-Bio per-record CRs come from the lane's own pipeline over a 10000-sample clinical-mode window per record, while lossless CRs here are computed over the full raw .dat byte stream.",
+  "per_record": [
+    {
+      "record_id": "100",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1453920,
+        "cr": 1.341202,
+        "prd_pct": 1.809451,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1151796,
+        "cr": 1.6930081368575685
+      },
+      "zlib": {
+        "compressed_bytes": 1151784,
+        "cr": 1.6930257756662708
+      },
+      "zstd": {
+        "compressed_bytes": 1149878,
+        "cr": 1.6958320795771378
+      }
+    },
+    {
+      "record_id": "101",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1481415,
+        "cr": 1.316309,
+        "prd_pct": 1.38712,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1147225,
+        "cr": 1.6997537536228726
+      },
+      "zlib": {
+        "compressed_bytes": 1147213,
+        "cr": 1.699771533272374
+      },
+      "zstd": {
+        "compressed_bytes": 1149922,
+        "cr": 1.6957671911660095
+      }
+    },
+    {
+      "record_id": "102",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1487362,
+        "cr": 1.311046,
+        "prd_pct": 1.567453,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1474675,
+        "cr": 1.3223252581077187
+      },
+      "zlib": {
+        "compressed_bytes": 1474663,
+        "cr": 1.322336018466592
+      },
+      "zstd": {
+        "compressed_bytes": 1483608,
+        "cr": 1.3143633628289952
+      }
+    },
+    {
+      "record_id": "103",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1444072,
+        "cr": 1.350348,
+        "prd_pct": 1.143388,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1349918,
+        "cr": 1.4445321863994702
+      },
+      "zlib": {
+        "compressed_bytes": 1349906,
+        "cr": 1.444545027579698
+      },
+      "zstd": {
+        "compressed_bytes": 1382062,
+        "cr": 1.4109352547136091
+      }
+    },
+    {
+      "record_id": "104",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1483755,
+        "cr": 1.314233,
+        "prd_pct": 1.054132,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1356784,
+        "cr": 1.437222137053503
+      },
+      "zlib": {
+        "compressed_bytes": 1356772,
+        "cr": 1.4372348485965218
+      },
+      "zstd": {
+        "compressed_bytes": 1376573,
+        "cr": 1.4165612720865512
+      }
+    },
+    {
+      "record_id": "105",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1476443,
+        "cr": 1.320742,
+        "prd_pct": 0.959176,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1428649,
+        "cr": 1.3649258845244703
+      },
+      "zlib": {
+        "compressed_bytes": 1428637,
+        "cr": 1.3649373493756636
+      },
+      "zstd": {
+        "compressed_bytes": 1452955,
+        "cr": 1.3420924942616943
+      }
+    },
+    {
+      "record_id": "106",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1498087,
+        "cr": 1.30166,
+        "prd_pct": 1.020311,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1396914,
+        "cr": 1.3959341806295877
+      },
+      "zlib": {
+        "compressed_bytes": 1396902,
+        "cr": 1.3959461723155955
+      },
+      "zstd": {
+        "compressed_bytes": 1419666,
+        "cr": 1.3735625139997718
+      }
+    },
+    {
+      "record_id": "107",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1470788,
+        "cr": 1.32582,
+        "prd_pct": 0.347089,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1628543,
+        "cr": 1.1973893228487058
+      },
+      "zlib": {
+        "compressed_bytes": 1628531,
+        "cr": 1.1973981459364298
+      },
+      "zstd": {
+        "compressed_bytes": 1660165,
+        "cr": 1.1745820445558122
+      }
+    },
+    {
+      "record_id": "108",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1500817,
+        "cr": 1.299292,
+        "prd_pct": 1.647754,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1490132,
+        "cr": 1.308608901761723
+      },
+      "zlib": {
+        "compressed_bytes": 1490120,
+        "cr": 1.308619440045097
+      },
+      "zstd": {
+        "compressed_bytes": 1528183,
+        "cr": 1.2760251880828408
+      }
+    },
+    {
+      "record_id": "109",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1486486,
+        "cr": 1.311819,
+        "prd_pct": 0.737318,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1429131,
+        "cr": 1.364465538848433
+      },
+      "zlib": {
+        "compressed_bytes": 1429119,
+        "cr": 1.3644769959674456
+      },
+      "zstd": {
+        "compressed_bytes": 1445170,
+        "cr": 1.3493222250669472
+      }
+    },
+    {
+      "record_id": "111",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1517100,
+        "cr": 1.285347,
+        "prd_pct": 1.398589,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1447114,
+        "cr": 1.3475095949593467
+      },
+      "zlib": {
+        "compressed_bytes": 1447102,
+        "cr": 1.3475207690957514
+      },
+      "zstd": {
+        "compressed_bytes": 1477019,
+        "cr": 1.3202267540227985
+      }
+    },
+    {
+      "record_id": "112",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1446120,
+        "cr": 1.348436,
+        "prd_pct": 1.557858,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1246817,
+        "cr": 1.5639825251019195
+      },
+      "zlib": {
+        "compressed_bytes": 1246805,
+        "cr": 1.5639975778088795
+      },
+      "zstd": {
+        "compressed_bytes": 1245981,
+        "cr": 1.5650318905344462
+      }
+    },
+    {
+      "record_id": "113",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1484437,
+        "cr": 1.313629,
+        "prd_pct": 0.848282,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1374819,
+        "cr": 1.4183685270570163
+      },
+      "zlib": {
+        "compressed_bytes": 1374807,
+        "cr": 1.4183809072837132
+      },
+      "zstd": {
+        "compressed_bytes": 1420903,
+        "cr": 1.3723667273557731
+      }
+    },
+    {
+      "record_id": "114",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1514468,
+        "cr": 1.287581,
+        "prd_pct": 2.239665,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1356826,
+        "cr": 1.4371776484236003
+      },
+      "zlib": {
+        "compressed_bytes": 1356814,
+        "cr": 1.4371903591796664
+      },
+      "zstd": {
+        "compressed_bytes": 1380262,
+        "cr": 1.4127752557123212
+      }
+    },
+    {
+      "record_id": "115",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1432275,
+        "cr": 1.36147,
+        "prd_pct": 1.212591,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1284594,
+        "cr": 1.5179893413794554
+      },
+      "zlib": {
+        "compressed_bytes": 1284582,
+        "cr": 1.5180035217681704
+      },
+      "zstd": {
+        "compressed_bytes": 1309796,
+        "cr": 1.4887814590974473
+      }
+    },
+    {
+      "record_id": "116",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1428668,
+        "cr": 1.364908,
+        "prd_pct": 0.792468,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1439539,
+        "cr": 1.3546003269102123
+      },
+      "zlib": {
+        "compressed_bytes": 1439527,
+        "cr": 1.354611618955393
+      },
+      "zstd": {
+        "compressed_bytes": 1451360,
+        "cr": 1.3435674126336676
+      }
+    },
+    {
+      "record_id": "117",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1482292,
+        "cr": 1.31553,
+        "prd_pct": 1.236195,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1330728,
+        "cr": 1.4653633199271376
+      },
+      "zlib": {
+        "compressed_bytes": 1330716,
+        "cr": 1.46537653413651
+      },
+      "zstd": {
+        "compressed_bytes": 1361352,
+        "cr": 1.4323995557357685
+      }
+    },
+    {
+      "record_id": "118",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1505302,
+        "cr": 1.295421,
+        "prd_pct": 0.878336,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1492573,
+        "cr": 1.3064687623318927
+      },
+      "zlib": {
+        "compressed_bytes": 1492561,
+        "cr": 1.3064792661740459
+      },
+      "zstd": {
+        "compressed_bytes": 1498034,
+        "cr": 1.3017061027987349
+      }
+    },
+    {
+      "record_id": "119",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1485023,
+        "cr": 1.313111,
+        "prd_pct": 0.661834,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1395466,
+        "cr": 1.3973826664354416
+      },
+      "zlib": {
+        "compressed_bytes": 1395454,
+        "cr": 1.397394683020723
+      },
+      "zstd": {
+        "compressed_bytes": 1406253,
+        "cr": 1.3866637084507554
+      }
+    },
+    {
+      "record_id": "121",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1465718,
+        "cr": 1.330406,
+        "prd_pct": 0.818748,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1331034,
+        "cr": 1.4650264380924904
+      },
+      "zlib": {
+        "compressed_bytes": 1331022,
+        "cr": 1.465039646226734
+      },
+      "zstd": {
+        "compressed_bytes": 1351972,
+        "cr": 1.4423375632039717
+      }
+    },
+    {
+      "record_id": "122",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1523924,
+        "cr": 1.279591,
+        "prd_pct": 0.940649,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1389683,
+        "cr": 1.4031977076786577
+      },
+      "zlib": {
+        "compressed_bytes": 1389671,
+        "cr": 1.4032098244836368
+      },
+      "zstd": {
+        "compressed_bytes": 1386044,
+        "cr": 1.4068817440138985
+      }
+    },
+    {
+      "record_id": "123",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1482097,
+        "cr": 1.315703,
+        "prd_pct": 1.166987,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1263956,
+        "cr": 1.5427752231881489
+      },
+      "zlib": {
+        "compressed_bytes": 1263944,
+        "cr": 1.5427898704372978
+      },
+      "zstd": {
+        "compressed_bytes": 1271302,
+        "cr": 1.5338605618491907
+      }
+    },
+    {
+      "record_id": "124",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1442317,
+        "cr": 1.351991,
+        "prd_pct": 0.883793,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1374909,
+        "cr": 1.4182756822451523
+      },
+      "zlib": {
+        "compressed_bytes": 1374897,
+        "cr": 1.4182880608511037
+      },
+      "zstd": {
+        "compressed_bytes": 1400620,
+        "cr": 1.3922405791720809
+      }
+    },
+    {
+      "record_id": "200",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1480928,
+        "cr": 1.316742,
+        "prd_pct": 0.757802,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1392026,
+        "cr": 1.400835903927082
+      },
+      "zlib": {
+        "compressed_bytes": 1392014,
+        "cr": 1.4008479799772129
+      },
+      "zstd": {
+        "compressed_bytes": 1412234,
+        "cr": 1.3807910020577328
+      }
+    },
+    {
+      "record_id": "201",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1435882,
+        "cr": 1.35805,
+        "prd_pct": 1.578857,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1129760,
+        "cr": 1.726030307321909
+      },
+      "zlib": {
+        "compressed_bytes": 1129748,
+        "cr": 1.7260486409358546
+      },
+      "zstd": {
+        "compressed_bytes": 1119522,
+        "cr": 1.7418148102493742
+      }
+    },
+    {
+      "record_id": "202",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1502767,
+        "cr": 1.297606,
+        "prd_pct": 1.117733,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1264626,
+        "cr": 1.5419578594778218
+      },
+      "zlib": {
+        "compressed_bytes": 1264614,
+        "cr": 1.5419724912107569
+      },
+      "zstd": {
+        "compressed_bytes": 1282477,
+        "cr": 1.5204951043956343
+      }
+    },
+    {
+      "record_id": "203",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1555808,
+        "cr": 1.253368,
+        "prd_pct": 0.69409,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1542707,
+        "cr": 1.264011895972469
+      },
+      "zlib": {
+        "compressed_bytes": 1542695,
+        "cr": 1.2640217282093997
+      },
+      "zstd": {
+        "compressed_bytes": 1570958,
+        "cr": 1.2412807980862632
+      }
+    },
+    {
+      "record_id": "205",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1419308,
+        "cr": 1.373909,
+        "prd_pct": 1.772611,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1119529,
+        "cr": 1.7418039193267882
+      },
+      "zlib": {
+        "compressed_bytes": 1119517,
+        "cr": 1.7418225895631776
+      },
+      "zstd": {
+        "compressed_bytes": 1120428,
+        "cr": 1.7404063447182683
+      }
+    },
+    {
+      "record_id": "207",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1500135,
+        "cr": 1.299883,
+        "prd_pct": 0.861751,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1436639,
+        "cr": 1.3573347236153273
+      },
+      "zlib": {
+        "compressed_bytes": 1436627,
+        "cr": 1.357346061294964
+      },
+      "zstd": {
+        "compressed_bytes": 1479091,
+        "cr": 1.318377300652901
+      }
+    },
+    {
+      "record_id": "208",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1510080,
+        "cr": 1.291322,
+        "prd_pct": 0.596571,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1468122,
+        "cr": 1.3282274906308875
+      },
+      "zlib": {
+        "compressed_bytes": 1468110,
+        "cr": 1.3282383472628072
+      },
+      "zstd": {
+        "compressed_bytes": 1493028,
+        "cr": 1.3060706162242102
+      }
+    },
+    {
+      "record_id": "209",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1479172,
+        "cr": 1.318305,
+        "prd_pct": 1.413644,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1353685,
+        "cr": 1.4405123791724073
+      },
+      "zlib": {
+        "compressed_bytes": 1353673,
+        "cr": 1.4405251489835433
+      },
+      "zstd": {
+        "compressed_bytes": 1369775,
+        "cr": 1.4235914657516746
+      }
+    },
+    {
+      "record_id": "210",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1480538,
+        "cr": 1.317089,
+        "prd_pct": 1.221409,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1271476,
+        "cr": 1.5336506548295052
+      },
+      "zlib": {
+        "compressed_bytes": 1271464,
+        "cr": 1.5336651293312276
+      },
+      "zstd": {
+        "compressed_bytes": 1278216,
+        "cr": 1.5255637544828105
+      }
+    },
+    {
+      "record_id": "212",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1493506,
+        "cr": 1.305653,
+        "prd_pct": 1.074325,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1493044,
+        "cr": 1.3060566198986767
+      },
+      "zlib": {
+        "compressed_bytes": 1493032,
+        "cr": 1.3060671171147036
+      },
+      "zstd": {
+        "compressed_bytes": 1520503,
+        "cr": 1.282470340407089
+      }
+    },
+    {
+      "record_id": "213",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1408192,
+        "cr": 1.384754,
+        "prd_pct": 0.752537,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1627100,
+        "cr": 1.1984512322537029
+      },
+      "zlib": {
+        "compressed_bytes": 1627088,
+        "cr": 1.1984600709980038
+      },
+      "zstd": {
+        "compressed_bytes": 1647474,
+        "cr": 1.1836302120701145
+      }
+    },
+    {
+      "record_id": "214",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1508032,
+        "cr": 1.293076,
+        "prd_pct": 0.669162,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1480639,
+        "cr": 1.3169989443746923
+      },
+      "zlib": {
+        "compressed_bytes": 1480627,
+        "cr": 1.3170096182225504
+      },
+      "zstd": {
+        "compressed_bytes": 1511805,
+        "cr": 1.289848889241668
+      }
+    },
+    {
+      "record_id": "215",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1508520,
+        "cr": 1.292658,
+        "prd_pct": 1.27231,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1396965,
+        "cr": 1.3958832182624474
+      },
+      "zlib": {
+        "compressed_bytes": 1396953,
+        "cr": 1.3958952090728893
+      },
+      "zstd": {
+        "compressed_bytes": 1417575,
+        "cr": 1.3755885931961271
+      }
+    },
+    {
+      "record_id": "217",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1503742,
+        "cr": 1.296765,
+        "prd_pct": 0.460127,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1497527,
+        "cr": 1.3021468060342152
+      },
+      "zlib": {
+        "compressed_bytes": 1497515,
+        "cr": 1.302157240495087
+      },
+      "zstd": {
+        "compressed_bytes": 1516676,
+        "cr": 1.2857063736750631
+      }
+    },
+    {
+      "record_id": "219",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1424768,
+        "cr": 1.368644,
+        "prd_pct": 0.832627,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1482343,
+        "cr": 1.3154850125780606
+      },
+      "zlib": {
+        "compressed_bytes": 1482331,
+        "cr": 1.315495661900075
+      },
+      "zstd": {
+        "compressed_bytes": 1519591,
+        "cr": 1.283240029718523
+      }
+    },
+    {
+      "record_id": "220",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1404780,
+        "cr": 1.388118,
+        "prd_pct": 1.272389,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1173876,
+        "cr": 1.6611635300491705
+      },
+      "zlib": {
+        "compressed_bytes": 1173864,
+        "cr": 1.6611805115413711
+      },
+      "zstd": {
+        "compressed_bytes": 1165263,
+        "cr": 1.6734419611709974
+      }
+    },
+    {
+      "record_id": "221",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1513297,
+        "cr": 1.288577,
+        "prd_pct": 1.041514,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1322961,
+        "cr": 1.4739663527496276
+      },
+      "zlib": {
+        "compressed_bytes": 1322949,
+        "cr": 1.4739797225743396
+      },
+      "zstd": {
+        "compressed_bytes": 1330836,
+        "cr": 1.4652444027663813
+      }
+    },
+    {
+      "record_id": "222",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1510958,
+        "cr": 1.290572,
+        "prd_pct": 1.92543,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1292832,
+        "cr": 1.5083166258260934
+      },
+      "zlib": {
+        "compressed_bytes": 1292820,
+        "cr": 1.5083306260732352
+      },
+      "zstd": {
+        "compressed_bytes": 1314678,
+        "cr": 1.4832529334179168
+      }
+    },
+    {
+      "record_id": "223",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1418820,
+        "cr": 1.374382,
+        "prd_pct": 0.861683,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1392123,
+        "cr": 1.40073829683153
+      },
+      "zlib": {
+        "compressed_bytes": 1392111,
+        "cr": 1.4007503711988483
+      },
+      "zstd": {
+        "compressed_bytes": 1390760,
+        "cr": 1.4021110759584687
+      }
+    },
+    {
+      "record_id": "228",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1517588,
+        "cr": 1.284934,
+        "prd_pct": 0.841246,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1490859,
+        "cr": 1.307970773896123
+      },
+      "zlib": {
+        "compressed_bytes": 1490847,
+        "cr": 1.3079813019042195
+      },
+      "zstd": {
+        "compressed_bytes": 1519900,
+        "cr": 1.282979143364695
+      }
+    },
+    {
+      "record_id": "230",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1416772,
+        "cr": 1.376368,
+        "prd_pct": 1.112339,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1379231,
+        "cr": 1.4138313306472954
+      },
+      "zlib": {
+        "compressed_bytes": 1379219,
+        "cr": 1.4138436317945156
+      },
+      "zstd": {
+        "compressed_bytes": 1397558,
+        "cr": 1.395290928891681
+      }
+    },
+    {
+      "record_id": "231",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1454310,
+        "cr": 1.340842,
+        "prd_pct": 1.078464,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1277895,
+        "cr": 1.5259469674738535
+      },
+      "zlib": {
+        "compressed_bytes": 1277883,
+        "cr": 1.5259612969262444
+      },
+      "zstd": {
+        "compressed_bytes": 1295623,
+        "cr": 1.5050674463173315
+      }
+    },
+    {
+      "record_id": "232",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1478978,
+        "cr": 1.318478,
+        "prd_pct": 2.324893,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1275908,
+        "cr": 1.5283233587374638
+      },
+      "zlib": {
+        "compressed_bytes": 1275896,
+        "cr": 1.5283377328559695
+      },
+      "zstd": {
+        "compressed_bytes": 1298715,
+        "cr": 1.5014841593421189
+      }
+    },
+    {
+      "record_id": "233",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1422232,
+        "cr": 1.371084,
+        "prd_pct": 0.646173,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1542641,
+        "cr": 1.2640659751685583
+      },
+      "zlib": {
+        "compressed_bytes": 1542629,
+        "cr": 1.2640758082468306
+      },
+      "zstd": {
+        "compressed_bytes": 1562457,
+        "cr": 1.2480343459051992
+      }
+    },
+    {
+      "record_id": "234",
+      "raw_bytes": 1950000,
+      "zpe_bio": {
+        "compressed_bytes_est": 1438223,
+        "cr": 1.35584,
+        "prd_pct": 1.072126,
+        "source": "validation/results/mitdb_python_only/mitdb_aggregate.json (clinical mode, 10000-sample window)"
+      },
+      "gzip": {
+        "compressed_bytes": 1322014,
+        "cr": 1.4750222009751788
+      },
+      "zlib": {
+        "compressed_bytes": 1322002,
+        "cr": 1.475035589961286
+      },
+      "zstd": {
+        "compressed_bytes": 1345752,
+        "cr": 1.4490039769586076
+      }
+    }
+  ],
+  "aggregate": {
+    "gzip": {
+      "mean_cr": 1.4290628217586543,
+      "median_cr": 1.4085145191629764,
+      "min_cr": 1.1973893228487058,
+      "max_cr": 1.7418039193267882
+    },
+    "zlib": {
+      "mean_cr": 1.4290754911310923,
+      "median_cr": 1.4085267281390763,
+      "min_cr": 1.1973981459364298,
+      "max_cr": 1.7418225895631776
+    },
+    "zstd": {
+      "mean_cr": 1.4115139364571057,
+      "median_cr": 1.393765754031881,
+      "min_cr": 1.1745820445558122,
+      "max_cr": 1.7418148102493742
+    },
+    "zpe_bio": {
+      "mean_cr": 1.3231794583333334,
+      "median_cr": 1.316006,
+      "min_cr": 1.253368,
+      "max_cr": 1.388118,
+      "mean_prd_pct": 1.1158541666666666,
+      "max_prd_pct": 2.324893,
+      "source_note": "ZPE-Bio CRs are taken from the lane's own aggregate, computed over a 10000-sample clinical-mode window per record. Lossless comparator CRs above are computed over the FULL raw .dat byte stream. Apples to oranges on input scope; report both honestly."
+    }
+  },
+  "honest_verdict": "On raw compression ratio alone, ZPE-Bio (mean CR 1.323) loses to gzip, zlib, zstd (gzip 1.429, zlib 1.429, zstd 1.412). This is expected and does not invalidate the lane: ZPE-Bio is a fidelity-bounded-lossy clinical ECG codec (mean PRD ~1.12%, max PRD <= 2.32% on MIT-BIH); gzip/zlib/zstd are lossless general-purpose compressors. The two are not commensurable as a single CR number. ZPE-Bio's value proposition is deterministic, bounded-error reconstruction with a clinical fidelity contract, not raw CR supremacy over lossless byte compressors."
+}

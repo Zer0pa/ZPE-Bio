@@ -76,6 +76,23 @@ Source: [`validation/results/ptbxl/summary.json`](validation/results/ptbxl/summa
 
 **Note on PTB-XL SNR/PRD:** PTB-XL records are 12-lead 500 Hz clinical studies; the lower SNR relative to MIT-BIH reflects higher signal diversity and more channels compressed per segment, not codec regression. Integrity passes 100/100.
 
+## Comp Benchmarks
+
+ZPE-Bio is a fidelity-bounded-lossy ECG codec (clinical mode, mean PRD ~1.12%, max PRD <= 2.32% on MIT-BIH). gzip, zlib, and zstd are general-purpose lossless byte compressors. Direct compression-ratio comparison is not apples-to-apples: ZPE-Bio's CR is intrinsically bounded by its clinical fidelity contract, while lossless compressors achieve whatever CR the byte distribution permits at zero error. The honest comparison reports both CRs and the fidelity contract, not a single "winner".
+
+| Codec | Mean CR | Median CR | Fidelity |
+| --- | ---: | ---: | --- |
+| ZPE-Bio | 1.323 | 1.316 | bounded-lossy, PRD <= 2.32% (mean ~1.12%) |
+| gzip (level 6) | 1.429 | 1.408 | lossless |
+| zlib (level 6) | 1.429 | 1.408 | lossless |
+| zstd (level 3) | 1.412 | 1.394 | lossless |
+
+On raw compression ratio alone, ZPE-Bio (mean CR 1.323) loses to gzip, zlib, zstd (gzip 1.429, zlib 1.429, zstd 1.412). This is expected and does not invalidate the lane: ZPE-Bio is a fidelity-bounded-lossy clinical ECG codec (mean PRD ~1.12%, max PRD <= 2.32% on MIT-BIH); gzip/zlib/zstd are lossless general-purpose compressors. The two are not commensurable as a single CR number. ZPE-Bio's value proposition is deterministic, bounded-error reconstruction with a clinical fidelity contract, not raw CR supremacy over lossless byte compressors.
+
+Note on input scope: lossless comparator CRs above are computed over the full raw int16 `.dat` byte stream of each MIT-BIH record; ZPE-Bio CRs are taken from the lane's existing aggregate, computed over a 10000-sample clinical-mode window per record. Both surfaces are recorded in the proof artifact below.
+
+Proof: [proofs/artifacts/comp_benchmarks/mitbih_codec_comparison.json](proofs/artifacts/comp_benchmarks/mitbih_codec_comparison.json)
+
 ## Local Validation
 
 ```bash
