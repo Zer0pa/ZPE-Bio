@@ -12,8 +12,8 @@
 - Canonical metric authority:
   `IMC_COMPATIBILITY_VECTOR.json` `canonical_demo_metrics.total_words = 844`
 
-## Shared Contract Assumptions
-1. 20-bit word layout with mode/version/payload bit boundaries.
+## Bio-IMC Compatibility Vector
+1. 20-bit packet layout per the ZPE-Bio ↔ ZPE-IMC compatibility vector (lane-scoped, not a portfolio-wide format).
 2. Extension-mode modality markers retained (`touch=0x0800`, `smell=0x0200`, `taste=0x0400`, etc.).
 3. Dispatch semantics reference IMC frozen precedence ordering.
 4. Bio compatibility gates validate packet extraction and deterministic replay against frozen assumptions.
