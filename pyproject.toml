@@ -9,9 +9,32 @@ description = "Deterministic 8-primitive biosignal codec with smell/taste multim
 requires-python = ">=3.10"
 readme = "README.md"
 license = "LicenseRef-Zer0pa-SAL-7.0"
+authors = [
+    {name = "Zer0pa (Pty) Ltd", email = "architects@zer0pa.ai"},
+]
+keywords = [
+    "biosignal compression",
+    "ECG",
+    "deterministic codec",
+    "medical waveform",
+    "PhysioNet",
+]
+classifiers = [
+    "License :: Other/Proprietary License",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+    "Development Status :: 4 - Beta",
+]
 dependencies = [
     "numpy>=1.24,<2.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/Zer0pa/ZPE-Bio"
+Documentation = "https://github.com/Zer0pa/ZPE-Bio#readme"
+Repository = "https://github.com/Zer0pa/ZPE-Bio"
+Issues = "https://github.com/Zer0pa/ZPE-Bio/issues"
+Changelog = "https://github.com/Zer0pa/ZPE-Bio/blob/main/CHANGELOG.md"
 
 [project.optional-dependencies]
 validation = [

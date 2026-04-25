@@ -3,6 +3,7 @@ name = "zpe-bio-codec"
 version = "0.1.0"
 edition = "2021"
 description = "8-primitive geometric biosignal compression codec"
+authors = ["Zer0pa (Pty) Ltd <architects@zer0pa.ai>"]
 license = "LicenseRef-Zer0pa-SAL-7.0"
 
 [lib]
