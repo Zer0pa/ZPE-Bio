@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "zpe-bio"
-version = "0.2.0"
-description = "Deterministic ECG codec with Python CLI, Rust parity tests, and committed validation artifacts."
+version = "0.2.1"
+description = "Deterministic ECG codec with Python + Rust core; staged proof on 4 standard clinical corpora (MIT-BIH, NSTDB, EDB, PTB-XL)"
 requires-python = ">=3.10"
 readme = "README.md"
 license = "LicenseRef-Zer0pa-SAL-7.0"
