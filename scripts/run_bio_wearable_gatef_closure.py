@@ -11,11 +11,9 @@ import argparse
 import ctypes
 import hashlib
 import json
-import math
 import platform
 import shutil
 import subprocess
-import sys
 import zipfile
 from dataclasses import dataclass
 from datetime import datetime, timezone
@@ -642,8 +640,6 @@ def main(argv: list[str] | None = None) -> int:
     if not old_bundle.exists():
         raise RuntimeError(f"Old bundle not found: {old_bundle}")
 
-    # Carry forward claims that were already PASS and unchanged in this closure run.
-    old_claim_delta = (old_bundle / "claim_status_delta.md").read_text(encoding="utf-8")
     carry_map = {
         "BIO-WEAR-C002": old_bundle / "bio_wear_ppg_benchmark.json",
         "BIO-WEAR-C003": old_bundle / "bio_wear_imu_benchmark.json",

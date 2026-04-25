@@ -1,11 +1,11 @@
 [build-system]
-requires = ["setuptools>=69.0", "wheel"]
+requires = ["setuptools>=69,<82", "wheel>=0.43,<1"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "zpe-bio"
 version = "0.2.0"
-description = "Deterministic 8-primitive biosignal codec with smell/taste multimodal extensions."
+description = "Deterministic ECG codec with Python CLI, Rust parity tests, and committed validation artifacts."
 requires-python = ">=3.10"
 readme = "README.md"
 license = "LicenseRef-Zer0pa-SAL-7.0"
@@ -13,17 +13,20 @@ authors = [
     {name = "Zer0pa (Pty) Ltd", email = "architects@zer0pa.ai"},
 ]
 keywords = [
-    "biosignal compression",
+    "ecg compression",
     "ECG",
     "deterministic codec",
     "medical waveform",
     "PhysioNet",
 ]
 classifiers = [
-    "License :: Other/Proprietary License",
     "Intended Audience :: Science/Research",
     "Topic :: Scientific/Engineering",
     "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
 ]
 dependencies = [
     "numpy>=1.24,<2.0",
@@ -40,7 +43,6 @@ Changelog = "https://github.com/Zer0pa/ZPE-Bio/blob/main/CHANGELOG.md"
 validation = [
     "matplotlib>=3.7",
     "neurokit2>=0.2.12",
-    "scipy>=1.11",
     "wfdb>=4.1",
 ]
 bioeeg = [
@@ -51,9 +53,6 @@ dev = [
     "build>=1.2",
     "pytest>=8.0",
     "ruff>=0.6",
-]
-observe = [
-    "comet-ml>=3.35",
 ]
 
 [project.scripts]
