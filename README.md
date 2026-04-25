@@ -1,8 +1,18 @@
 # ZPE-Bio
 
-Deterministic ECG codec repository with a Python CLI, a Rust core crate, and committed validation artifacts. This README is intentionally limited to claims that are backed by proof artifacts already on disk and by tests that run in CI.
+Deterministic ECG codec — 100% integrity across four standard corpora (253 records), Python and Rust parity-gated in CI. ZPE-Bio is one of 17 independent encoding products in the Zer0pa portfolio, each developed for its own domain.
 
-This repo's claimed surface is ECG staged proof only. It does not use the wearable runbooks as release evidence, and it does not make a generalized biosignal or regulatory claim.
+Scope discipline: ECG staged proof only. Not a generalized biosignal codec. Not a regulatory or wearable closure claim. Useful now, improving continuously.
+
+## Commercial Readiness
+
+| Field | Value |
+| --- | --- |
+| Verdict | STAGED |
+| Domain | ECG — clinical and research corpora |
+| Scope | ECG round-trip codec; Python + Rust; 4 standard corpora validated in CI |
+| What is not claimed | Wearable closure, generalized biosignal, regulatory / FDA clearance |
+| License | Zer0pa Source-Available License v7.0 (`LicenseRef-Zer0pa-SAL-7.0`) |
 
 ## Anchored Proof Surface
 
@@ -15,12 +25,11 @@ This repo's claimed surface is ECG staged proof only. It does not use the wearab
 
 ## Not Claimed
 
-- No public release-readiness verdict
-- No Bio Wearable closure claim
 - No generalized biosignal victory claim
+- No Bio Wearable closure claim
 - No regulatory or FDA claim
 
-## Benchmark Results (committed artifacts, beta)
+## Benchmark Results
 
 Results below are from committed benchmark artifacts. All runs are CPU-only Python codec; no hardware path is implied.
 
