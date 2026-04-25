@@ -9,7 +9,7 @@ Evidence sources used:
 
 | Requirement ID | Description | DT(s) | DT Status | Evidence |
 |:---|:---|:---|:---|:---|
-| REQ-CODEC-1 | 8-primitive chain code | DT-1, DT-5 | PASS | `dt_results_20260212T104642.json` |
+| REQ-CODEC-1 | Deterministic chain-code direction encoding | DT-1, DT-5 | PASS | `dt_results_20260212T104642.json` |
 | REQ-CODEC-2 | Quantisation to active directions | DT-3, DT-12 | PASS | `dt_results_20260212T104642.json`, `dt_results_20260212T112710.json` |
 | REQ-CODEC-3 | RLE compression | DT-2 | PASS | `dt_results_20260212T104642.json` |
 | REQ-CODEC-4 | Adaptive threshold | DT-15 | PASS | `dt_results_20260212T104642.json` |
