@@ -1,8 +1,8 @@
 # ZPE-Bio
 
-Deterministic ECG codec repository with a Python CLI, a Rust core crate, and committed validation artifacts. This README is intentionally limited to claims that are backed by proof artifacts already on disk and by tests that run in CI. ZPE-Bio is one of 17 independent encoding products in the Zer0pa portfolio, each developed for its own domain.
+Fidelity-bounded-lossy clinical ECG archival format. The product is the deterministic PRD <= 2.32% reconstruction contract that lossless byte compressors structurally cannot offer. Shipped as a Python CLI, a Rust core crate, and committed validation artifacts. This README is intentionally limited to claims that are backed by proof artifacts already on disk and by tests that run in CI. ZPE-Bio is one of 17 independent encoding products in the Zer0pa portfolio, each developed for its own domain.
 
-This repo's claimed surface is ECG staged proof only. It does not use the wearable runbooks as release evidence, and it does not make a generalized biosignal or regulatory claim.
+This repo's claimed surface is the clinical-mode ECG fidelity contract only. It does not use the wearable runbooks as release evidence, and it does not make a generalized biosignal or regulatory claim.
 
 ## Anchored Proof Surface
 
@@ -127,3 +127,10 @@ python -m zpe_bio roundtrip --mode clinical --samples 250
 - [`validation/results/BENCHMARK_SUMMARY.md`](validation/results/BENCHMARK_SUMMARY.md)
 - [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
 - [`docs/LEGAL_BOUNDARIES.md`](docs/LEGAL_BOUNDARIES.md)
+
+## Upcoming Workstreams
+
+This section captures the active lane priorities — what the next agent or contributor picks up, and what investors should expect. Cadence is continuous, not milestoned.
+
+- **Rust embedded encode/decode path** — Active Engineering. Wearable-cardiac-monitor wedge requires sub-ms latency and constrained-resource execution; foundation primitives are mature.
+- **Regulatory alignment scoping (IEC 60601 / FDA)** — Research-Deferred — Investigation Underway. The PRD-bounded fidelity contract is a regulatory moat that lossless coders cannot match; alignment work scopes the path to clinical submission.
