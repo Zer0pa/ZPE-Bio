@@ -15,44 +15,59 @@ Honest blocker: PTB-XL max PRD reaches 5.29% (100-record sample) — above the c
 
 ## What This Is
 
-ECG codec, beta. Clinical-mode fidelity-bounded-lossy ECG archival format. The product is the deterministic PRD <= 2.32% reconstruction contract that lossless byte compressors structurally cannot offer. Shipped as a Python CLI, a Rust core crate, and committed validation artifacts.
+Fidelity-bounded ECG archival codec. Deterministic PRD <=2.32% contract, Python CLI, Rust core, and MIT-BIH/PTB-XL validation. Install from PyPI: `pip install zpe-bio`
 
 This repo's claimed surface is the clinical-mode ECG fidelity contract only. It does not use the wearable runbooks as release evidence, and it does not make a generalized biosignal or regulatory claim. ZPE-Bio is one of 17 independent encoding products in the Zer0pa portfolio, each developed for its own domain.
 
+## Codec Mechanics
+
+<p>
+  <img src=".github/assets/readme/lane-mechanics/BIO.gif" alt="ZPE-Bio Codec Mechanics animation" width="100%">
+</p>
+
 | Field | Value |
-| --- | --- |
+| ------- | ------- |
 | Architecture | BIO_STREAM |
 | Encoding | BIO_DELTA_V1 |
+| Mechanics Asset | `.github/assets/readme/lane-mechanics/BIO.gif` |
 
 ## Key Metrics
 
-All runs are CPU-only Python codec. Full per-database detail appears in the detailed subsections below.
+| Metric | Value | Baseline |
+| -------- | ------- | ---------- |
+| MIT-BIH Arrhythmia (mitdb) | 48/48 (100%) | Mean PRD 1.12%, Mean SNR 43.3 dB |
+| MIT-BIH Noise Stress (nstdb) | 15/15 (100%) | Mean SNR 60.5 dB |
+| European ST-T (edb) | 90/90 (100%) | Mean SNR 52.5 dB |
+| PTB-XL (sample) | 100/100 (100%) | Max PRD 5.29% — open boundary |
 
-| Database | Records | Integrity | Mean PRD | Mean SNR |
-| --- | ---: | ---: | ---: | ---: |
-| MIT-BIH Arrhythmia (mitdb) | 48/48 | 100% | 1.12% | 43.3 dB |
-| MIT-BIH Noise Stress (nstdb) | 15/15 | 100% | — | 60.5 dB |
-| European ST-T (edb) | 90/90 | 100% | — | 52.5 dB |
-| PTB-XL (100-record sample) | 100/100 | 100% | — | 32.0 dB |
+> Source: `validation/results/BENCHMARK_SUMMARY.md`
 
-Source artifacts: [`validation/results/BENCHMARK_SUMMARY.md`](validation/results/BENCHMARK_SUMMARY.md), [`validation/results/mitdb_python_only/mitdb_aggregate.json`](validation/results/mitdb_python_only/mitdb_aggregate.json), [`validation/results/ptbxl/summary.json`](validation/results/ptbxl/summary.json), [`validation/results/nstdb/summary.json`](validation/results/nstdb/summary.json), [`validation/results/edb/summary.json`](validation/results/edb/summary.json)
+## Repo Identity
 
-## Competitive Benchmarks
+| Field | Value |
+| ------- | ------- |
+| Identifier | ZPE-Bio |
+| Repository | https://github.com/Zer0pa/ZPE-Bio |
+| Section | encoding |
+| Visibility | PUBLIC |
+| Architecture | BIO_STREAM |
+| Encoding | BIO_DELTA_V1 |
+| License | SAL-7.0 |
+| Authority Source | validation/results/BENCHMARK_SUMMARY.md |
 
-ZPE-Bio is a fidelity-bounded-lossy ECG codec (clinical mode, mean PRD ~1.12%, max PRD <= 2.32% on MIT-BIH). gzip, zlib, and zstd are general-purpose lossless byte compressors. Direct compression-ratio comparison is not apples-to-apples: ZPE-Bio's CR is intrinsically bounded by its clinical fidelity contract, while lossless compressors achieve whatever CR the byte distribution permits at zero error. The honest comparison reports both CRs and the fidelity contract, not a single "winner".
+## Readiness
 
-| Codec | Mean CR | Median CR | Fidelity |
-| --- | ---: | ---: | --- |
-| ZPE-Bio | 1.323 | 1.316 | bounded-lossy, PRD <= 2.32% (mean ~1.12%) |
-| gzip (level 6) | 1.429 | 1.408 | lossless |
-| zlib (level 6) | 1.429 | 1.408 | lossless |
-| zstd (level 3) | 1.412 | 1.394 | lossless |
+| Field | Value |
+| ------- | ------- |
+| Verdict | STAGED |
+| Checks | 4/4 |
+| Anchors | 4 display anchors |
+| Confidence | MEDIUM — clinical-mode MIT-BIH contract met; PTB-XL max PRD exceeds 2.32% threshold (open boundary); regulatory alignment deferred |
+| Authority | validation/results/BENCHMARK_SUMMARY.md |
 
-On raw compression ratio alone, ZPE-Bio (mean CR 1.323) loses to gzip, zlib, zstd (gzip 1.429, zlib 1.429, zstd 1.412). This is expected and does not invalidate the lane: ZPE-Bio is a fidelity-bounded-lossy clinical ECG codec (mean PRD ~1.12%, max PRD <= 2.32% on MIT-BIH); gzip/zlib/zstd are lossless general-purpose compressors. The two are not commensurable as a single CR number. ZPE-Bio's value proposition is deterministic, bounded-error reconstruction with a clinical fidelity contract, not raw CR supremacy over lossless byte compressors.
+### Honest Blocker
 
-Note on input scope: lossless comparator CRs above are computed over the full raw int16 `.dat` byte stream of each MIT-BIH record; ZPE-Bio CRs are taken from the lane's existing aggregate, computed over a 10000-sample clinical-mode window per record. Both surfaces are recorded in the proof artifact below.
-
-Proof: [proofs/artifacts/comp_benchmarks/mitbih_codec_comparison.json](proofs/artifacts/comp_benchmarks/mitbih_codec_comparison.json)
+PTB-XL max PRD reaches 5.29% (100-record sample) — above the clinical 2.32% contract threshold. This is an open boundary; PTB-XL is logged but not claimed under the clinical fidelity contract.
 
 ## What We Prove
 
@@ -70,42 +85,34 @@ Proof: [proofs/artifacts/comp_benchmarks/mitbih_codec_comparison.json](proofs/ar
 - No Bio Wearable closure claim
 - No regulatory or FDA claim
 
-## Commercial Readiness
+## Verification Status
 
-| Field | Value |
-| --- | --- |
-| Verdict | STAGED |
-| Commit SHA | see CI badge |
-| Confidence | MEDIUM — clinical-mode MIT-BIH contract met; PTB-XL max PRD exceeds 2.32% threshold (open boundary); regulatory alignment deferred |
-| Source path | [`validation/results/BENCHMARK_SUMMARY.md`](validation/results/BENCHMARK_SUMMARY.md) |
-
-## Tests and Verification
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-python -m pip install --upgrade pip
-python -m pip install -e ".[dev,validation]"
-pytest -q
-python -m build
-```
-
-Quick ECG smoke check:
-
-```bash
-python -m zpe_bio roundtrip --mode clinical --samples 250
-```
+| Code | Check | Verdict |
+| ------ | ------- | --------- |
+| V_01 | MIT-BIH benchmark writer emits summary + aggregate artifacts | PASS |
+| V_02 | PTB-XL benchmark writer emits committed-style summary artifacts | PASS |
+| V_03 | Clinical ECG round-trip remains deterministic and high-fidelity in the Python codec | PASS |
+| V_04 | Python and Rust codec implementations remain parity-gated in CI | PASS |
 
 ## Proof Anchors
 
-| Claim | Proof Artifact On Disk | CI Test Anchor |
-| --- | --- | --- |
-| MIT-BIH benchmark writer emits summary + aggregate artifacts | [`validation/results/BENCHMARK_SUMMARY.md`](validation/results/BENCHMARK_SUMMARY.md), [`validation/results/mitdb_python_only/mitdb_aggregate.json`](validation/results/mitdb_python_only/mitdb_aggregate.json) | [`tests/test_benchmark_mitdb.py`](tests/test_benchmark_mitdb.py) |
-| PTB-XL benchmark writer emits committed-style summary artifacts | [`validation/results/ptbxl/summary.json`](validation/results/ptbxl/summary.json) | [`tests/test_benchmark_physionet.py`](tests/test_benchmark_physionet.py) |
-| Clinical ECG round-trip remains deterministic and high-fidelity in the Python codec | [`validation/results/BENCHMARK_SUMMARY.md`](validation/results/BENCHMARK_SUMMARY.md) | [`tests/test_codec.py`](tests/test_codec.py), [`tests/test_deterministic_replay.py`](tests/test_deterministic_replay.py) |
-| Python and Rust codec implementations remain parity-gated in CI | [`core/rust/`](core/rust), [`tests/test_parity.py`](tests/test_parity.py) | [`tests/test_parity.py`](tests/test_parity.py) |
+| Path | State |
+| ------ | ------- |
+| `validation/results/BENCHMARK_SUMMARY.md` | VERIFIED |
+| `validation/results/mitdb_python_only/mitdb_aggregate.json` | VERIFIED |
+| `validation/results/ptbxl/summary.json` | VERIFIED |
+| `tests/test_parity.py` | VERIFIED |
 
 ## Repo Shape
+
+| Field | Value |
+| ------- | ------- |
+| Proof Anchors | 4 display anchors |
+| Modality Lanes | 2 |
+| Architecture | BIO_STREAM |
+| Encoding | BIO_DELTA_V1 |
+| Verification | 4/4 checks |
+| Authority Source | validation/results/BENCHMARK_SUMMARY.md |
 
 - `python/zpe_bio/`: Python package and CLI
 - `core/rust/`: Rust codec crate
@@ -115,6 +122,31 @@ python -m zpe_bio roundtrip --mode clinical --samples 250
 - `validation/results/`: committed benchmark outputs
 - `validation/runbooks/`: execution and boundary runbooks
 - `docs/`: repo documentation and regulatory/reference material
+
+## Extended Metrics
+
+Rows retained from the previous expanded `## Key Metrics` table. The public product page uses the first four rows only.
+
+| Database | Records | Integrity | Mean PRD | Mean SNR |
+| --- | ---: | ---: | ---: | ---: |
+| PTB-XL (100-record sample) | 100/100 | 100% | — | 32.0 dB |
+
+## Competitive Benchmarks
+
+ZPE-Bio is a fidelity-bounded-lossy ECG codec (clinical mode, mean PRD ~1.12%, max PRD <= 2.32% on MIT-BIH). gzip, zlib, and zstd are general-purpose lossless byte compressors. Direct compression-ratio comparison is not apples-to-apples: ZPE-Bio's CR is intrinsically bounded by its clinical fidelity contract, while lossless compressors achieve whatever CR the byte distribution permits at zero error. The honest comparison reports both CRs and the fidelity contract, not a single "winner".
+
+| Codec | Mean CR | Median CR | Fidelity |
+| --- | ---: | ---: | --- |
+| ZPE-Bio | 1.323 | 1.316 | bounded-lossy, PRD <= 2.32% (mean ~1.12%) |
+| gzip (level 6) | 1.429 | 1.408 | lossless |
+| zlib (level 6) | 1.429 | 1.408 | lossless |
+| zstd (level 3) | 1.412 | 1.394 | lossless |
+
+On raw compression ratio alone, ZPE-Bio (mean CR 1.323) loses to gzip, zlib, zstd (gzip 1.429, zlib 1.429, zstd 1.412). This is expected and does not invalidate the lane: ZPE-Bio is a fidelity-bounded-lossy clinical ECG codec (mean PRD ~1.12%, max PRD <= 2.32% on MIT-BIH); gzip/zlib/zstd are lossless general-purpose compressors. The two are not commensurable as a single CR number. ZPE-Bio's value proposition is deterministic, bounded-error reconstruction with a clinical fidelity contract, not raw CR supremacy over lossless byte compressors.
+
+Note on input scope: lossless comparator CRs above are computed over the full raw int16 `.dat` byte stream of each MIT-BIH record; ZPE-Bio CRs are taken from the lane's existing aggregate, computed over a 10000-sample clinical-mode window per record. Both surfaces are recorded in the proof artifact below.
+
+Proof: [proofs/artifacts/comp_benchmarks/mitbih_codec_comparison.json](proofs/artifacts/comp_benchmarks/mitbih_codec_comparison.json)
 
 ## Quick Start
 
