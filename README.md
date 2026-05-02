@@ -52,6 +52,7 @@ This repo's claimed surface is the clinical-mode ECG fidelity contract only. It 
 | Visibility | PUBLIC |
 | Architecture | BIO_STREAM |
 | Encoding | BIO_DELTA_V1 |
+| Commit SHA | b57bd19f1609 |
 | License | SAL-7.0 |
 | Authority Source | validation/results/BENCHMARK_SUMMARY.md |
 
