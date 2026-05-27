@@ -72,7 +72,7 @@ Further reading:
 <table width="100%">
 <tr>
 <td width="50%" valign="top">
-<div><b>03 · VALUE</b></div>
+<div><b>03 · VALUE OF MARKET</b></div>
       <div><span>48</span> <span>/48</span></div>
       <div>MIT-BIH records replay inside the 2.32% target &middot; <b>mean 1.12% replay error</b></div>
 </td>
