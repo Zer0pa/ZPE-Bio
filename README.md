@@ -1,9 +1,6 @@
 # ZPE-Bio
 
-## Install / Developer Commands
-
-<!-- INSTALL-DX:START -->
-#### Package Install
+## Package Install
 
 Installable package: `python3.11 -m pip install zpe-bio`.
 Current release: `0.2.1` on [PyPI](https://pypi.org/project/zpe-bio/).
@@ -13,43 +10,7 @@ Source: [Zer0pa/ZPE-Bio](https://github.com/Zer0pa/ZPE-Bio/).
 python3.11 -m pip install zpe-bio
 ```
 
-Import smoke:
-
-```bash
-python3.11 - <<'PY'
-import importlib.metadata as md
-import zpe_bio
-
-print("zpe-bio", md.version("zpe-bio"))
-PY
-```
-
-
-CLI smoke:
-
-```bash
-zpe-bio --help
-```
-
-Install success only proves package acquisition/import. Product scope, stale PyPI state, platform limits, and blockers remain in the front-door sections below.
-- PyPI copy is stale or pending refresh; install success is not product readiness.
-<!-- INSTALL-DX:END -->
-
-#### Quick Start
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -e ".[dev,validation]"
-python -m zpe_bio roundtrip --mode clinical --samples 250
-```
-
-Further reading:
-
-- [`validation/results/README.md`](validation/results/README.md)
-- [`validation/results/BENCHMARK_SUMMARY.md`](validation/results/BENCHMARK_SUMMARY.md)
-- [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
-- [`docs/LEGAL_BOUNDARIES.md`](docs/LEGAL_BOUNDARIES.md)
+For full install, smoke, source, and developer commands, [click here](#install-developer-commands-detailed).
 
 ---
 
@@ -324,3 +285,60 @@ Further reading:
 </td>
 </tr>
 </table>
+
+---
+
+<a id="install-developer-commands-detailed"></a>
+
+## Install / Developer Commands Detailed
+
+<!-- INSTALL-DX:START -->
+#### Package Install
+
+Installable package: `python3.11 -m pip install zpe-bio`.
+Current release: `0.2.1` on [PyPI](https://pypi.org/project/zpe-bio/).
+Source: [Zer0pa/ZPE-Bio](https://github.com/Zer0pa/ZPE-Bio/).
+
+```bash
+python3.11 -m pip install zpe-bio
+```
+
+Import smoke:
+
+```bash
+python3.11 - <<'PY'
+import importlib.metadata as md
+import zpe_bio
+
+print("zpe-bio", md.version("zpe-bio"))
+PY
+```
+
+
+CLI smoke:
+
+```bash
+zpe-bio --help
+```
+
+Install success only proves package acquisition/import. Product scope, stale PyPI state, platform limits, and blockers remain in the front-door sections below.
+- PyPI copy is stale or pending refresh; install success is not product readiness.
+<!-- INSTALL-DX:END -->
+
+#### Quick Start
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -e ".[dev,validation]"
+python -m zpe_bio roundtrip --mode clinical --samples 250
+```
+
+Further reading:
+
+- [`validation/results/README.md`](validation/results/README.md)
+- [`validation/results/BENCHMARK_SUMMARY.md`](validation/results/BENCHMARK_SUMMARY.md)
+- [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
+- [`docs/LEGAL_BOUNDARIES.md`](docs/LEGAL_BOUNDARIES.md)
+
+---
