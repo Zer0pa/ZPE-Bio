@@ -19,6 +19,7 @@ For full install, smoke, source, and developer commands, [click here](#install-d
 <td width="100%" valign="top">
 <div><span><b>00 · ZPE-BIO</b> · ECG CODEC</span> <span>DEVELOPER-READY · PTB-XL OPEN</span></div>
       <h1>ECG With Every <span>Beat Encoded</span></h1>
+      <p><strong>Live experiment. Not a release. Ambition headlined. Claims bounded.</strong></p>
       <p>ECG-only staged codec · ZPE-Bio · PyPI <em>zpe-bio</em> v0.2.1 · github.com/Zer0pa/ZPE-Bio</p>
       <p>ZPE-Bio compresses heart-rhythm recordings and publishes the replay error on every dataset it touches. On MIT-BIH, all 48 records return inside the 2.32% clinical target with a <strong>mean replay error of 1.12%</strong>. PTB-XL processes cleanly but one record drifts to 5.29%, so the wider ECG surface is named, not claimed. This is a developer-ready archival codec, not a clinical device, wearable, or regulatory product.</p>
 </td>
